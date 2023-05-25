@@ -1,0 +1,35 @@
+
+.showcase-icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  &-24 {
+    max-width: 1032px;
+  }
+
+  &-16 {
+    max-width: 1024px;
+  }
+}
+
+
+.icon { 
+  display: block;
+
+  &-32 {
+    width: 32px;
+    height: 32px;
+  }
+
+  &-24 {
+    width: 24px;
+    height: 24px;
+  }
+
+  &-16 {
+    width: 16px;
+    height: 16px;
+  }
+}

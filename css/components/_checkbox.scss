@@ -1,0 +1,96 @@
+.checkbox {
+  position: relative;
+
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    min-width: 0px;
+    opacity: 0;
+
+    &:checked {
+
+      + .checkbox__label {
+
+        &:hover {
+          &::before {
+            background-color: var(--primary);
+          }
+        }
+
+        &::before {
+          background-color: var(--primary);
+        }
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:disabled {
+      
+      + .checkbox__label {
+        pointer-events: none;
+
+        
+        &::before {
+          border-color: rgba(#787486, .6);
+        }
+
+       
+        color: rgba(#787486, .6);
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    padding-left: 28px;
+    position: relative;
+    cursor: pointer;
+    color: var(--dark);
+    font-weight: 500;
+
+    @media(max-width: 767px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &::before {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      content: '';
+      width: 16px;
+      height: 16px;
+      border: 1px solid var(--primary);
+      border-radius: 4px;
+      background-color: var(--white);
+      left: 1px;
+      top: 5px;
+    }
+
+    &::after {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      content: '';
+      width: 16px;
+      height: 16px;
+      top: 5px;
+      left: 1px;
+      background: url('../images/check.svg') center center / 16px no-repeat;
+      opacity: 0;
+    }
+
+    &:hover {
+      &::before {
+        background-color: #F5F5F6;
+      }
+    }
+  }
+}

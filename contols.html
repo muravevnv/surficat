@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="showcase">
+          <div class="showcase-box showcase-box-controls">
+            <h2 class="showcase-box__title">Radiobutton & Checkbox</h2>
+            <div class="showcase-section">
+              <div class="showcase-section-content">
+                <div class="showcase-section__text">На этих элементов управления необходимо отобразить 3 основных состояния: Default, Hover, Active</div>
+                <div class="showcase-item">
+                  <div class="radio">
+                    <input type="radio" name="" id="radio-1" class="radio__input">
+                    <label for="radio-1" class="radio__label">Radiobutton</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="" id="check-1" class="checkbox__input">
+                    <label for="check-1" class="checkbox__label">Checkbox</label>
+                  </div>
+                </div>
+              </div>
+              <div class="showcase-section-content">
+                <div class="showcase-section__text">Отобразить Disabled-состояния для данных элементов управления</div>
+                <div class="showcase-item">
+                  <div class="radio">
+                    <input type="radio" name="" id="radio-2" class="radio__input" disabled>
+                    <label for="radio-2" class="radio__label">Radiobutton</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="" id="check-2" class="checkbox__input" disabled>
+                    <label for="check-2" class="checkbox__label">Checkbox</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-box showcase-box-controls">
+            <h2 class="showcase-box__title">Pagination</h2>
+            <div class="showcase-section">
+              <div class="showcase-section-content">
+                <div class="showcase-section__text">На этой пагинации необходимо отобразить активный пункт, ховеры пунктов, переключение пункта</div>
+                <div class="pagination">
+                  <div class="pagination-item">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#First-24"></use>
+                    </svg>
+                  </div>
+                  <div class="pagination-item">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Back-24"></use>
+                    </svg>
+                  </div>
+                  <div class="pagination-item js-pagination-item">1</div>
+                  <div class="pagination-item  js-pagination-item is-active">2</div>
+                  <div class="pagination-item js-pagination-item">3</div>
+                  <div class="pagination-item js-pagination-item">4</div>
+                  <div class="pagination-item">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Ellipsis-24"></use>
+                    </svg>
+                  </div>
+                  <div class="pagination-item js-pagination-item">39</div>
+                  <div class="pagination-item">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Next-24"></use>
+                    </svg>
+                  </div>
+                  <div class="pagination-item">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Last-24"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-box showcase-box-controls">
+            <h2 class="showcase-box__title">Tab</h2>
+            <div class="showcase-section">
+              <div class="showcase-section__head">
+                <h4 class="showcase-section__subtitle">Desktop</h4>
+              </div>
+              <div class="showcase-section-content">
+                <div class="showcase-section__text">На этих табах необходимо отобразить активный пункт, ховеры пунктов, переключение пункта</div>
+                <div class="showcase-item">
+                  <div class="tabs">
+                      <div class="tabs__item is-active">Tab text</div>
+                      <div class="tabs__item">Tab text</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-section">
+              <div class="showcase-section__head">
+                <h4 class="showcase-section__subtitle">Mobile</h4>
+              </div>
+              <div class="showcase-section-content">
+                <div class="showcase-section__text">На этих табах необходимо отобразить активный пункт, переключение пункта</div>
+                <div class="showcase-item">
+                  <div class="tabs tabs-m">
+                    <div class="tabs__item ">Tab text</div>
+                    <div class="tabs__item is-active">Tab text</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+.modal {
+
+  &-content {
+    position: relative;
+    max-width: 520px;
+    width: 100%;
+    padding: 39px;
+    background-color: var(--white);
+    border: 1px solid #eaecf1;
+    border-radius: 12px;
+
+    &-sm {
+      max-width: 380px;
+      width: 100%;
+    }
+
+    &-m {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+      padding: 22.5px 19px;
+
+      .modal__title {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 12px;
+      }
+
+      .modal__text {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      .modal__close {
+        top: 11px;
+        right: 11.5px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .modal__btn {
+        margin-top: 20px;
+
+        + .modal__btn {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    .form-control {
+
+      + .form-control {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: var(--grey);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--dark);
+    }
+  }
+
+  &-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+
+    .modal__title {
+      margin-bottom: 0;
+    }
+  }
+
+  &-list {
+    margin: -12px 0 -11px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 24px;
+      padding-right: 40px;
+      position: relative;
+      padding: 12px 40px 11px 0;
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        content: url('../images/check-list.svg');
+        top: 12px;
+        right: 0;
+        opacity: 0;
+      }
+
+      &.is-active {
+        color: var(--primary);
+
+        &::before {
+          opacity: 1;
+        }
+      }
+      
+      + .modal-list__item {
+        border-top: 1px solid var(--border-grey);
+      }
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+
+
+
+  &__btn {
+    margin-top: 32px;
+  }
+}
+
+.showcase-card {
+  position: relative;
+
+  .modal-content-m {
+    margin: 0 -1px 0 -1px;
+    margin-bottom: 0px;
+    width: calc(100% + 2px);
+  }
+}

@@ -1,0 +1,60 @@
+.tooltip {
+
+  padding-top: 4px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 4px;
+    display: block;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background:url('../images/tooltip-icon.svg') center center / 8px no-repeat;
+  }
+
+  &-up {
+    padding-top: 0px;
+    padding-bottom: 4px;
+
+    &::before {
+      top: auto;
+      bottom: 0;
+      transform: translateX(-50%) rotate(180deg);
+    }
+  }
+
+  &-body {
+    padding: 6px 13px 6px 12px;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 4px;
+    max-width: 282px;
+    width: auto;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    .tooltip__icon {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+
+      svg {
+        stroke: var(--white);
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+
+.showcase-item {
+  align-items: flex-start;
+}

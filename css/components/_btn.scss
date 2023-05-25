@@ -1,0 +1,280 @@
+.showcase-state {
+
+  +.showcase-state {
+    margin-top: 32px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+}
+
+.showcase-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.btn {
+  max-width: 266px;
+  width: 100%;
+  padding: 15px;
+  font-family: 'Gilroy';
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+  border: 1px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+  gap: 12px;
+  cursor: pointer;
+  transition: .25s;
+  
+
+  svg {
+    stroke: var(--white);
+  }
+
+  &:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: var(--white);
+    transition: .25s;
+
+    svg {
+      stroke: var(--white);
+    }
+  }
+
+  &:active {
+    background-color: var(--primary-pressed);
+    border-color: var(--primary-pressed);
+    color: var(--white);
+    transition: .25s;
+
+    svg {
+      stroke: var(--white);
+    }
+  }
+
+  @media(max-width: 1024px) {
+    padding: 11px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 6px;
+  }
+
+
+  &-wide {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &--m {
+    padding: 11px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 6px;
+  }
+
+  &--s {
+    padding: 7px;
+    font-size: 14px;
+    line-height: 24px;
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 4px;
+    
+    span {
+      line-height: 23px;
+    }
+
+    .lds-ring {
+      width: 20px;
+      height: 20px;
+
+      div {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &--xs {
+    padding: 3px;
+    font-size: 14px;
+    line-height: 24px;
+    min-height: 32px;
+    min-width: 32px;
+    border-radius: 4px;
+    
+    span {
+      line-height: 23px;
+    }
+    
+
+    .lds-ring {
+      width: 18px;
+      height: 18px;
+
+      div {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &--secondary {
+    background-color: var(--dark);
+    border-color: var(--dark);
+
+    svg {
+      stroke: var(--white);
+    }
+  }
+
+  &--red {
+    background-color: var(--red);
+    border-color: var(--red);
+
+    svg {
+      stroke: var(--white);
+    }
+
+    &:hover {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), #FF4D50;;
+      border-color: transparent;
+      transition: .25s;
+    }
+
+    &:active {
+      background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #FF4D50;;
+      border-color: transparent;
+      transition: .25s;
+    }
+  }
+
+  &--outline {
+    background-color: var(--white);
+    border-color: var(--border-grey);
+    color: var(--dark);
+    
+    svg {
+      stroke: none;
+    }
+
+    
+    .lds-ring div {
+      border-color: var(--primary) transparent transparent transparent; 
+    }
+
+    // &.btn--disabled {
+    //   background-color: var(--white);
+    // }
+
+    &:hover {
+      transition: .25s;
+
+      svg {
+        stroke: none;
+      }
+      
+      .lds-ring div {
+        border-color: var(--white) transparent transparent transparent; 
+      }
+    }
+  }
+
+  &--disabled {
+    background-color: var(--bg-grey);
+    border-color: var(--border-grey);
+    color: var(--grey);
+    pointer-events: none;
+
+    span {
+      opacity: .6;
+    }
+    svg {
+      stroke: var(--grey);
+      opacity: .6;
+    }
+  }
+
+  &--icon {
+    max-width: initial;
+    width: auto;
+    
+    span {
+      display: none;
+    }
+  }
+
+  &--loaded {
+    pointer-events: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,256 @@
+.auth {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @media(max-width: 767px) {
+    background-color: var(--white);
+  }
+
+  &-logo {
+    position: absolute;
+    left: 96px;
+    top: 64px;
+
+    img {
+      width: 100%;
+    }
+
+    @media(max-width: 1024px) {
+      top: 32px;
+      left: 40px;
+      width: 86px;
+      height: 26px;
+    }
+
+    @media(max-width: 767px) {
+      top: 20px;
+      left: 20px;
+    }
+  }
+
+  &-wrapper {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  &-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width: 1024px) {
+      display: none;
+    }
+
+    img {
+      max-width: 480px;
+    }
+  }
+
+  &-main {
+    width: 50%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width: 1024px) {
+      width: 100%;
+      background-color: transparent;
+      align-items: flex-start;
+    }
+  }
+
+
+  &.auth-registration {
+    @media(max-width: 1024px) {
+      .auth-content {
+        padding-top: 48px;
+      }
+    }
+
+    @media(max-width: 767px) {
+      padding-top: 94px;
+    }
+  }
+
+  &.auth-enter {
+    @media(max-width: 1024px) {
+      .auth-content {
+        padding-top: 48px;
+      }
+    }
+
+    @media(max-width: 767px) {
+      padding-top: 122px;
+    }
+  }
+
+  &-content {
+    max-width: 464px;
+    width: 100%;
+    margin-top: 0px;
+
+    @media(max-width: 1024px) {
+      box-sizing: border-box;
+      max-width: 380px;
+      background-color: var(--white);
+    }
+
+    @media(max-width: 767px) {
+      padding: 20px;
+      max-width: 100%;
+      min-height: 100vh;
+      margin-top: 0;
+    }
+  }
+
+  &-block {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 465px;
+    width: 100%;
+
+    @media(max-width: 1024px) {
+      max-width: 380px;
+      padding: 24px;
+    }
+
+    @media(max-width: 495px) {
+      padding: 20px;
+    }
+  }
+  
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    @media(max-width: 1024px)  {
+      font-size: 14px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    @media(max-width: 1024px) {
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 12px;
+    }
+
+    @media(max-width: 767px) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+
+    @media(max-width: 1024px)  {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    @media(max-width: 767px)  {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    a {
+      color: var(--primary);
+      font-weight: 600;
+
+      &:hover {
+        color: var(--black);
+      }
+    }
+  }
+
+}
+
+.auth-form {
+  margin-top: 32px;
+
+  &__tip {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 24px;
+    text-align: center;
+
+    a {
+      color: var(--primary);
+    }
+  }
+
+  @media(max-width: 1024px)  {
+    margin-top: 24px;
+  }
+}
+
+
+.auth-google {
+  margin-top: 32px;
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+  }
+
+  &-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+
+    @media(max-width: 1024px) {
+      margin-bottom: 20px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--border-grey);
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    span {
+      display: inline-block;
+      width: auto;
+      padding: 0 16px;
+      background-color: #fff;
+      position: relative;
+      z-index: 2;
+    }
+    
+    @media(max-width: 1024px) {
+
+      span {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+}

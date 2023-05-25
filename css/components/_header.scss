@@ -1,0 +1,161 @@
+.header {
+  padding: 16px 0 15px;
+  border-bottom: 1px solid #EAECF1;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    img {
+      display: block;
+      width: 104px;
+      height: 32px;
+    }
+  }
+
+  &-nav {
+    margin: 0 32px 0 auto;
+
+    &__list {
+      display: flex;
+      align-items: center;
+    }
+
+    &__item {
+      margin-right: 32px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.is-active {
+        > a {
+          color: var(--primary);
+        }
+      }
+
+      > a {
+        display: block;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--dark);
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  &-cabinet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-right: 1px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+
+.showcase-header {
+
+  &-md {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    .container {
+      padding: 0 40px;
+    }
+
+    .header {
+      padding: 11px 0 10px;
+    }
+
+    .header__logo {
+      img {
+        width: 86px;
+        height: 26px;
+      }
+    }
+
+    .header-cabinet {
+      font-size: 14px;
+      line-height: 24px;
+      margin-right: 0px;
+      gap: 12px;
+
+      
+    }
+
+    .header-nav {
+      margin-right: 23.5px;
+
+      &__item {
+        margin-right: 25.5px;
+
+        > a {
+          font-size: 14px;
+          line-height: 24px;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &-sm {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+
+    .header {
+      padding: 11px 0 10px;
+    }
+
+    .header__logo {
+      img {
+        width: 86px;
+        height: 26px;
+      }
+    }
+
+    .header-cabinet {
+      margin-right: 0px;
+      &__name {
+        display: none;
+      }
+    }
+
+    .header-nav {
+      margin-right: 16.5px;
+
+      &__item {
+        display: none;
+
+        > a {
+          font-size: 14px;
+          line-height: 24px;
+        }
+
+        &:last-of-type {
+          display: block;
+        }
+      }
+    }
+  }
+
+  + .showcase-header {
+    margin-top: 40px;
+  }
+}

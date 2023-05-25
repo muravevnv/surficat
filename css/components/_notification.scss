@@ -1,0 +1,154 @@
+.notification {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 7px;
+
+  &-red {
+    color: var(--red);
+    a {
+      color: var(--red);
+    }
+  }
+
+  &-yellow {
+    color: var(--yellow);
+    a {
+      color: var(--yellow);
+    }
+  }
+
+  &-green {
+    color: var(--green);
+    a {
+      color: var(--green);
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__icon {
+    margin-left: 0px;
+
+    svg {
+      color: currentColor;
+    }
+    margin-right: 12px;
+  }
+
+  &__text {
+    color: var(--white);
+    margin-right: 9px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+
+  &__link {
+    color: currentColor;
+    font-size: 16px;
+    line-height: 26px;
+    cursor: pointer;
+  }
+
+  &__close {
+    position: absolute;
+    right: 12px;
+    top: 0.5px;
+    cursor: pointer;
+
+    svg {
+      color: var(--white);
+    }
+
+    &:hover {
+      svg {
+        color: #b4b7c7;
+      }
+    }
+  }
+}
+
+.notification-sm {
+  padding: 12px 20px;
+  max-width: 320px;
+  width: 100%;
+  position: relative;
+
+  .notification__text {
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 32px;
+  }
+
+  .notification__link {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .notification__close {
+    right: 20px;
+    top: 24px;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.notification-badge {
+  width: auto;
+  padding: 11px 20.5px 11px 16px;
+  background: #232124;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  gap: 12px;
+  font-size: 16px;
+  line-height: 26px;
+
+  &-wide {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px;
+    gap: 12px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      display: block;
+      margin-left: -1px;
+    }
+  }
+}
+
+.showcase-card {
+  width: 320px;
+  margin-top: 40px;
+  height: 660px;
+  border: 1px solid #787486;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3px;
+}
+
+.showcase-notification {
+  &-row {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+
+  + .showcase-notification {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="auth auth-enter">
+      <div class="auth-logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="auth-wrapper">
+        <div class="auth-img">
+          <img src="images/auth-img.png" alt="" />
+        </div>
+        <div class="auth-main">
+          <div class="auth-content">
+            <div class="auth__title">Добро пожаловать!</div>
+            <div class="auth__subtitle">
+              У вас еще нет аккаунта? <a href="#">Зарегистрироваться</a>
+            </div>
+            <form action="#" class="auth-form">
+              <div class="form-item form-control">
+                <input type="text" class="js-form-control form__input" />
+                <label for="" class="form__label">Ваш email <span>*</span></label>
+              </div>
+              <div class="form-item form-control form-control-icon-right">
+                <input type="text" class="js-form-control form__input" />
+                <label for="" class="form__label">Создайте пароль <span>*</span></label>
+                <div class="form__icon-info">
+                  <svg class="icon icon-24">
+                    <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-controls">
+                <div class="checkbox">
+                  <input type="checkbox" name="" id="check-1" class="checkbox__input">
+                  <label for="check-1" class="checkbox__label">Запомнить меня</label>
+                </div>
+                <a href="#" class="form__link">Забыли пароль?</a>
+              </div>
+              <div class="form__btn btn btn-wide">Войти</div>
+              <div class="form__aproove">
+                Продолжая, вы принимаете <a href="#">условия пользовательского соглашения</a> и <a href="#">политики конфиденциальности</a>.
+              </div>
+              <div class="auth-google">
+                <div class="auth-google-head">
+                  <span>Или</span>
+                </div>
+                <div class="btn btn-wide btn--outline">
+                  <svg class="icon icon-24">
+                    <use xlink:href="images/sprite.svg#Google-24"></use>
+                  </svg>
+                  <span>Войти через Google</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
