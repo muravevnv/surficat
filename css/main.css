@@ -104,6 +104,21 @@ select {
   display: none;
 }
 
+@media (max-width: 767px) {
+  .mob-hidden {
+    display: none;
+  }
+}
+
+.desc-hidden {
+  display: none;
+}
+@media (max-width: 767px) {
+  .desc-hidden {
+    display: inline-block;
+  }
+}
+
 h1 {
   font-size: 40px;
   line-height: 52px;
@@ -241,13 +256,18 @@ h6 {
   justify-content: space-between;
   margin: 20px 0;
 }
+@media (max-width: 1024px) {
+  .form-controls {
+    margin: 16px 0 24px;
+  }
+}
 .form-controls .form__link {
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   color: var(--primary);
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .form-controls .form__link {
     font-size: 14px;
     line-height: 24px;
@@ -1770,6 +1790,7 @@ h6 {
 @media (max-width: 767px) {
   .auth {
     background-color: var(--white);
+    padding: 64px 0;
   }
 }
 .auth-logo {
@@ -1807,6 +1828,11 @@ h6 {
   display: flex;
   min-height: 100vh;
 }
+@media (max-width: 767px) {
+  .auth-wrapper {
+    min-height: initial;
+  }
+}
 .auth-img {
   width: 50%;
   display: flex;
@@ -1836,7 +1862,7 @@ h6 {
   }
 }
 @media (max-width: 1024px) {
-  .auth.auth-registration .auth-main {
+  .auth.auth-registration {
     padding-top: 48px;
   }
 }
@@ -1846,7 +1872,7 @@ h6 {
   }
 }
 @media (max-width: 1024px) {
-  .auth.auth-enter .auth-main {
+  .auth.auth-enter {
     padding-top: 48px;
   }
 }
@@ -1872,9 +1898,9 @@ h6 {
 }
 @media (max-width: 767px) {
   .auth-content {
-    padding: 20px;
+    padding: 0 20px;
     max-width: 100%;
-    min-height: 100vh;
+    min-height: initial;
     margin-top: 0;
     border: none;
   }
@@ -1896,20 +1922,24 @@ h6 {
   .auth-block {
     padding: 20px;
   }
+  .auth-block--mail {
+    text-align: center;
+  }
 }
 .auth__text {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 26px;
 }
 @media (max-width: 1024px) {
   .auth__text {
     font-size: 14px;
+    line-height: 24px;
   }
 }
 .auth__title {
   font-size: 32px;
   line-height: 42px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 16px;
 }
 @media (max-width: 1024px) {
@@ -1921,7 +1951,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .auth__title {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 }
 .auth__subtitle {
@@ -1961,6 +1991,18 @@ h6 {
 }
 .auth-form__tip a {
   color: var(--primary);
+}
+@media (max-width: 1024px) {
+  .auth-form__tip {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .auth-form__tip {
+    text-align: left;
+  }
 }
 @media (max-width: 1024px) {
   .auth-form {

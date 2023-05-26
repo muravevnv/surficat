@@ -47,3 +47,17 @@ main {
 select {
   display: none;
 }
+
+.mob-hidden {
+  @media(max-width: 767px) {
+    display: none;
+  }
+}
+
+.desc-hidden {
+  display: none;
+
+  @media(max-width: 767px) {
+    display: inline-block;
+  }
+}

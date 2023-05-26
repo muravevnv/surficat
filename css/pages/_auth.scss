@@ -8,6 +8,7 @@
 
   @media(max-width: 767px) {
     background-color: var(--white);
+    padding: 64px 0;
   }
 
   &-logo {
@@ -44,6 +45,10 @@
     width: 100%;
     display: flex;
     min-height: 100vh;
+    
+    @media(max-width: 767px) {
+      min-height: initial;
+    }
   }
 
   &-img {
@@ -78,9 +83,7 @@
 
   &.auth-registration {
     @media(max-width: 1024px) {
-      .auth-main {
         padding-top: 48px;
-      }
     }
 
     @media(max-width: 767px) {
@@ -90,9 +93,9 @@
 
   &.auth-enter {
     @media(max-width: 1024px) {
-      .auth-main {
+      
         padding-top: 48px;
-      }
+      
     }
 
     @media(max-width: 767px) {
@@ -115,9 +118,9 @@
     }
 
     @media(max-width: 767px) {
-      padding: 20px;
+      padding: 0 20px;
       max-width: 100%;
-      min-height: 100vh;
+      min-height: initial;
       margin-top: 0;
       border: none;
     }
@@ -137,22 +140,27 @@
 
     @media(max-width: 495px) {
       padding: 20px;
+
+      &--mail {
+        text-align: center;
+      }
     }
   }
   
   &__text {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 26px;
 
     @media(max-width: 1024px)  {
       font-size: 14px;
+      line-height: 24px;
     }
   }
 
   &__title {
     font-size: 32px;
     line-height: 42px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 16px;
 
     @media(max-width: 1024px) {
@@ -162,7 +170,7 @@
     }
 
     @media(max-width: 767px) {
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
   }
 
@@ -205,6 +213,17 @@
 
     a {
       color: var(--primary);
+    }
+
+    @media(max-width: 1024px)  {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    @media(max-width: 767px)  {
+      text-align: left;
+    
     }
   }
 
