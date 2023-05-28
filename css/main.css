@@ -217,11 +217,6 @@ h6 {
 }
 @media (max-width: 1024px) {
   .form__btn {
-    margin-top: 20px;
-  }
-}
-@media (max-width: 767px) {
-  .form__btn {
     margin-top: 24px;
   }
 }
@@ -233,6 +228,9 @@ h6 {
 }
 .form__aproove a {
   color: var(--primary);
+}
+.form__aproove a:hover {
+  color: var(--black);
 }
 @media (max-width: 1024px) {
   .form__aproove {
@@ -266,6 +264,9 @@ h6 {
   line-height: 24px;
   font-weight: 600;
   color: var(--primary);
+}
+.form-controls .form__link:hover {
+  color: var(--black);
 }
 @media (max-width: 1024px) {
   .form-controls .form__link {
@@ -1230,7 +1231,7 @@ h6 {
   color: var(--dark);
   font-weight: 500;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .checkbox__label {
     font-size: 14px;
     line-height: 24px;
@@ -1828,7 +1829,7 @@ h6 {
   display: flex;
   min-height: 100vh;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .auth-wrapper {
     min-height: initial;
   }
@@ -1907,10 +1908,11 @@ h6 {
 }
 .auth-block {
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 40px;
   max-width: 465px;
   width: 100%;
+  border: 1px solid var(--border-grey);
 }
 @media (max-width: 1024px) {
   .auth-block {
@@ -1918,12 +1920,21 @@ h6 {
     padding: 24px;
   }
 }
-@media (max-width: 495px) {
+@media (max-width: 767px) {
+  .auth-block {
+    border: none;
+  }
+}
+@media (max-width: 767px) {
   .auth-block {
     padding: 20px;
   }
   .auth-block--mail {
     text-align: center;
+  }
+  .auth-block--mail .auth__text {
+    max-width: 310px;
+    margin: 0 auto;
   }
 }
 .auth__text {
@@ -1991,6 +2002,10 @@ h6 {
 }
 .auth-form__tip a {
   color: var(--primary);
+  font-weight: 600;
+}
+.auth-form__tip a:hover {
+  color: var(--black);
 }
 @media (max-width: 1024px) {
   .auth-form__tip {
@@ -2017,6 +2032,9 @@ h6 {
   .auth-google {
     margin-top: 20px;
   }
+}
+.auth-google .btn.btn--outline:hover svg path {
+  fill: white;
 }
 .auth-google-head {
   width: 100%;

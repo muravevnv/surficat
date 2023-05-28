@@ -13,9 +13,6 @@
   margin-top: 32px;
 
   @media(max-width: 1024px)  {
-    margin-top: 20px;
-  }
-  @media(max-width: 767px)  {
     margin-top: 24px;
   }
 }
@@ -27,6 +24,10 @@
 
   a {
     color: var(--primary);
+
+    &:hover {
+      color: var(--black);
+    }
   }
 
   @media(max-width: 1024px)  {
@@ -58,6 +59,10 @@
     line-height: 24px;
     font-weight: 600;
     color: var(--primary);
+
+    &:hover {
+      color: var(--black);
+    }
 
     @media(max-width: 1024px) {
       font-size: 14px;
