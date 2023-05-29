@@ -1237,6 +1237,12 @@ h6 {
     line-height: 24px;
   }
 }
+@media (max-width: 767px) {
+  .checkbox__label span {
+    display: block;
+    margin-top: -1px;
+  }
+}
 .checkbox__label::before {
   box-sizing: border-box;
   display: block;
@@ -1250,6 +1256,11 @@ h6 {
   left: 1px;
   top: 5px;
 }
+@media (max-width: 767px) {
+  .checkbox__label::before {
+    top: 4px;
+  }
+}
 .checkbox__label::after {
   box-sizing: border-box;
   display: block;
@@ -1261,6 +1272,11 @@ h6 {
   left: 1px;
   background: url("../images/check.svg") center center/16px no-repeat;
   opacity: 0;
+}
+@media (max-width: 767px) {
+  .checkbox__label::after {
+    top: 4px;
+  }
 }
 .checkbox__label:hover::before {
   background-color: #F5F5F6;

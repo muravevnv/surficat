@@ -60,6 +60,13 @@
       line-height: 24px;
     }
 
+    @media(max-width: 767px) {
+      span {
+        display: block;
+        margin-top: -1px;
+      }
+    }
+
     &::before {
       box-sizing: border-box;
       display: block;
@@ -72,6 +79,10 @@
       background-color: var(--white);
       left: 1px;
       top: 5px;
+
+      @media(max-width: 767px) {
+        top: 4px;
+      }
     }
 
     &::after {
@@ -85,6 +96,10 @@
       left: 1px;
       background: url('../images/check.svg') center center / 16px no-repeat;
       opacity: 0;
+
+      @media(max-width: 767px) {
+        top: 4px;
+      }
     }
 
     &:hover {
