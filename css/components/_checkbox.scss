@@ -63,7 +63,7 @@
     @media(max-width: 767px) {
       span {
         display: block;
-        margin-top: -1px;
+        margin-top: 0px;
       }
     }
 
@@ -81,7 +81,7 @@
       top: 5px;
 
       @media(max-width: 767px) {
-        top: 4px;
+        top: 3px;
       }
     }
 

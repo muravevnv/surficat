@@ -1,6 +1,11 @@
 .header {
   padding: 16px 0 15px;
-  border-bottom: 1px solid #EAECF1;
+  border-bottom: 1px solid #eaecf1;
+  background-color: #fff;
+
+  @include media(md) {
+    padding: 11px 0 10px;
+  }
 
   .container {
     display: flex;
@@ -9,15 +14,25 @@
   }
 
   &__logo {
+
     img {
       display: block;
       width: 104px;
       height: 32px;
+
+      @include media(md) {
+        width: 86px;
+        height: 26px;
+      }
     }
   }
 
   &-nav {
     margin: 0 32px 0 auto;
+
+    @include media(md) {
+      margin-right: 23.5px;
+    }
 
     &__list {
       display: flex;
@@ -47,6 +62,32 @@
           color: var(--primary);
         }
       }
+
+      @include media(md) {
+        margin-right: 25.5px;
+
+        > a {
+          font-size: 14px;
+          line-height: 24px;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      @include media(sm) {
+        display: none;
+
+        > a {
+          font-size: 14px;
+          line-height: 24px;
+        }
+
+        &:last-of-type {
+          display: block;
+        }
+      }
     }
   }
 
@@ -59,15 +100,32 @@
     margin-right: 1px;
     cursor: pointer;
 
+    &__icon {
+      stroke: var(--black);
+    }
+
+    @include media(md) {
+      font-size: 14px;
+      line-height: 24px;
+      margin-right: 0px;
+      gap: 12px;
+    }
+
+    @include media(sm) {
+      margin-right: 0px;
+
+      &__name {
+        display: none;
+      }
+    }
+
     &:hover {
       color: var(--primary);
     }
   }
 }
 
-
 .showcase-header {
-
   &-md {
     max-width: 1024px;
     margin: 0 auto;
@@ -92,8 +150,6 @@
       line-height: 24px;
       margin-right: 0px;
       gap: 12px;
-
-      
     }
 
     .header-nav {

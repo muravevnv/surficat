@@ -97,3 +97,21 @@ tabs.forEach(function(item){
     })
   })
 })
+
+
+let sertificatSlider = new Swiper('.sertificat-list', {
+  allowTouchMover: false,
+  slidesPerView: 'auto',
+  breakpoints: {
+    0: {
+      slidesPerView: 'auto',
+      allowTouchMover: true,
+      spaceBetween: 12,
+    }, 
+    768: {
+      slidesPerView: 'auto',
+      allowTouchMover: false,
+      spaceBetween: 0
+    }, 
+  }
+})
