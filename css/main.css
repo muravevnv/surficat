@@ -2067,6 +2067,12 @@ h6 {
     font-size: 16px;
     line-height: 26px;
   }
+  .auth__subtitle .mob-hidden {
+    display: none;
+  }
+  .auth__subtitle .desc-hidden {
+    display: inline-block;
+  }
 }
 @media (max-width: 767px) {
   .auth__subtitle {

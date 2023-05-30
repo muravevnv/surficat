@@ -193,6 +193,14 @@
       margin-bottom: 20px;
       font-size: 16px;
       line-height: 26px;
+
+      .mob-hidden {
+        display: none;
+      }
+
+      .desc-hidden {
+        display: inline-block;
+      }
     }
 
     @media(max-width: 767px)  {
