@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nice-select2.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>FAQ</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header__logo">
+          <img src="images/logo.svg" alt="" />
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item is-active">
+              <a href="">Мои сертификаты</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="">Отправки</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="">Помощь</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-cabinet">
+          <div class="header-cabinet__icon">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#User-Circle-24"></use>
+            </svg>
+          </div>
+          <div class="header-cabinet__name">Александр</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page new-sertificat-page">
+        <div class="container container--md">
+          <div class="page__back">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Long-arrow-left-24"></use>
+            </svg>
+            Назад
+          </div>
+          <div class="page-head">
+            <h1 class="page__title">
+              <svg class="icon icon-32">
+                <use xlink:href="images/sprite.svg#Long-arrow-left-32"></use>
+              </svg>
+              Новый сертификат</h1>
+          </div>
+          <div class="new-sertificat">
+            <div class="box new-sertificat__box">
+              <div class="new-sertificat__title">Основная информация</div>
+              <div class="new-sertificat__desc">
+                Вся указанная информация будет отображаться в сертификате и
+                публично доступна тем, у кого есть ссылка.
+              </div>
+              <form class="new-sertificat__form">
+                <div class="form-control form-control-icon-right">
+                  <input type="text" class="js-form-control form__input" />
+                  <label for="" class="form__label"
+                    >Название сертификата <span>*</span></label
+                  >
+                  <div class="form__tooltip">
+                    Можно не писать «Подарочный сертификат» — это будет указано
+                    автоматически. Пример названия: «Семейная фотосессия в
+                    студии»
+                  </div>
+                </div>
+                <div class="form-control">
+                  <textarea
+                    contenteditable=""
+                    class="js-form-control form__textarea"
+                    style="height: 124px; overflow-y: hidden"
+                  ></textarea>
+                  <label for="" class="form__label"
+                    >Описание <span>*</span></label
+                  >
+                  <div class="form__tooltip">
+                    Тут вы можете указать условия использования сертификата или
+                    подробно рассказать о компании, сделав сертификат более
+                    ценным для получателя.
+                  </div>
+                </div>
+              </form>
+              <div class="new-sertificat__price">
+                <div class="form-control">
+                  <input type="text" class="js-form-control form__input" />
+                  <label for="" class="form__label"
+                    >Укажите номинал (если нужно)</label
+                  >
+                </div>
+                <div class="dropdown-list is-disabled">
+                  <select
+                    name=""
+                    data-display="Select"
+                    data-name="Рубли, ₽"
+                    id=""
+                    style="display: none"
+                  >
+                    <option value="1">Label 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="box new-sertificat__box">
+              <div class="new-sertificat__title">Основная информация</div>
+              <div class="new-sertificat__desc">
+                Вся указанная информация будет отображаться в сертификате и
+                публично доступна тем, у кого есть ссылка.
+              </div>
+              <div class="new-sertificat__btn btn btn--outline btn--m btn-wide">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Download-24"></use>
+                </svg>
+                Загрузить
+              </div>
+            </div>
+            <div class="box new-sertificat__box">
+              <div class="new-sertificat__title">Основная информация</div>
+              <div class="new-sertificat__desc">
+                Вся указанная информация будет отображаться в сертификате и
+                публично доступна тем, у кого есть ссылка.
+              </div>
+              <div class="new-sertificat__btn btn btn--outline btn--m btn-wide">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Plus-24"></use>
+                </svg>
+                Создать компанию
+              </div>
+              <div class="new-sertificat__tip">
+                Необходимо указать информацию о компании и контакты
+              </div>
+            </div>
+            <div class="box new-sertificat__box new-sertificat__bottom">
+              <div class="new-sertificat__subtitle">
+                Создавая сертификат, вы подтверждаете, что ознакомились с
+                <a href="#"> пользовательским соглашением </a> и принимаете его
+                условия.
+              </div>
+              <div class="new-sertificat__btn btn btn-wide">Создать сертификат</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/nice-select2.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

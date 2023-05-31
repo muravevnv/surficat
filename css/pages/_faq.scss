@@ -223,56 +223,7 @@
   }
 }
 
-.page {
-  padding: 64px 0 120px;
 
-  @include media(sm) {
-    padding: 32px 0 64px;
-  }
-  
-  &-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 48px;
-
-    @include media(sm) {
-      margin-bottom: 32px;
-    }
-  }
-
-  &__back {
-    display: none;
-
-    @include media(sm) {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      color: var(--primary);
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 800;
-      margin-bottom: 16px;
-    }
-  }
-
-  &-tabs {
-    max-width: 365px;
-    width: 100%;
-
-    @include media(sm) {
-      max-width: 100%;
-      width: 100%;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      border-radius: 0;
-      border: none;
-      border-top: 1px solid var(--border-grey);
-    }
-  }
-}
 
 .sertificats {
   padding-bottom: 94px;

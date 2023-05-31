@@ -344,7 +344,7 @@
   border: 1px solid #eaecf1;
   border-radius: 8px;
   color: var(--dark);
-  min-height: 170px;
+  min-height: 124px;
   font-weight: 500;
   margin-bottom: 0px;
 
@@ -421,6 +421,36 @@
       }
     }
   } 
+
+  @include media(md) {
+    box-sizing: border-box;
+    display: inline-table;
+    padding: 11px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    min-height: 150px;
+    border-radius: 6px;
+
+    ~ .form__icon-info {
+      top: 12px;
+    }
+
+    + .form__label {
+      top: 12px;
+      left: 16.5px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &.is-fill {
+      padding-top: 31px;
+
+      + .form__label {
+        font-size: 10px;
+        line-height: 20px;
+      }
+    }
+  }
 }
 
 .form__icon {

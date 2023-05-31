@@ -45,6 +45,7 @@
 
     .nice-select {
       padding-left: 59px;
+
     }
 
     .dropdown-list__icon {
@@ -70,10 +71,47 @@
     }
   }
 
+  @include media(md) {
+    .nice-select  {
+      padding: 11px 55px 11px 15px;
+      height: 48px;
+      font-size: 14px;
+      line-height: 24px;
+      border-radius: 6px;
+
+      .nice-select-dropdown {
+        border-radius: 6px;
+      }
+    }
+
+    .nice-select::after {
+      right: 15px;
+      top: 15px;
+    }
+
+    .nice-select .option {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &.dropdown-list-icon {
+      position: relative;
+  
+      .nice-select {
+        padding-left: 51px;
+      }
+  
+      .dropdown-list__icon {
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        z-index: 5;
+      }
+    }
+  }
+
 
   &-m {
-
-
 
     .nice-select  {
       padding: 11px 55px 11px 15px;

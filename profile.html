@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nice-select2.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>FAQ</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header__logo">
+          <img src="images/logo.svg" alt="" />
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item is-active">
+              <a href="">Мои сертификаты</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="">Отправки</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="">Помощь</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-cabinet">
+          <div class="header-cabinet__icon">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#User-Circle-24"></use>
+            </svg>
+          </div>
+          <div class="header-cabinet__name">Александр</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page profile-page">
+        <div class="container container--md">
+          <div class="page__back">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Long-arrow-left-24"></use>
+            </svg>
+            Назад
+          </div>
+          <div class="page-head">
+            <h1 class="page__title">Мой профиль</h1>
+            <div class="logout btn btn--outline">Выйти</div>
+          </div>
+          <div class="profile">
+            <div class="box profile-box">
+              <h3 class="profile__title">Основная информация</h3>
+              <div class="profile__text">
+                Эти данные не будут доступны публично.
+              </div>
+              <form action="" class="profile__form">
+                <div class="form-control form-control-icon-right">
+                  <input type="text" class="js-form-control form__input" />
+                  <label for="" class="form__label"
+                    >Ваше имя <span>*</span></label
+                  >
+                </div>
+                <div class="form-control form-control-icon-right">
+                  <input type="text" class="js-form-control form__input" />
+                  <label for="" class="form__label"
+                    >Ваш email <span>*</span></label
+                  >
+                </div>
+                <div class="form__btn btn btn-wide btn--disabled">
+                  Сохранить
+                </div>
+              </form>
+            </div>
+            <div class="box profile-box">
+              <h3 class="profile__title">Изменение пароля</h3>
+              <form action="" class="profile__form">
+                <div class="form-control form-control-icon-right">
+                  <input type="text" class="js-form-control form__input" />
+                  <label for="" class="form__label"
+                    >Ваше имя <span>*</span></label
+                  >
+                </div>
+                <div class="form-control form-control-icon-right">
+                  <input type="text" class="js-form-control form__input" />
+                  <label for="" class="form__label"
+                    >Ваш email <span>*</span></label
+                  >
+                </div>
+                <div class="form__btn btn btn-wide btn--disabled">
+                  Сохранить
+                </div>
+              </form>
+            </div>
+            <div class="box profile-box">
+              <h3 class="profile__title">Информация о компаниях и контакты</h3>
+              <div class="profile__text">
+                Эти данные будут отображаться в сертификатах, в блоке
+                «Связаться». Привязать данные о компании к определенному
+                сертификату можно в редактировании сертификата.
+              </div>
+              <div class="profile-companies">
+                <div class="profile-companies__item">
+                  <div class="porifle-companies__img"></div>
+                  <div class="profile-companies__info">
+                    <div class="profile-companies__title">Александр Александровский</div>
+                    <div class="profile-companies__desc">Сдаю дома для отдыха</div>
+                  </div>
+                  <div class="profile-companies__edit btn btn--icon"></div>
+                  <div class="profile-companies__remove btn btn--icon"></div>
+                </div>
+                <div class="profile-companies__item">
+                  <div class="porifle-companies__img"></div>
+                  <div class="profile-companies__info">
+                    <div class="profile-companies__title">TAIGA</div>
+                    <div class="profile-companies__desc">Аренда дома на Байкале</div>
+                  </div>
+                  <div class="profile-companies__edit btn btn--icon"></div>
+                  <div class="profile-companies__remove btn btn--icon"></div>
+                </div>
+                <div class="profile-companies__item">
+                  <div class="porifle-companies__img"></div>
+                  <div class="profile-companies__info">
+                    <div class="profile-companies__title">HouseMouse</div>
+                    <div class="profile-companies__desc">Аренда дома в Москве</div>
+                  </div>
+                  <div class="profile-companies__edit btn btn--icon"></div>
+                  <div class="profile-companies__remove btn btn--icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="box profile-box">
+              <h3 class="profile__title">Удаление аккаунта</h3>
+              <div class="profile__text">
+                Для подтверждения удаления введите «Удалить аккаунт».
+              </div>
+              <form action="" class="profile__form">
+                <div class="form-control form-control-icon-right">
+                  <input type="text" class="js-form-control form__input" />
+                  <label for="" class="form__label"
+                    >Введите текст <span>*</span></label>
+                </div>
+                <div class="form__btn btn btn-wide btn--disabled">
+                  Подтвердить удаление
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/nice-select2.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -51,6 +51,10 @@ main {
   &--lg {
     max-width: 1001px;
   }
+
+  &--md {
+    max-width: 604px;
+  }
 }
 
 select {
@@ -68,5 +72,93 @@ select {
 
   @media(max-width: 767px) {
     display: inline-block;
+  }
+}
+
+
+
+.page {
+  padding: 64px 0 120px;
+
+  @include media(sm) {
+    padding: 32px 0 64px;
+  }
+  
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+    @include media(sm) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    svg {
+      flex-shrink: 0;
+      cursor: pointer;
+
+      @include media(md)  {
+        display: none;
+      }
+    }
+  }
+
+  &__back {
+    display: none;
+
+    @include media(sm) {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--primary);
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+  }
+
+  &-tabs {
+    max-width: 365px;
+    width: 100%;
+
+    @include media(sm) {
+      max-width: 100%;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 0;
+      border: none;
+      border-top: 1px solid var(--border-grey);
+    }
+  }
+}
+
+.box {
+  padding: 39px;
+  background-color: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--border-grey);
+
+  @include media(md) {
+    padding: 23px;
+  }
+
+  @include media(sm) {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  + .box {
+    margin-top: 16px;
   }
 }

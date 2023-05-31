@@ -22,16 +22,11 @@ formControls.forEach(function (item) {
   });
 });
 
-var options = {
-  placeholder: 'Name of dropdown list'
-}
-
-
 
 const selects = document.querySelectorAll("select");
 
 selects.forEach(function (item) {
-  NiceSelect.bind(item, {placeholder: 'Name of the dropdown list'});
+  NiceSelect.bind(item, {placeholder: item.dataset.name});
 });
 
 const niceSelects = document.querySelectorAll('.nice-select');
