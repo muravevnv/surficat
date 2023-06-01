@@ -375,7 +375,7 @@ h6 {
 @media (max-width: 1024px) {
   .form-controls .form__link {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 23px;
   }
 }
 @media (max-width: 767px) {
@@ -1425,7 +1425,7 @@ h6 {
   left: 1px;
   top: 5px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .checkbox__label::before {
     top: 4px;
   }
@@ -2924,4 +2924,69 @@ h6 {
   .not-found__btn {
     max-width: 100%;
   }
+}
+
+.profile__logout {
+  max-width: 152px;
+}
+.profile__title {
+  margin-bottom: 16px;
+}
+.profile__text {
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.profile__form {
+  margin-top: 32px;
+}
+
+.profile-companies__item {
+  display: flex;
+  align-items: center;
+  padding: 15px 23px;
+  width: 100%;
+  border: 1px solid var(--border-grey);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.profile-companies__item + .profile-companies__item {
+  margin-top: 16px;
+}
+.profile-companies__item:hover {
+  background: rgba(109, 84, 254, 0.03);
+}
+.profile-companies__img {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border-grey);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+}
+.profile-companies__img img {
+  width: 100%;
+}
+.profile-companies__edit {
+  margin: 0 12px 0 auto;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+.profile-companies__remove {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+.profile-companies__title {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.profile-companies__desc {
+  font-size: 12px;
+  line-height: 20px;
 }/*# sourceMappingURL=main.css.map */

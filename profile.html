@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/nice-select2.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>FAQ</title>
+    <title>Профиль</title>
   </head>
   <body>
     <header class="header">
@@ -80,17 +80,17 @@
                 <div class="form-control form-control-icon-right">
                   <input type="text" class="js-form-control form__input" />
                   <label for="" class="form__label"
-                    >Ваше имя <span>*</span></label
+                    >Текущий пароль <span>*</span></label
                   >
                 </div>
                 <div class="form-control form-control-icon-right">
                   <input type="text" class="js-form-control form__input" />
                   <label for="" class="form__label"
-                    >Ваш email <span>*</span></label
+                    >Новый пароль <span>*</span></label
                   >
                 </div>
-                <div class="form__btn btn btn-wide btn--disabled">
-                  Сохранить
+                <div class="form__btn btn btn-wide">
+                  Изменить пароль
                 </div>
               </form>
             </div>
@@ -103,31 +103,61 @@
               </div>
               <div class="profile-companies">
                 <div class="profile-companies__item">
-                  <div class="porifle-companies__img"></div>
+                  <div class="profile-companies__img">
+                    <img src="images/company-avatar-2.png" alt="">
+                  </div>
                   <div class="profile-companies__info">
                     <div class="profile-companies__title">Александр Александровский</div>
                     <div class="profile-companies__desc">Сдаю дома для отдыха</div>
                   </div>
-                  <div class="profile-companies__edit btn btn--icon"></div>
-                  <div class="profile-companies__remove btn btn--icon"></div>
+                  <div class="profile-companies__edit btn btn--icon btn--s btn--outline">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Edit-16"></use>
+                    </svg>
+                  </div>
+                  <div class="profile-companies__remove btn btn--icon btn--s btn--outline">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Trash-16"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="profile-companies__item">
-                  <div class="porifle-companies__img"></div>
+                  <div class="profile-companies__img">
+                    <img src="images/company-avatar-default.png" alt="">
+                  </div>
                   <div class="profile-companies__info">
                     <div class="profile-companies__title">TAIGA</div>
                     <div class="profile-companies__desc">Аренда дома на Байкале</div>
                   </div>
-                  <div class="profile-companies__edit btn btn--icon"></div>
-                  <div class="profile-companies__remove btn btn--icon"></div>
+                  <div class="profile-companies__edit btn btn--icon btn--s btn--outline">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Edit-16"></use>
+                    </svg>
+                  </div>
+                  <div class="profile-companies__remove btn btn--icon btn--s btn--outline">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Trash-16"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="profile-companies__item">
-                  <div class="porifle-companies__img"></div>
+                  <div class="profile-companies__img">
+                    <img src="images/company-avatar-1.png" alt="">
+                  </div>
                   <div class="profile-companies__info">
                     <div class="profile-companies__title">HouseMouse</div>
                     <div class="profile-companies__desc">Аренда дома в Москве</div>
                   </div>
-                  <div class="profile-companies__edit btn btn--icon"></div>
-                  <div class="profile-companies__remove btn btn--icon"></div>
+                  <div class="profile-companies__edit btn btn--icon btn--s btn--outline">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Edit-16"></use>
+                    </svg>
+                  </div>
+                  <div class="profile-companies__remove btn btn--icon btn--s btn--outline">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Trash-16"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -142,7 +172,7 @@
                   <label for="" class="form__label"
                     >Введите текст <span>*</span></label>
                 </div>
-                <div class="form__btn btn btn-wide btn--disabled">
+                <div class="form__btn btn btn-wide btn--red">
                   Подтвердить удаление
                 </div>
               </form>

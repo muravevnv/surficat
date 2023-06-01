@@ -1,0 +1,81 @@
+.profile {
+
+  &__logout {
+    max-width: 152px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &__form {
+    margin-top: 32px;
+  }
+}
+
+.profile-companies {
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 15px 23px;
+    width: 100%;
+    border: 1px solid var(--border-grey);
+    border-radius: 8px;
+    cursor: pointer;
+
+    + .profile-companies__item {
+      margin-top: 16px;
+    }
+    
+    &:hover {
+      background: rgba(109, 84, 254, 0.03);
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--border-grey);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 16px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__edit {
+    margin: 0 12px 0 auto;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+
+  &__remove {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  &__desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
