@@ -2226,24 +2226,6 @@ h6 {
   display: block;
 }
 
-.contacts-item {
-  display: flex;
-  gap: 20px;
-}
-.contacts-item {
-  margin-top: 24px;
-}
-.contacts-item__link {
-  width: 100%;
-}
-.contacts-item__remove {
-  flex-shrink: 0;
-}
-.contacts-item__type {
-  max-width: 106px;
-  width: 100%;
-}
-
 .status {
   padding-left: 20px;
   position: relative;
@@ -3148,6 +3130,69 @@ h6 {
   }
 }
 
+@media (max-width: 767px) {
+  .contacts-list {
+    margin-top: 16px;
+  }
+}
+.contacts-item {
+  display: flex;
+  gap: 20px;
+}
+.contacts-item + .contacts-item {
+  margin-top: 24px;
+}
+.contacts-item__link {
+  width: 100%;
+}
+.contacts-item__remove {
+  flex-shrink: 0;
+}
+.contacts-item__type {
+  max-width: 106px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .contacts-item + .contacts-item {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts-item {
+    background: rgba(245, 245, 246, 0.5);
+    border: 1px solid #eaecf1;
+    border-radius: 4px;
+    padding: 11px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .contacts-item + .contacts-item {
+    margin-top: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts-item__type {
+    max-width: 100%;
+    width: calc(50% - 6px);
+  }
+}
+@media (max-width: 767px) {
+  .contacts-item__remove {
+    max-width: 100%;
+    width: calc(50% - 6px);
+    order: 2;
+    padding: 11px;
+    min-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts-item__link {
+    order: 3;
+  }
+}
+.contacts-item .dropdown-list {
+  margin: 0 !important;
+}
 .contacts__add {
   margin-top: 24px;
 }
@@ -3164,12 +3209,34 @@ h6 {
   }
 }
 
-.photo__add {
+.photo-preview {
   margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  padding: 23px;
+  background: rgba(245, 245, 246, 0.5);
+  border: 1px solid #eaecf1;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .photo-preview {
+    margin-top: 16px;
+  }
+}
+.photo-action {
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .photo-action {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+  }
 }
 @media (max-width: 767px) {
   .photo__add {
-    margin-top: 16px;
     padding: 7px;
     font-size: 14px;
     line-height: 24px;

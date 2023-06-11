@@ -51,7 +51,7 @@
               <svg class="icon icon-32">
                 <use xlink:href="images/sprite.svg#Long-arrow-left-32"></use>
               </svg>
-              Новая компания
+              Редактирование компании
             </h1>
           </div>
           <div class="new-sertificat">
@@ -75,6 +75,76 @@
             </div>
             <div class="box new-sertificat__box contacts">
               <div class="new-sertificat__title">Контактные данные</div>
+              <div class="contacts-list">
+                <div class="contacts-item">
+                  <div class="contacts-item__type">
+                    <div class="dropdown-list">
+                      <select
+                        name=""
+                        data-display="Select"
+                        data-name=" "
+                        id=""
+                        style="display: none"
+                      >
+                        <option value="1">
+                          Vk
+                        </option>
+                        <option value="2">
+                          Tel
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="contacts-item__link">
+                    <div class="form-control">
+                      <input type="text" class="js-form-control form__input">
+                      <label for="" class="form__label">Укажите ссылку</label>
+                    </div>
+                  </div>
+                  <div class="contacts-item__remove btn btn--outline btn--icon">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Delete-24"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="contacts-item">
+                  <div class="contacts-item__type">
+                    <div class="dropdown-list">
+                      <select
+                        name=""
+                        data-display="Select"
+                        data-name=" "
+                        id=""
+                        style="display: none"
+                      >
+                        <option value="1">
+                          Vk
+                        </option>
+                        <option value="2">
+                          Tel
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="contacts-item__link">
+                    <div class="form-control">
+                      <input type="text" class="js-form-control form__input">
+                      <label for="" class="form__label">Укажите ссылку</label>
+                    </div>
+                  </div>
+                  <div class="contacts-item__remove btn btn--outline btn--icon">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Delete-24"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="new-sertificat__tip">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
+                </svg>
+                Необходимо указать информацию о компании и контакты
+              </div>
               <div class="contacts__add btn btn-wide btn--outline btn--m">
                 <svg class="icon icon-24">
                   <use xlink:href="images/sprite.svg#Plus-24"></use>
@@ -85,11 +155,23 @@
             <div class="box new-sertificat__box photo">
               <div class="new-sertificat__title">Логотип или фотография</div>
               <div class="new-sertificat__text">Вы можете загрузить изображение, в формате .jpeg или .png. Вес файла не более 500 кб.</div>
-              <div class="photo__add btn btn-wide btn--outline btn--m">
-                <svg class="icon icon-24">
-                  <use xlink:href="images/sprite.svg#Download-24"></use>
-                </svg>
-                Загрузить</div>
+              <div class="photo-preview">
+                <img src="images/company-photo.png" alt="">
+              </div>
+              <div class="photo-action">
+                <div class="photo__add btn btn-wide btn--outline btn--m">
+                  <svg class="icon icon-24">
+                    <use xlink:href="images/sprite.svg#Download-24"></use>
+                  </svg>
+                  Загрузить
+                </div>
+                <div class="photo__add btn btn-wide btn--outline btn--m">
+                  <svg class="icon icon-24">
+                    <use xlink:href="images/sprite.svg#Delete-24"></use>
+                  </svg>
+                  Удалить
+                </div>
+              </div>
             </div>
             <div class="new-sertificat__bottom">
               <div class="new-sertificat__btn btn btn-wide">Создать сертификат</div>
