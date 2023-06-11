@@ -54,6 +54,10 @@ main {
 
   &--md {
     max-width: 604px;
+
+    @include media(lg) {
+      max-width: 500px;
+    }
   }
 }
 
@@ -112,16 +116,16 @@ select {
 
   &__back {
     display: none;
+    align-items: center;
+    gap: 18px;
+    color: var(--primary);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
 
     @include media(sm) {
       display: flex;
-      align-items: center;
-      gap: 18px;
-      color: var(--primary);
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 800;
-      margin-bottom: 16px;
     }
   }
 
@@ -160,5 +164,9 @@ select {
 
   + .box {
     margin-top: 16px;
+
+    @include media(sm) {
+      margin-top: 12px;
+    }
   }
 }

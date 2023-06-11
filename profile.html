@@ -40,15 +40,14 @@
     <main>
       <div class="page profile-page">
         <div class="container container--md">
-          <div class="page__back">
-            <svg class="icon icon-24">
-              <use xlink:href="images/sprite.svg#Long-arrow-left-24"></use>
-            </svg>
-            Назад
-          </div>
           <div class="page-head">
             <h1 class="page__title">Мой профиль</h1>
-            <div class="logout btn btn--outline">Выйти</div>
+            <div class="logout btn btn--outline">
+              <svg class="icon icon-24">
+                <use xlink:href="images/sprite.svg#Log-out-24"></use>
+              </svg>
+              Выйти
+            </div>
           </div>
           <div class="profile">
             <div class="box profile-box">
@@ -78,20 +77,32 @@
               <h3 class="profile__title">Изменение пароля</h3>
               <form action="" class="profile__form">
                 <div class="form-control form-control-icon-right">
-                  <input type="text" class="js-form-control form__input" />
+                  <input
+                    type="text"
+                    class="js-form-control is-fill form__input"
+                    value="qwerty123"
+                  />
                   <label for="" class="form__label"
                     >Текущий пароль <span>*</span></label
                   >
+                  <div class="form__icon-info">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Eye-off-24"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="form-control form-control-icon-right">
                   <input type="text" class="js-form-control form__input" />
                   <label for="" class="form__label"
                     >Новый пароль <span>*</span></label
                   >
+                  <div class="form__icon-info">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Eye-24"></use>
+                    </svg>
+                  </div>
                 </div>
-                <div class="form__btn btn btn-wide">
-                  Изменить пароль
-                </div>
+                <div class="form__btn btn btn-wide">Изменить пароль</div>
               </form>
             </div>
             <div class="box profile-box">
@@ -104,59 +115,94 @@
               <div class="profile-companies">
                 <div class="profile-companies__item">
                   <div class="profile-companies__img">
-                    <img src="images/company-avatar-2.png" alt="">
+                    <img src="images/company-avatar-2.png" alt="" />
                   </div>
                   <div class="profile-companies__info">
-                    <div class="profile-companies__title">Александр Александровский</div>
-                    <div class="profile-companies__desc">Сдаю дома для отдыха</div>
+                    <div class="profile-companies__title">
+                      Александр Александровский
+                    </div>
+                    <div class="profile-companies__desc">
+                      Сдаю дома для отдыха
+                    </div>
                   </div>
-                  <div class="profile-companies__edit btn btn--icon btn--s btn--outline">
-                    <svg class="icon icon-24">
-                      <use xlink:href="images/sprite.svg#Edit-16"></use>
-                    </svg>
-                  </div>
-                  <div class="profile-companies__remove btn btn--icon btn--s btn--outline">
-                    <svg class="icon icon-24">
-                      <use xlink:href="images/sprite.svg#Trash-16"></use>
-                    </svg>
+                  <div class="profile-companies__action">
+                    <div
+                      class="profile-companies__edit btn btn--icon btn--s btn--outline"
+                    >
+                      <svg class="icon icon-24">
+                        <use xlink:href="images/sprite.svg#Edit-16"></use>
+                      </svg>
+                    </div>
+                    <div
+                      class="profile-companies__remove profile-companies__remove--disabled tooltip-box btn btn--icon btn--s btn--outline"
+                    >
+                      <svg class="icon icon-24">
+                        <use xlink:href="images/sprite.svg#Trash-16"></use>
+                      </svg>
+                      <div class="tooltip">
+                        <div class="tooltip-body">
+                          <div class="tooltip__text">
+                            Эту компанию нельзя удалить, пока она привязана к
+                            сертификату.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="profile-companies__item">
                   <div class="profile-companies__img">
-                    <img src="images/company-avatar-default.png" alt="">
+                    <img src="images/company-avatar-default.png" alt="" />
                   </div>
                   <div class="profile-companies__info">
                     <div class="profile-companies__title">TAIGA</div>
-                    <div class="profile-companies__desc">Аренда дома на Байкале</div>
+                    <div class="profile-companies__desc">
+                      Аренда дома на Байкале
+                    </div>
                   </div>
-                  <div class="profile-companies__edit btn btn--icon btn--s btn--outline">
-                    <svg class="icon icon-24">
-                      <use xlink:href="images/sprite.svg#Edit-16"></use>
-                    </svg>
-                  </div>
-                  <div class="profile-companies__remove btn btn--icon btn--s btn--outline">
-                    <svg class="icon icon-24">
-                      <use xlink:href="images/sprite.svg#Trash-16"></use>
-                    </svg>
+                  <div class="profile-companies__action">
+                    <div
+                      class="profile-companies__edit btn btn--icon btn--s btn--outline"
+                    >
+                      <svg class="icon icon-24">
+                        <use xlink:href="images/sprite.svg#Edit-16"></use>
+                      </svg>
+                    </div>
+                    <div
+                      class="profile-companies__remove btn btn--icon btn--s btn--outline"
+                    >
+                      <svg class="icon icon-24">
+                        <use xlink:href="images/sprite.svg#Trash-16"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="profile-companies__item">
                   <div class="profile-companies__img">
-                    <img src="images/company-avatar-1.png" alt="">
+                    <img src="images/company-avatar-1.png" alt="" />
                   </div>
                   <div class="profile-companies__info">
                     <div class="profile-companies__title">HouseMouse</div>
-                    <div class="profile-companies__desc">Аренда дома в Москве</div>
+                    <div class="profile-companies__desc">
+                      Аренда дома в Москве
+                    </div>
                   </div>
-                  <div class="profile-companies__edit btn btn--icon btn--s btn--outline">
-                    <svg class="icon icon-24">
-                      <use xlink:href="images/sprite.svg#Edit-16"></use>
-                    </svg>
-                  </div>
-                  <div class="profile-companies__remove btn btn--icon btn--s btn--outline">
-                    <svg class="icon icon-24">
-                      <use xlink:href="images/sprite.svg#Trash-16"></use>
-                    </svg>
+                  <div class="profile-companies__action">
+                    
+                    <div
+                      class="profile-companies__edit btn btn--icon btn--s btn--outline"
+                    >
+                      <svg class="icon icon-24">
+                        <use xlink:href="images/sprite.svg#Edit-16"></use>
+                      </svg>
+                    </div>
+                    <div
+                      class="profile-companies__remove btn btn--icon btn--s btn--outline"
+                    >
+                      <svg class="icon icon-24">
+                        <use xlink:href="images/sprite.svg#Trash-16"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -168,11 +214,19 @@
               </div>
               <form action="" class="profile__form">
                 <div class="form-control form-control-icon-right">
-                  <input type="text" class="js-form-control form__input" />
+                  <input
+                    type="text"
+                    class="js-form-control is-fill form__input"
+                    value="Удалить аккаунт"
+                  />
                   <label for="" class="form__label"
-                    >Введите текст <span>*</span></label>
+                    >Введите текст <span>*</span></label
+                  >
                 </div>
                 <div class="form__btn btn btn-wide btn--red">
+                  <svg class="icon icon-24">
+                    <use xlink:href="images/sprite.svg#Delete-24"></use>
+                  </svg>
                   Подтвердить удаление
                 </div>
               </form>
@@ -181,6 +235,27 @@
         </div>
       </div>
     </main>
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content modal-content--centered">
+        <div class="modal__close">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Close-24"></use>
+          </svg>
+        </div>
+        <div class="modal-head">
+          <div class="modal__title">Удалить компанию и ее контакты?</div>
+        </div>
+        <div class="modal-action">
+          <button class="modal__btn btn btn-wide btn--outline">Отменить</button>
+          <button class="modal__btn btn btn-wide btn-primary btn--red">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Delete-24"></use>
+            </svg>
+            Удалить</button>
+        </div>
+      </div>
+    </div>
     <script src="js/nice-select2.js"></script>
     <script src="js/main.js"></script>
   </body>

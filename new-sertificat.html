@@ -111,12 +111,13 @@
               </div>
             </div>
             <div class="box new-sertificat__box">
-              <div class="new-sertificat__title">Основная информация</div>
+              <div class="new-sertificat__title">Изображения слайдера</div>
               <div class="new-sertificat__desc">
-                Вся указанная информация будет отображаться в сертификате и
-                публично доступна тем, у кого есть ссылка.
+                Вы можете загрузить в слайдер сертификата до 3х квадратных изображений, в формате 
+                .jpeg или .png. Вес каждого файла не более 2 мб. Рекомендуем загружать
+                изображения разрешением не менее 1500x1500px.
               </div>
-              <div class="new-sertificat__btn btn btn--outline btn--m btn-wide">
+              <div class="new-sertificat__btn new-sertificat__upload btn btn--outline btn--m btn-wide">
                 <svg class="icon icon-24">
                   <use xlink:href="images/sprite.svg#Download-24"></use>
                 </svg>
@@ -124,18 +125,20 @@
               </div>
             </div>
             <div class="box new-sertificat__box">
-              <div class="new-sertificat__title">Основная информация</div>
+              <div class="new-sertificat__title">Информация о компании и контакты *</div>
               <div class="new-sertificat__desc">
-                Вся указанная информация будет отображаться в сертификате и
-                публично доступна тем, у кого есть ссылка.
+                Выберите компанию и ее контакты, которые нужно показывать клиенту в сертификате (блок «Связаться»).
               </div>
-              <div class="new-sertificat__btn btn btn--outline btn--m btn-wide">
+              <div class="new-sertificat__btn new-sertificat__create btn btn--outline btn--m btn-wide">
                 <svg class="icon icon-24">
                   <use xlink:href="images/sprite.svg#Plus-24"></use>
                 </svg>
                 Создать компанию
               </div>
               <div class="new-sertificat__tip">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
+                </svg>
                 Необходимо указать информацию о компании и контакты
               </div>
             </div>
@@ -151,7 +154,228 @@
         </div>
       </div>
     </main>
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content modal-content--sm">
+        <div class="modal__close">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Close-24"></use>
+          </svg>
+        </div>
+        <div class="modal-head">
+          <div class="modal__title">Сертификат успешно создан!</div>
+          <div class="modal__text">Теперь он доступен в вашем каталоге сертификатов и вы можете отправить его клиенту.</div>
+        </div>
+        <div class="modal__btn btn btn-wide">Отправить сертификат</div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content modal-company">
+        <div class="modal__close">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Close-24"></use>
+          </svg>
+        </div>
+        <div class="modal-head">
+          <div class="modal__title">Новая компания</div>
+        </div>
+
+        <div class="modal-form">
+          <div class="form-control">
+            <input type="text" class="js-form-control form__input">
+            <label for="" class="form__label">Название компании <span>*</span></label>
+
+            <div class="form__tooltip">Если вы работаете от своего лица, то можно указать имя и фамилию</div>
+          </div>
+          <div class="form-control">
+            <input type="text" class="js-form-control form__input">
+            <label for="" class="form__label">Чем занимается компания (кратко) <span>*</span></label>
+            <div class="form__tooltip">Например, «Семейный фотограф / Москва»</div>
+          </div>
+        </div>
+
+        <div class="modal-company-contacts">
+          <div class="modal-company__head">
+            <div class="modal-company__subtitle">Контактные данные</div>
+          </div>
+          <div class="modal-company-contacts__add btn btn--m btn--outline btn-wide">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Plus-24"></use>
+            </svg>
+            Добавить</div>
+        </div>
+
+        <div class="modal-company-photo">
+          <div class="modal-company__head">
+            <div class="modal-company__subtitle">Логотип или фотография</div>
+            <div class="modal-company__text">Вы можете загрузить изображение, в формате .jpeg или .png. Вес файла не более 500 кб.</div>
+          </div>
+          <div class="modal-company-photo__add btn btn--m btn--outline btn-wide">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Download-24"></use>
+            </svg>
+            Загрузить</div>
+        </div>
+
+        <div class="modal-action">
+          <div class="modal__btn btn btn-wide">Создать компанию</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content modal-company">
+        <div class="modal__close">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Close-24"></use>
+          </svg>
+        </div>
+        <div class="modal-head">
+          <div class="modal__title">Редактирование компании</div>
+        </div>
+
+        <div class="modal-form">
+          <div class="form-control">
+            <input type="text" class="js-form-control form__input">
+            <label for="" class="form__label">Название компании <span>*</span></label>
+
+            <div class="form__tooltip">Если вы работаете от своего лица, то можно указать имя и фамилию</div>
+          </div>
+          <div class="form-control">
+            <input type="text" class="js-form-control form__input">
+            <label for="" class="form__label">Чем занимается компания (кратко) <span>*</span></label>
+            <div class="form__tooltip">Например, «Семейный фотограф / Москва»</div>
+          </div>
+        </div>
+
+        <div class="modal-company-contacts">
+          <div class="modal-company__head">
+            <div class="modal-company__subtitle">Контактные данные</div>
+          </div>
+          <div class="modal-company-contacts__item contacts-item">
+            <div class="contacts-item__type">
+              <div class="dropdown-list">
+                <select
+                  name=""
+                  data-display="Select"
+                  data-name=" "
+                  id=""
+                  style="display: none"
+                >
+                  <option value="1">Vk</option>
+                  <option value="2">Tel</option>
+                </select>
+              </div>
+            </div>
+            <div class="contacts-item__link">
+              <div class="form-control">
+                <input type="text" class="js-form-control form__input">
+                <label for="" class="form__label">Укажите ссылку</label>
+              </div>
+            </div>
+            <div class="contacts-item__remove btn btn--outline btn--icon">
+              <svg class="icon icon-24">
+                <use xlink:href="images/sprite.svg#Delete-24"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-company-contacts__item contacts-item">
+            <div class="contacts-item__type">
+              <div class="dropdown-list">
+                <select
+                  name=""
+                  data-display="Select"
+                  data-name=" "
+                  id=""
+                  style="display: none"
+                >
+                  <option value="1">
+                    Vk
+                  </option>
+                  <option value="2">
+                    Tel
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="contacts-item__link">
+              <div class="form-control">
+                <input type="text" class="js-form-control form__input">
+                <label for="" class="form__label">Укажите ссылку</label>
+              </div>
+            </div>
+            <div class="contacts-item__remove btn btn--outline btn--icon">
+              <svg class="icon icon-24">
+                <use xlink:href="images/sprite.svg#Delete-24"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-company-contacts__error">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
+            </svg>
+            Необходимо указать хотя бы один способ связи
+          </div>
+          <div class="modal-company-contacts__add btn btn--m btn--outline btn-wide">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Plus-24"></use>
+            </svg>
+            Добавить</div>
+        </div>
+
+        <div class="modal-company-photo">
+          <div class="modal-company__head">
+            <div class="modal-company__subtitle">Логотип или фотография</div>
+            <div class="modal-company__text">Вы можете загрузить изображение, в формате .jpeg или .png. Вес файла не более 500 кб.</div>
+          </div>
+          <div class="modal-company-photo__picture">
+            <img src="images/company-photo.png" alt="">
+          </div>
+          <div class="modal-company-photo__action ">
+            <div class="modal-company-photo__add btn btn--m btn--outline btn-wide">
+              <svg class="icon icon-24">
+                <use xlink:href="images/sprite.svg#Download-24"></use>
+              </svg>
+              Загрузить
+            </div>
+            <div class="modal-company-photo__remove btn btn--m btn--outline btn-wide">
+              <svg class="icon icon-24">
+                <use xlink:href="images/sprite.svg#Delete-24"></use>
+              </svg>
+              Удалить
+            </div>
+          </div>
+        </div>
+        <div class="modal-action">
+          <div class="modal__btn btn btn-wide">Создать компанию</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content modal-photo">
+        <div class="modal__close">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Close-24"></use>
+          </svg>
+        </div>
+        <div class="modal-head">
+          <div class="modal__title">Выделите видимую область изображения</div>
+        </div>
+        <div class="modal-photo__preview">
+          <img src="images/preview.png" alt="">
+        </div>
+        <div class="modal-action">
+          <div class="modal__btn btn btn-wide">
+            Сохранить
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/nice-select2.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

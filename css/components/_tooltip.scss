@@ -3,6 +3,24 @@
   padding-top: 4px;
   position: relative;
 
+  &-box {
+    position: relative;
+
+    .tooltip {
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &:hover {
+     .tooltip {
+      opacity: 1;
+      visibility: visible;
+     }
+    }
+  }
+
   &::before {
     position: absolute;
     content: '';

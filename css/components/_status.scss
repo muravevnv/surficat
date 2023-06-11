@@ -1,0 +1,38 @@
+.status {
+  padding-left: 20px;
+  position: relative;
+
+  @include media(sm) {
+    padding-left: 16px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: block;
+    left: 0;
+    top: 9px;
+    border-radius: 50%;
+    background-color: var(--primary);
+  }
+
+  &--compelet {
+    &::before {
+      background-color: var(--primary);
+    }
+  }
+
+  &--active {
+    &::before {
+      background-color: var(--green);
+    }
+  }
+
+  &--ended {
+    &::before {
+      background-color: var(--red);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.page-mob {
+  padding: 32px 0;
+  background-color: var(--white);
+  min-height: 100vh;
+
+  &__back {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 20px;
+  }
+}

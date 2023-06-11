@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nice-select2.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>FAQ</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header__logo">
+          <img src="images/logo.svg" alt="" />
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item is-active">
+              <a href="">Мои сертификаты</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="">Отправки</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="">Помощь</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-cabinet">
+          <div class="header-cabinet__icon">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#User-Circle-24"></use>
+            </svg>
+          </div>
+          <div class="header-cabinet__name">Александр</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page">
+        <div class="container">
+          <div class="page-head">
+            <h1 class="page__title">Отправки</h1>
+            <div class="tabs page-tabs">
+              <div class="tabs__item is-active">Сертификаты</div>
+              <div class="tabs__item">Отправки</div>
+            </div>
+          </div>
+          <div class="sendings">
+            <div class="sendings-panel">
+              <div class="sendings-panel__item">
+                <div class="form-control form-control-icon-left">
+                  <input type="text" class="js-form-control form__input" />
+                  <label for="" class="form__label"
+                    >Поиск по номеру сертификата</label
+                  >
+                  <div class="form__icon">
+                    <svg class="icon icon-24">
+                      <use xlink:href="images/sprite.svg#Search-24"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="sendings-panel__item">
+                <div class="dropdown-list">
+                  <select
+                    name=""
+                    data-display="Select"
+                    id=""
+                    style="display: none"
+                  >
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="sendings-panel__item">
+                <div class="dropdown-list">
+                  <select
+                    name=""
+                    data-display="Select"
+                    id=""
+                    style="display: none"
+                  >
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="sendings-panel__statuses">
+                <div class="sendings-panel__status">
+
+                </div>
+              </div>
+            </div>
+            <div class="sendings-table">
+              <div class="sendings-table-head">
+                <div class="sendings-table-head__item">Номер</div>
+                <div class="sendings-table-head__item">Сертификат</div>
+                <div class="sendings-table-head__item">Получатель</div>
+                <div class="sendings-table-head__item">Срок действия</div>
+                <div class="sendings-table-head__item">Комментарий</div>
+                <div class="sendings-table-head__item">Статус</div>
+                <div class="sendings-table-head__item">Действия</div>
+              </div>
+              <div class="sendings-table-main">
+                <div class="sendings-item">
+                  <div class="sendings-item__num sendings-item__cell">
+                    <div class="sendings-item__cell-title">Номер</div>
+                    <div class="sendings-item__cell-body">
+                      <span>1421412512</span>
+                      15.06.2023
+                    </div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__sert">
+                    <div class="sendings-item__cell-title">Сертификат</div>
+                    <div class="sendings-item__sert-name">
+                      <span>10 000 ₽ •</span>
+                      Vestibulum bibendum elit in nulla elementum facilisistqc…
+                    </div>
+                    <div class="sendings-item__sert-price"></div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__recipient">
+                    <div class="sendings-item__cell-title">Получатель</div>
+                    <div class="sendings-item__cell-body">Александра</div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__period">
+                    <div class="sendings-item__cell-title">Срок действия</div>
+                    <div class="sendings-item__cell-body">15.06.2024</div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__comment">
+                    <div class="sendings-item__cell-title">Комментарий</div>
+                    <div class="sendint-item__cell-body">
+                      <div class="sendings-item__comment-text">
+                        Потратил из это…
+                      </div>
+                      <div class="sendings-item__comment-edit"></div>
+                    </div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__status">
+                    <div class="sendings-item__cell-title">Статус</div>
+                    <div class="sendings-item__cell-body">
+                      <div class="status status--complete">Выполнен</div>
+                    </div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__action">
+                    <div class="sendings-item__cell-title">Действия</div>
+                    <div class="sendings-item__cell-body">
+                      <div
+                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
+                      >
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                      </div>
+                      <div
+                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
+                      >
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                      </div>
+                      <div
+                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
+                      >
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Trash-16"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sendings-item">
+                  <div class="sendings-item__num sendings-item__cell">
+                    <div class="sendings-item__cell-title">Номер</div>
+                    <div class="sendings-item__cell-body">
+                      <span>1421412512</span>
+                      15.06.2023
+                    </div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__sert">
+                    <div class="sendings-item__cell-title">Сертификат</div>
+                    <div class="sendings-item__cell-body">
+                      <div class="sendings-item__sert-name">
+                        <span>10 000 ₽ •</span>
+                        Vestibulum bibendum
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__recipient">
+                    <div class="sendings-item__cell-title">Получатель</div>
+                    <div class="sendings-item__cell-body">Никита</div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__period">
+                    <div class="sendings-item__cell-title">Срок действия</div>
+                    <div class="sendings-item__cell-body">15.06.2024</div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__comment">
+                    <div class="sendings-item__cell-title">Комментарий</div>
+                    <div class="sendings-item__cell-body">
+                      <div class="sendings-item__comment-add">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        <span>Добавить</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__status">
+                    <div class="sendings-item__cell-title">Статус</div>
+                    <div class="sendings-item__cell-body">
+                      <div class="status status--active">Активен</div>
+                    </div>
+                  </div>
+                  <div class="sendings-item__cell sendings-item__action">
+                    <div class="sendings-item__cell-title">Действия</div>
+                    <div class="sendings-item__cell-body">
+                      <div
+                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
+                      >
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                      </div>
+                      <div
+                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
+                      >
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                      </div>
+                      <div
+                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
+                      >
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Trash-16"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sendings-table sendings-table--mob">
+              <div class="sendings-item">
+                <div class="sendings-item__cell sendings-item__num">
+                  <div class="sendings-item__cell-title">Номер</div>
+                  <div class="sendings-item__cell-content">1421412512</div>
+                </div>
+                <div class="sendings-item__cell sendings-item__status">
+                  <div class="sendings-item__cell-title">Статус</div>
+                  <div class="sendings-item__cell-content">
+                    <div class="status status--active">Активен</div>
+                  </div>
+                </div>
+                <div class="sendings-item__cell sendings-item__date">
+                  <div class="sendings-item__cell-title">Дата отправки</div>
+                  <div class="sendings-item__cell-content">15.06.2023</div>
+                </div>
+                <div class="sendings-item__cell sendings-item__amount">
+                  <div class="sendings-item__cell-title">Срок действия</div>
+                  <div class="sendings-item__cell-content">15.06.2024</div>
+                </div>
+                <div class="sendings-item__cell sendings-item__sert">
+                  <div class="sendings-item__cell-title">Сертификат</div>
+                  <div class="sendings-item__cell-content">
+                    <span>10 000 ₽ •</span>
+                    Nam ullamcorper leo finibus ligula auctor volutpat. Donec
+                    sagittis aliquet nisi vel aliquet
+                  </div>
+                </div>
+                <div class="sendings-item__cell sendings-item__recepient">
+                  <div class="sendings-item__cell-title">Получатель</div>
+                  <div class="sendings-item__cell-content">Александрина</div>
+                </div>
+                <div class="sendings-item__cell sendings-item__comment">
+                  <div class="sendings-item__cell-title">Комментарий</div>
+                  <div class="sendings-item__cell-content text">
+                    <p class="text-hidden">
+                      Quisque pulvinar aliquet neque. Donec et aliquam libero, non sagittis metus. 
+                      Curabitur auctor, ex ut elementum ultrices, tellus ipsum scelerisque odio, in 
+                      condimentum arcu ante vel diam. Integer quis ligula efficitur, 
+                      iaculis mi sit amet, consectetur dolor.
+                    </p>
+                    <span class="text-show">Развернуть</span>
+                  </div>
+                </div>
+                <div class="sendings-item__action">
+                  <div
+                    class="sendings-item__action-item sendings-item__action-toggle btn btn-wide btn--xs btn--outline"
+                  >
+                    <span class="hide">Свернуть</span>
+                    <span class="show">Подробнее</span>
+                  </div>
+                  <div
+                    class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
+                  >
+                    <svg class="icon icon-16">
+                      <use xlink:href="images/sprite.svg#Check-24"></use>
+                    </svg>
+                  </div>
+                  <div
+                    class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
+                  >
+                    <svg class="icon icon-16">
+                      <use xlink:href="images/sprite.svg#Edit-16"></use>
+                    </svg>
+                  </div>
+                  <div
+                    class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
+                  >
+                    <svg class="icon icon-16">
+                      <use xlink:href="images/sprite.svg#Trash-16"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="sendings-item is-open">
+                <div class="sendings-item__cell sendings-item__num">
+                  <div class="sendings-item__cell-title">Номер</div>
+                  <div class="sendings-item__cell-content">1421412512</div>
+                </div>
+                <div class="sendings-item__cell sendings-item__status">
+                  <div class="sendings-item__cell-title">Статус</div>
+                  <div class="sendings-item__cell-content">
+                    <div class="status status--ended">Просрочено</div>
+                  </div>
+                </div>
+                <div class="sendings-item__cell sendings-item__date">
+                  <div class="sendings-item__cell-title">Дата отправки</div>
+                  <div class="sendings-item__cell-content">15.06.2023</div>
+                </div>
+                <div class="sendings-item__cell sendings-item__amount">
+                  <div class="sendings-item__cell-title">Срок действия</div>
+                  <div class="sendings-item__cell-content">15.06.2024</div>
+                </div>
+                <div class="sendings-item__cell sendings-item__sert">
+                  <div class="sendings-item__cell-title">Сертификат</div>
+                  <div class="sendings-item__cell-content">
+                    <span>10 000 ₽ •</span>
+                    Nam ullamcorper leo finibus ligula auctor volutpat. Donec
+                    sagittis aliquet nisi vel aliquet
+                  </div>
+                </div>
+                <div class="sendings-item__cell sendings-item__recepient">
+                  <div class="sendings-item__cell-title">Получатель</div>
+                  <div class="sendings-item__cell-content">Александрина</div>
+                </div>
+                <div class="sendings-item__cell sendings-item__comment">
+                  <div class="sendings-item__cell-title">Комментарий</div>
+                  <div class="sendings-item__cell-content text">
+                    <p class="text-hidden">
+                      Quisque pulvinar aliquet neque. Donec et aliquam libero, non sagittis metus. 
+                      Curabitur auctor, ex ut elementum ultrices, tellus ipsum scelerisque odio, in 
+                      condimentum arcu ante vel diam. Integer quis ligula efficitur, 
+                      iaculis mi sit amet, consectetur dolor.
+                    </p>
+                    <span class="text-show">
+                      <div class="show">Развернуть</div>
+                      <div class="hide">Свернуть</div>
+                    </span>
+                  </div>
+                  <div class="sendings-item__comment-edit btn btn--outline btn--xs btn-wide">
+                    Редактировать
+                  </div>
+                </div>
+                <div class="sendings-item__action">
+                  <div
+                    class="sendings-item__action-item sendings-item__action-toggle btn btn-wide btn--xs btn--outline"
+                  >
+                    <span class="hide">Свернуть</span>
+                    <span class="show">Подробнее</span>
+                  </div>
+                  <div
+                    class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
+                  >
+                    <svg class="icon icon-16">
+                      <use xlink:href="images/sprite.svg#Check-24"></use>
+                    </svg>
+                  </div>
+                  <div
+                    class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
+                  >
+                    <svg class="icon icon-16">
+                      <use xlink:href="images/sprite.svg#Edit-16"></use>
+                    </svg>
+                  </div>
+                  <div
+                    class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
+                  >
+                    <svg class="icon icon-16">
+                      <use xlink:href="images/sprite.svg#Trash-16"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sendings-pagination pagination">
+              <div class="pagination-item">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#First-24"></use>
+                </svg>
+              </div>
+              <div class="pagination-item">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Back-24"></use>
+                </svg>
+              </div>
+              <div class="pagination-item js-pagination-item">1</div>
+              <div class="pagination-item  js-pagination-item is-active">2</div>
+              <div class="pagination-item js-pagination-item">3</div>
+              <div class="pagination-item js-pagination-item">4</div>
+              <div class="pagination-item">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Ellipsis-24"></use>
+                </svg>
+              </div>
+              <div class="pagination-item js-pagination-item">39</div>
+              <div class="pagination-item">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Next-24"></use>
+                </svg>
+              </div>
+              <div class="pagination-item">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Last-24"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal__close">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Close-24"></use>
+          </svg>
+        </div>
+        <div class="modal-head">
+          <div class="modal__title">Редактирование отправленного сертификата</div>
+          <div class="modal__subtitle">
+            Семейные выходные в уютном доме «Taiga»  на Байкале  •  10 000 ₽
+          </div>
+        </div>
+        <div class="modal-form">
+
+            <div class="form-control form-control-icon-left form-control-icon-right ">
+
+              <input type="text" class="js-form-control form__input is-fill" value="Александрина">
+              <label for="" class="form__label">Получатель <span>*</span></label>
+              <div class="form__icon">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#User-24"></use>
+                </svg>
+              </div>
+              
+              <div class="form__icon-info">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
+                </svg>
+              </div>
+              <div class="form__tooltip">Имя лучше указывать в дательном падеже. Например: «Любимой Александре».</div>
+            </div>
+            <div class="form-control form-control-icon-left">
+              <input type="text" class="js-form-control form__input is-fill" value="13.05.2024">
+              <label for="" class="form__label">Срок действия сертификата <span>*</span></label>
+              <div class="form__icon">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#User-24"></use>
+                </svg>
+              </div>
+              <div class="form__tooltip">До какого числа клиент может воспользоваться сертификатом</div>
+            </div>
+            <div class="form-control">
+              <textarea contenteditable="" class="js-form-control form__textarea is-fill">Curabitur mattis arcu lectus, vitae vulputate ipsum facilisis vitae. Phasellus eget enim eu risus elementum bibendum.
+              </textarea>
+              <label for="" class="form__label">Укажите от кого сертификат или пожелание</label>
+            </div>
+        </div>
+        <div class="modal-action">
+          <button class="modal__btn btn btn-wide btn-primary">Сохранить изменения</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal__close">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Close-24"></use>
+          </svg>
+        </div>
+        <div class="modal-head">
+          <div class="modal__title">Добавление комментария</div>
+        </div>
+        <div class="modal-form">
+          <div class="form-control">
+            <textarea contenteditable="" class="js-form-control form__textarea">
+            </textarea>
+            <label for="" class="form__label">Введите комментарий</label>
+          </div>
+        </div>
+        <div class="modal-action">
+          <button class="modal__btn btn btn-wide btn-primary">Сохранить</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal__close">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Close-24"></use>
+          </svg>
+        </div>
+        <div class="modal-head">
+          <div class="modal__title">Редактирование комментария</div>
+        </div>
+        <div class="modal-form">
+          <div class="form-control">
+            <textarea contenteditable="" class="js-form-control form__textarea is-fill">Curabitur mattis arcu lectus, vitae vulputate ipsum facilisis vitae. Phasellus eget enim eu risus elementum bibendum.
+            </textarea>
+            <label for="" class="form__label">Укажите от кого сертификат или пожелание</label>
+          </div>
+        </div>
+        <div class="modal-action">
+          <button class="modal__btn btn btn-wide btn--outline">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Delete-24"></use>
+            </svg>
+            Удалить</button>
+          <button class="modal__btn btn btn-wide btn-primary">Сохранить</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content modal-content--centered">
+        <div class="modal__close">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Close-24"></use>
+          </svg>
+        </div>
+        <div class="modal-head">
+          <div class="modal__title">Удалить комментарий?</div>
+        </div>
+        <div class="modal-action">
+          <button class="modal__btn btn btn-wide btn--outline">Отменить</button>
+          <button class="modal__btn btn btn-wide btn-primary btn--red">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Delete-24"></use>
+            </svg>
+            Удалить</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/nice-select2.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
