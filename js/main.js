@@ -35,7 +35,6 @@ console.log(niceSelects)
 niceSelects.forEach(function(item){
   item.addEventListener('click', function(){
     let niceSelectsOptions = item.querySelectorAll('.option');
-    console.log(niceSelectsOptions)
 
     niceSelectsOptions.forEach(function(el){
       if(el.classList.contains('selected')){

@@ -3411,8 +3411,6 @@ h6 {
 }
 
 .profile-companies__item {
-  display: flex;
-  align-items: center;
   padding: 15px 23px;
   width: 100%;
   border: 1px solid var(--border-grey);
@@ -3432,9 +3430,44 @@ h6 {
 }
 @media (max-width: 767px) {
   .profile-companies__item {
+    background: rgba(245, 245, 246, 0.5);
+    border: 1px solid #eaecf1;
+    border-radius: 8px;
+  }
+}
+.profile-companies__item-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .profile-companies__item-main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+.profile-companies__item-tip {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .profile-companies__item-tip {
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+    gap: 8px;
+    color: var(--grey);
+  }
+  .profile-companies__item-tip svg {
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 767px) {
+  .profile-companies__item-tip {
+    align-items: flex-start;
+    gap: 12px;
   }
 }
 .profile-companies__img {
@@ -3540,6 +3573,11 @@ h6 {
 .logout {
   max-width: 152px;
 }
+@media (max-width: 767px) {
+  .logout {
+    max-width: 100%;
+  }
+}
 
 .sendings-table {
   background-color: var(--white);
@@ -3631,6 +3669,14 @@ h6 {
   position: relative;
   max-width: 256px;
 }
+.sendings-item__sert-name {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .sendings-item__sert-price {
   position: absolute;
   right: 0;
@@ -3639,6 +3685,26 @@ h6 {
 }
 .sendings-item__comment {
   max-width: 158px;
+}
+.sendings-item__comment p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sendings-item__comment .sendings-item__cell-body {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sendings-item__comment-edit {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.sendings-item__comment-edit:hover {
+  color: var(--primary);
 }
 @media (max-width: 1024px) {
   .sendings-item__comment {

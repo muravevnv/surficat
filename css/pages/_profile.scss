@@ -1,7 +1,5 @@
 .profile {
-
   &-page {
-
     @include media(md) {
       padding: 51px 0 96px;
     }
@@ -9,9 +7,8 @@
     @include media(sm) {
       padding: 32px 0 112px;
     }
-    
-    .page-head {
 
+    .page-head {
       @include media(sm) {
         flex-direction: column;
         align-items: flex-start;
@@ -20,8 +17,6 @@
       }
     }
   }
-
-
 
   &__logout {
     max-width: 152px;
@@ -36,7 +31,7 @@
       margin-bottom: 12px;
     }
 
-    @include media(sm)  {
+    @include media(sm) {
       font-size: 18px;
       line-height: 28px;
       margin-bottom: 8px;
@@ -81,10 +76,7 @@
 }
 
 .profile-companies {
-  
   &__item {
-    display: flex;
-    align-items: center;
     padding: 15px 23px;
     width: 100%;
     border: 1px solid var(--border-grey);
@@ -94,7 +86,7 @@
     + .profile-companies__item {
       margin-top: 16px;
     }
-    
+
     &:hover {
       background: rgba(109, 84, 254, 0.03);
     }
@@ -104,9 +96,44 @@
     }
 
     @include media(sm) {
-      flex-direction: column;
+      background: rgba(245, 245, 246, 0.5);
+      border: 1px solid #eaecf1;
+      border-radius: 8px;
+    }
+
+    &-main {
+      width: 100%;
+      display: flex;
       align-items: center;
-      text-align: center;
+
+      @include media(sm) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    &-tip {
+      display: none;
+
+      @include media(md) {
+        font-size: 12px;
+        line-height: 20px;
+        display: flex;
+        margin-top: 12px;
+        align-items: center;
+        gap: 8px;
+        color: var(--grey);
+
+        svg {
+          flex-shrink: 0;
+        }
+      }
+
+      @include media(sm) {
+        align-items: flex-start;
+        gap: 12px;
+      }
     }
   }
 
@@ -123,7 +150,7 @@
       width: 100%;
     }
 
-    @include media(sm)  {
+    @include media(sm) {
       margin-right: 0;
       margin-bottom: 8px;
       width: 32px;
@@ -142,8 +169,7 @@
       width: calc(50% - 6px);
       height: 32px;
       min-height: 32px;
-    } 
- 
+    }
   }
 
   &__remove {
@@ -157,7 +183,7 @@
       border-width: 1px;
 
       svg {
-        opacity: .6;
+        opacity: 0.6;
       }
 
       &:hover {
@@ -166,8 +192,6 @@
         border-color: var(--border-grey) !important;
       }
     }
-
-
 
     .tooltip {
       top: 48px;
@@ -178,7 +202,7 @@
       width: calc(50% - 6px);
       min-height: 32px;
       height: 32px;
-    } 
+    }
   }
 
   &__title {
@@ -193,20 +217,18 @@
       text-overflow: ellipsis;
       -webkit-line-clamp: 1;
     }
-
   }
 
   &__desc {
     font-size: 12px;
     line-height: 20px;
 
-    @include media(sm)  {
+    @include media(sm) {
       margin-bottom: 12px;
     }
   }
 
   &__action {
-    
     margin: 0 0 0 auto;
     display: flex;
     align-items: center;
@@ -222,5 +244,8 @@
 
 .logout {
   max-width: 152px;
-}
 
+  @include media(sm) {
+    max-width: 100%;
+  }
+}

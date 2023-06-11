@@ -88,6 +88,15 @@
     position: relative;
     max-width: 256px;
 
+    &-name {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
     &-price {
       position: absolute;
       right: 0;
@@ -98,6 +107,30 @@
 
   &__comment {
     max-width: 158px;
+
+    p {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sendings-item__cell-body {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-edit {
+      flex-shrink: 0;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
 
     @include media(md) {
       max-width: calc(100% + 48px);
