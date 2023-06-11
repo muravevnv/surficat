@@ -39,7 +39,7 @@
       </div>
     </header>
     <main>
-      <div class="page">
+      <div class="page page-sendings">
         <div class="container">
           <div class="page-head">
             <h1 class="page__title">Отправки</h1>
@@ -78,7 +78,7 @@
                   </select>
                 </div>
               </div>
-              <div class="sendings-panel__item">
+              <div class="sendings-panel__item sendings-panel__item--statuses">
                 <div class="dropdown-list">
                   <select
                     name=""
@@ -95,7 +95,25 @@
               </div>
               <div class="sendings-panel__statuses">
                 <div class="sendings-panel__status">
-
+                  Все статусы
+                  <svg class="icon icon-16">
+                    <use xlink:href="images/sprite.svg#Check-24"></use>
+                  </svg>
+                </div>
+                <div class="sendings-panel__status">
+                  <div class="status status--active">
+                    Активен
+                  </div>
+                </div>
+                <div class="sendings-panel__status">
+                  <div class="status status--complete">
+                    Выполнен
+                  </div>
+                </div>
+                <div class="sendings-panel__status">
+                  <div class="status status--ended">
+                    Просрочено
+                  </div>
                 </div>
               </div>
             </div>
@@ -110,693 +128,933 @@
                 <div class="sendings-table-head__item">Действия</div>
               </div>
               <div class="sendings-table-main">
-                <div class="sendings-item">
-                  <div class="sendings-item__num sendings-item__cell">
-                    <div class="sendings-item__cell-title">Номер</div>
-                    <div class="sendings-item__cell-body">
-                      <span>1421412512</span>
+                <div class="sending">
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-num">
+                      <a href="" target="_blank">1421412512</a>
                       15.06.2023
                     </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__sert">
-                    <div class="sendings-item__cell-title">Сертификат</div>
-                    <div class="sendings-item__sert-name">
-                      <span>10 000 ₽ •</span>
-                      Vestibulum bibendum elit in nulla elementum facilisistqc…
-                    </div>
-                    <div class="sendings-item__sert-price"></div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__recipient">
-                    <div class="sendings-item__cell-title">Получатель</div>
-                    <div class="sendings-item__cell-body">Александра</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__period">
-                    <div class="sendings-item__cell-title">Срок действия</div>
-                    <div class="sendings-item__cell-body">15.06.2024</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__comment">
-                    <div class="sendings-item__cell-title">Комментарий</div>
-                    <div class="sendint-item__cell-body">
-                      <div class="sendings-item__comment-text">
-                        Потратил из это…
-                      </div>
-                      <div class="sendings-item__comment-edit"></div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-sert">
+                      10 000 ₽ • Vestibulum bibendum elit in nulla elementum facilisistqc…
                     </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__status">
-                    <div class="sendings-item__cell-title">Статус</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="status status--complete">Выполнен</div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Получатель</div>
+                    <div class="sending-recepient">
+                      Александра
                     </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__action">
-                    <div class="sendings-item__cell-title">Действия</div>
-                    <div class="sendings-item__cell-body">
-                      <div
-                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Check-24"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Edit-16"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Trash-16"></use>
-                        </svg>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Срок действия</div>
+                    <div class="sending-amount">
+                      15.06.2024
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-comment tablet-hide">
+                      <div class="sending-comment__info">
+                        <div class="sending-comment__text tooltip-box">
+                          <p>Потратил из это потратил из это все</p>
+                          <div class="tooltip">
+                            <div class="tooltip-body">
+                              <div class="tooltip__text">
+                                Потратил из это потратил из это все
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sending-comment__edit">
+                          <svg class="icon icon-16">
+                            <use xlink:href="images/sprite.svg#Edit-16"></use>
+                          </svg>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="sendings-item">
-                  <div class="sendings-item__num sendings-item__cell">
-                    <div class="sendings-item__cell-title">Номер</div>
-                    <div class="sendings-item__cell-body">
-                      <span>1421412512</span>
-                      15.06.2023
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__sert">
-                    <div class="sendings-item__cell-title">Сертификат</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__sert-name">
-                        <span>10 000 ₽ •</span>
-                        Vestibulum bibendum
+                    <div class="sending-comment tablet-show">
+                      <div class="sending-comment__content">
+                        <span>Нет комментария</span> 
                       </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__recipient">
-                    <div class="sendings-item__cell-title">Получатель</div>
-                    <div class="sendings-item__cell-body">Никита</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__period">
-                    <div class="sendings-item__cell-title">Срок действия</div>
-                    <div class="sendings-item__cell-body">15.06.2024</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__comment">
-                    <div class="sendings-item__cell-title">Комментарий</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__comment-add">
+                      <div class="sending-comment__btn btn btn--outline btn--xs">
                         <svg class="icon icon-16">
                           <use xlink:href="images/sprite.svg#Plus-16"></use>
                         </svg>
-                        <span>Добавить</span>
-                      </div>
+                        Добавить</div>
                     </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__status">
-                    <div class="sendings-item__cell-title">Статус</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="status status--active">Активен</div>
-                    </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Статус</div>
+                    <div class="sending-status status status--complete">Выполнен</div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__action">
-                    <div class="sendings-item__cell-title">Действия</div>
-                    <div class="sendings-item__cell-body">
-                      <div
-                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                  <div class="sending-cell">
+                    <div class="sending-action">
+                      <div class="action-continue tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-24">
+                          <use xlink:href="images/sprite.svg#Reset-24"></use>
                         </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Возобновить
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
-                      >
+                      <div class="action-edit tooltip-box btn btn--icon btn--xs btn--outline">
                         <svg class="icon icon-16">
                           <use xlink:href="images/sprite.svg#Edit-16"></use>
                         </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Редактировать
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
-                      >
+                      <div class="action-delete tooltip-box btn btn--icon btn--xs btn--outline">
                         <svg class="icon icon-16">
                           <use xlink:href="images/sprite.svg#Trash-16"></use>
                         </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Удалить
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="sendings-item">
-                  <div class="sendings-item__num sendings-item__cell">
-                    <div class="sendings-item__cell-title">Номер</div>
-                    <div class="sendings-item__cell-body">
-                      <span>1421412512</span>
+                <div class="sending">
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-num">
+                      <a href="" target="_blank">1421412512</a>
                       15.06.2023
                     </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__sert">
-                    <div class="sendings-item__cell-title">Сертификат</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__sert-name">
-                        Vestibulum bibendum elit in nulla elementum facilisis 
-                      </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-sert">
+                      10 000 ₽ • Vestibulum bibendum elit in nulla elementum facilisistqc…
                     </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__recipient">
-                    <div class="sendings-item__cell-title">Получатель</div>
-                    <div class="sendings-item__cell-body">Александрита</div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Получатель</div>
+                    <div class="sending-recepient">
+                      Никита
+                    </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__period">
-                    <div class="sendings-item__cell-title">Срок действия</div>
-                    <div class="sendings-item__cell-body">15.06.2024</div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Срок действия</div>
+                    <div class="sending-amount">
+                      15.06.2024
+                    </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__comment">
-                    <div class="sendings-item__cell-title">Комментарий</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__comment-add">
+                  <div class="sending-cell">
+                    <div class="sending-comment tablet-hide">
+                      <div class="sending-comment__add">
                         <svg class="icon icon-16">
                           <use xlink:href="images/sprite.svg#Plus-16"></use>
                         </svg>
-                        <span>Добавить</span>
+                        Добавить
                       </div>
                     </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__status">
-                    <div class="sendings-item__cell-title">Статус</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="status status--ended">Просрочен</div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__action">
-                    <div class="sendings-item__cell-title">Действия</div>
-                    <div class="sendings-item__cell-body">
-                      <div
-                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Check-24"></use>
-                        </svg>
+                    <div class="sending-comment tablet-show">
+                      <div class="sending-comment__content">
+                        <span>Комментарий:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse diam odio, scelerisque id accumsan et, consectetur id elit. 
+                        Sed quam ante, porttitor sit amet mattis a, vulputate id nibh. In justo nulla, 
+                        posuere nec dolor a, fermentum luctus magna. Donec consectetur aliquam 
+                        dolor, at ultricies nibh condimentum nec.
                       </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
-                      >
+                      <div class="sending-comment__btn btn btn--outline btn--xs">
                         <svg class="icon icon-16">
                           <use xlink:href="images/sprite.svg#Edit-16"></use>
                         </svg>
+                        Изменить</div>
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Статус</div>
+                    <div class="sending-status status status--active">Активен</div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-action">
+                      <div class="action-complete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Выполнен
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
-                      >
+                      <div class="action-edit tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Редактировать
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-delete tooltip-box btn btn--icon btn--xs btn--outline">
                         <svg class="icon icon-16">
                           <use xlink:href="images/sprite.svg#Trash-16"></use>
                         </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Удалить
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="sendings-item">
-                  <div class="sendings-item__num sendings-item__cell">
-                    <div class="sendings-item__cell-title">Номер</div>
-                    <div class="sendings-item__cell-body">
-                      <span>1421412512</span>
+                <div class="sending">
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-num">
+                      <a href="" target="_blank">1421412512</a>
                       15.06.2023
                     </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__sert">
-                    <div class="sendings-item__cell-title">Сертификат</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__sert-name">
-                        <span>10 000 ₽ •</span>
-                        Vestibulum bibendum
-                      </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-sert">
+                      Vestibulum bibendum elit in nulla elementum facilisis 
                     </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__recipient">
-                    <div class="sendings-item__cell-title">Получатель</div>
-                    <div class="sendings-item__cell-body">Александра</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__period">
-                    <div class="sendings-item__cell-title">Срок действия</div>
-                    <div class="sendings-item__cell-body">15.06.2024</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__comment">
-                    <div class="sendings-item__cell-title">Комментарий</div>
-                    <div class="sendings-item__cell-body">
-                      <p>Нужно уточнить у клиента, кто именно обратится за сертификатом</p>
-                      <div class="sendings-item__comment-edit">
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Edit-16"></use>
-                        </svg>
-                      </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Получатель</div>
+                    <div class="sending-recepient">
+                      Александрина
                     </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__status">
-                    <div class="sendings-item__cell-title">Статус</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="status status--active">Активен</div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Срок действия</div>
+                    <div class="sending-amount">
+                      15.06.2024
                     </div>
                   </div>
-                  <div class="sendings-item__cell sendings-item__action">
-                    <div class="sendings-item__cell-title">Действия</div>
-                    <div class="sendings-item__cell-body">
-                      <div
-                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Check-24"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Edit-16"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Trash-16"></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sendings-item">
-                  <div class="sendings-item__num sendings-item__cell">
-                    <div class="sendings-item__cell-title">Номер</div>
-                    <div class="sendings-item__cell-body">
-                      <span>1421412512</span>
-                      15.06.2023
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__sert">
-                    <div class="sendings-item__cell-title">Сертификат</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__sert-name">
-                        <span>10 000 ₽ •</span>
-                        Vestibulum bibendum
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__recipient">
-                    <div class="sendings-item__cell-title">Получатель</div>
-                    <div class="sendings-item__cell-body">Никита</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__period">
-                    <div class="sendings-item__cell-title">Срок действия</div>
-                    <div class="sendings-item__cell-body">15.06.2024</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__comment">
-                    <div class="sendings-item__cell-title">Комментарий</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__comment-add">
+                  <div class="sending-cell">
+                    <div class="sending-comment tablet-hide">
+                      <div class="sending-comment__add">
                         <svg class="icon icon-16">
                           <use xlink:href="images/sprite.svg#Plus-16"></use>
                         </svg>
-                        <span>Добавить</span>
+                        Добавить
                       </div>
                     </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__status">
-                    <div class="sendings-item__cell-title">Статус</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="status status--active">Активен</div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__action">
-                    <div class="sendings-item__cell-title">Действия</div>
-                    <div class="sendings-item__cell-body">
-                      <div
-                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Check-24"></use>
-                        </svg>
+                    <div class="sending-comment tablet-show">
+                      <div class="sending-comment__content">
+                        <span>Нет комментария</span> 
                       </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Edit-16"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Trash-16"></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sendings-item">
-                  <div class="sendings-item__num sendings-item__cell">
-                    <div class="sendings-item__cell-title">Номер</div>
-                    <div class="sendings-item__cell-body">
-                      <span>1421412512</span>
-                      15.06.2023
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__sert">
-                    <div class="sendings-item__cell-title">Сертификат</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__sert-name">
-                        <span>10 000 ₽ •</span>
-                        Vestibulum bibendum
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__recipient">
-                    <div class="sendings-item__cell-title">Получатель</div>
-                    <div class="sendings-item__cell-body">Никита</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__period">
-                    <div class="sendings-item__cell-title">Срок действия</div>
-                    <div class="sendings-item__cell-body">15.06.2024</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__comment">
-                    <div class="sendings-item__cell-title">Комментарий</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__comment-add">
+                      <div class="sending-comment__btn btn btn--outline btn--xs">
                         <svg class="icon icon-16">
                           <use xlink:href="images/sprite.svg#Plus-16"></use>
                         </svg>
-                        <span>Добавить</span>
-                      </div>
+                        Добавить</div>
                     </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__status">
-                    <div class="sendings-item__cell-title">Статус</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="status status--active">Активен</div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__action">
-                    <div class="sendings-item__cell-title">Действия</div>
-                    <div class="sendings-item__cell-body">
-                      <div
-                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Check-24"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Edit-16"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Trash-16"></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sendings-item">
-                  <div class="sendings-item__num sendings-item__cell">
-                    <div class="sendings-item__cell-title">Номер</div>
-                    <div class="sendings-item__cell-body">
-                      <span>1421412512</span>
-                      15.06.2023
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__sert">
-                    <div class="sendings-item__cell-title">Сертификат</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__sert-name">
-                        <span>10 000 ₽ •</span>
-                        Vestibulum bibendum
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__recipient">
-                    <div class="sendings-item__cell-title">Получатель</div>
-                    <div class="sendings-item__cell-body">Никита</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__period">
-                    <div class="sendings-item__cell-title">Срок действия</div>
-                    <div class="sendings-item__cell-body">15.06.2024</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__comment">
-                    <div class="sendings-item__cell-title">Комментарий</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__comment-add">
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Plus-16"></use>
-                        </svg>
-                        <span>Добавить</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__status">
-                    <div class="sendings-item__cell-title">Статус</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="status status--active">Активен</div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__action">
-                    <div class="sendings-item__cell-title">Действия</div>
-                    <div class="sendings-item__cell-body">
-                      <div
-                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Check-24"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Edit-16"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Trash-16"></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sendings-item">
-                  <div class="sendings-item__num sendings-item__cell">
-                    <div class="sendings-item__cell-title">Номер</div>
-                    <div class="sendings-item__cell-body">
-                      <span>1421412512</span>
-                      15.06.2023
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__sert">
-                    <div class="sendings-item__cell-title">Сертификат</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__sert-name">
-                        <span>10 000 ₽ •</span>
-                        Vestibulum bibendum
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__recipient">
-                    <div class="sendings-item__cell-title">Получатель</div>
-                    <div class="sendings-item__cell-body">Никита</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__period">
-                    <div class="sendings-item__cell-title">Срок действия</div>
-                    <div class="sendings-item__cell-body">15.06.2024</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__comment">
-                    <div class="sendings-item__cell-title">Комментарий</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__comment-add">
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Plus-16"></use>
-                        </svg>
-                        <span>Добавить</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__status">
-                    <div class="sendings-item__cell-title">Статус</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="status status--active">Активен</div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__action">
-                    <div class="sendings-item__cell-title">Действия</div>
-                    <div class="sendings-item__cell-body">
-                      <div
-                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Check-24"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Edit-16"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Trash-16"></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sendings-item">
-                  <div class="sendings-item__num sendings-item__cell">
-                    <div class="sendings-item__cell-title">Номер</div>
-                    <div class="sendings-item__cell-body">
-                      <span>1421412512</span>
-                      15.06.2023
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__sert">
-                    <div class="sendings-item__cell-title">Сертификат</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__sert-name">
-                        <span>10 000 ₽ •</span>
-                        Vestibulum bibendum
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__recipient">
-                    <div class="sendings-item__cell-title">Получатель</div>
-                    <div class="sendings-item__cell-body">Никита</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__period">
-                    <div class="sendings-item__cell-title">Срок действия</div>
-                    <div class="sendings-item__cell-body">15.06.2024</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__comment">
-                    <div class="sendings-item__cell-title">Комментарий</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__comment-add">
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Plus-16"></use>
-                        </svg>
-                        <span>Добавить</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__status">
-                    <div class="sendings-item__cell-title">Статус</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="status status--active">Активен</div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__action">
-                    <div class="sendings-item__cell-title">Действия</div>
-                    <div class="sendings-item__cell-body">
-                      <div
-                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Check-24"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Edit-16"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Trash-16"></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sendings-item">
-                  <div class="sendings-item__num sendings-item__cell">
-                    <div class="sendings-item__cell-title">Номер</div>
-                    <div class="sendings-item__cell-body">
-                      <span>1421412512</span>
-                      15.06.2023
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__sert">
-                    <div class="sendings-item__cell-title">Сертификат</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__sert-name">
-                        <span>10 000 ₽ •</span>
-                        Vestibulum bibendum
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__recipient">
-                    <div class="sendings-item__cell-title">Получатель</div>
-                    <div class="sendings-item__cell-body">Никита</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__period">
-                    <div class="sendings-item__cell-title">Срок действия</div>
-                    <div class="sendings-item__cell-body">15.06.2024</div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__comment">
-                    <div class="sendings-item__cell-title">Комментарий</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="sendings-item__comment-add">
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Plus-16"></use>
-                        </svg>
-                        <span>Добавить</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__status">
-                    <div class="sendings-item__cell-title">Статус</div>
-                    <div class="sendings-item__cell-body">
-                      <div class="status status--active">Активен</div>
-                    </div>
-                  </div>
-                  <div class="sendings-item__cell sendings-item__action">
-                    <div class="sendings-item__cell-title">Действия</div>
-                    <div class="sendings-item__cell-body">
-                      <div
-                        class="sendings-item__action-item sendings-item__action-status btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Check-24"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Edit-16"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="sendings-item__action-item sendings-item__action-delete btn btn--icon btn--xs btn--outline"
-                      >
-                        <svg class="icon icon-16">
-                          <use xlink:href="images/sprite.svg#Trash-16"></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
+                   
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Статус</div>
+                    <div class="sending-status status status--ended">Просрочен</div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-action">
+                      <div class="action-complete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Выполнен
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-edit tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Редактировать
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-delete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Trash-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Удалить
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sending">
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-num">
+                      <a href="" target="_blank">1421412512</a>
+                      15.06.2023
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-sert">
+                      Vestibulum bibendum elit in nulla elementum facilisis 
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Получатель</div>
+                    <div class="sending-recepient">
+                      Александра
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Срок действия</div>
+                    <div class="sending-amount">
+                      15.06.2024
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-comment tablet-hide">
+                      <div class="sending-comment__add">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить
+                      </div>
+                    </div>
+                    <div class="sending-comment tablet-show">
+                      <div class="sending-comment__content">
+                        <span>Нет комментария</span> 
+                      </div>
+                      <div class="sending-comment__btn btn btn--outline btn--xs">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить</div>
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Статус</div>
+                    <div class="sending-status status status--active">Активен</div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-action">
+                      <div class="action-complete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Выполнен
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-edit tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Редактировать
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-delete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Trash-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Удалить
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sending">
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-num">
+                      <a href="" target="_blank">1421412512</a>
+                      15.06.2023
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-sert">
+                      Vestibulum bibendum elit in nulla
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Получатель</div>
+                    <div class="sending-recepient">
+                      Никита
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Срок действия</div>
+                    <div class="sending-amount">
+                      15.06.2024
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-comment tablet-hide">
+                      <div class="sending-comment__add">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить
+                      </div>
+                    </div>
+                    <div class="sending-comment tablet-show">
+                      <div class="sending-comment__content">
+                        <span>Нет комментария</span> 
+                      </div>
+                      <div class="sending-comment__btn btn btn--outline btn--xs">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить</div>
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Статус</div>
+                    <div class="sending-status status status--active">Активен</div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-action">
+                      <div class="action-complete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Выполнен
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-edit tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Редактировать
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-delete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Trash-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Удалить
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sending">
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-num">
+                      <a href="" target="_blank">1421412512</a>
+                      15.06.2023
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-sert">
+                      Vestibulum bibendum elit in nulla
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Получатель</div>
+                    <div class="sending-recepient">
+                      Никита
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Срок действия</div>
+                    <div class="sending-amount">
+                      15.06.2024
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-comment tablet-hide">
+                      <div class="sending-comment__add">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить
+                      </div>
+                    </div>
+                    <div class="sending-comment tablet-show">
+                      <div class="sending-comment__content">
+                        <span>Нет комментария</span> 
+                      </div>
+                      <div class="sending-comment__btn btn btn--outline btn--xs">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить</div>
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Статус</div>
+                    <div class="sending-status status status--active">Активен</div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-action">
+                      <div class="action-complete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Выполнен
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-edit tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Редактировать
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-delete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Trash-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Удалить
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sending">
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-num">
+                      <a href="" target="_blank">1421412512</a>
+                      15.06.2023
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-sert">
+                      Vestibulum bibendum elit in nulla
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Получатель</div>
+                    <div class="sending-recepient">
+                      Никита
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Срок действия</div>
+                    <div class="sending-amount">
+                      15.06.2024
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-comment tablet-hide">
+                      <div class="sending-comment__add">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить
+                      </div>
+                    </div>
+                    <div class="sending-comment tablet-show">
+                      <div class="sending-comment__content">
+                        <span>Нет комментария</span> 
+                      </div>
+                      <div class="sending-comment__btn btn btn--outline btn--xs">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить</div>
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Статус</div>
+                    <div class="sending-status status status--active">Активен</div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-action">
+                      <div class="action-complete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Выполнен
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-edit tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Редактировать
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-delete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Trash-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Удалить
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sending">
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-num">
+                      <a href="" target="_blank">1421412512</a>
+                      15.06.2023
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-sert">
+                      Vestibulum bibendum elit in nulla
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Получатель</div>
+                    <div class="sending-recepient">
+                      Никита
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Срок действия</div>
+                    <div class="sending-amount">
+                      15.06.2024
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-comment tablet-hide">
+                      <div class="sending-comment__add">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить
+                      </div>
+                    </div>
+                    <div class="sending-comment tablet-show">
+                      <div class="sending-comment__content">
+                        <span>Нет комментария</span> 
+                      </div>
+                      <div class="sending-comment__btn btn btn--outline btn--xs">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить</div>
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Статус</div>
+                    <div class="sending-status status status--active">Активен</div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-action">
+                      <div class="action-complete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Выполнен
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-edit tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Редактировать
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-delete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Trash-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Удалить
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sending">
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-num">
+                      <a href="" target="_blank">1421412512</a>
+                      15.06.2023
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-sert">
+                      Vestibulum bibendum elit in nulla
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Получатель</div>
+                    <div class="sending-recepient">
+                      Никита
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Срок действия</div>
+                    <div class="sending-amount">
+                      15.06.2024
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-comment tablet-hide">
+                      <div class="sending-comment__add">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить
+                      </div>
+                    </div>
+                    <div class="sending-comment tablet-show">
+                      <div class="sending-comment__content">
+                        <span>Нет комментария</span> 
+                      </div>
+                      <div class="sending-comment__btn btn btn--outline btn--xs">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить</div>
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Статус</div>
+                    <div class="sending-status status status--active">Активен</div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-action">
+                      <div class="action-complete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Выполнен
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-edit tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Редактировать
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-delete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Trash-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Удалить
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sending">
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-num">
+                      <a href="" target="_blank">1421412512</a>
+                      15.06.2023
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title"></div>
+                    <div class="sending-sert">
+                      Vestibulum bibendum elit in nulla
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Получатель</div>
+                    <div class="sending-recepient">
+                      Никита
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Срок действия</div>
+                    <div class="sending-amount">
+                      15.06.2024
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-comment tablet-hide">
+                      <div class="sending-comment__add">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить
+                      </div>
+                    </div>
+                    <div class="sending-comment tablet-show">
+                      <div class="sending-comment__content">
+                        <span>Нет комментария</span> 
+                      </div>
+                      <div class="sending-comment__btn btn btn--outline btn--xs">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Plus-16"></use>
+                        </svg>
+                        Добавить</div>
+                    </div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-cell__title">Статус</div>
+                    <div class="sending-status status status--active">Активен</div>
+                  </div>
+                  <div class="sending-cell">
+                    <div class="sending-action">
+                      <div class="action-complete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Check-24"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Выполнен
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-edit tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Edit-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Редактировать
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="action-delete tooltip-box btn btn--icon btn--xs btn--outline">
+                        <svg class="icon icon-16">
+                          <use xlink:href="images/sprite.svg#Trash-16"></use>
+                        </svg>
+                        <div class="tooltip">
+                          <div class="tooltip-body">
+                            <div class="tooltip__text">
+                              Удалить
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="sendings-table sendings-table--mob">
@@ -861,7 +1119,7 @@
                     class="sendings-item__action-item sendings-item__action-edit btn btn--icon btn--xs btn--outline"
                   >
                     <svg class="icon icon-16">
-                      <use xlink:href="images/sprite.svg#Edit-16"></use>
+                      <use xlink:href="images/sprite.svg#Plus-16"></use>
                     </svg>
                   </div>
                   <div
@@ -985,6 +1243,7 @@
                 </svg>
               </div>
             </div>
+            <div class="sendings-more btn-wide btn--m btn btn--outline">Показать еще</div>
           </div>
         </div>
       </div>

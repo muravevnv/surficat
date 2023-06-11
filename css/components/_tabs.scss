@@ -21,6 +21,12 @@
     border-radius: 4px;
     cursor: pointer;
 
+    @include media(md) {
+      padding:  6px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
     &:hover {
       color: var(--black);
     }
