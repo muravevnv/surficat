@@ -192,6 +192,24 @@
     }
   }
 
+  &__desc {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+
+    @include media(md) {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 12px;
+    }
+
+    @include media(sm) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
   &__text {
     font-size: 16px;
     line-height: 26px;
@@ -320,6 +338,31 @@
   &__preview {
     img {
       display: block;
+    }
+  }
+}
+
+.modal-delete {
+
+  .form-btn__cancel {
+    display: none;
+  }
+
+  .modal__title {
+    color: var(--red);
+  }
+
+  @include media(sm) {
+    .modal__text {
+      display: none;
+    }
+
+    .modal-form {
+      display: none;
+    }
+
+    .form-btn__cancel  {
+      display: flex;
     }
   }
 }

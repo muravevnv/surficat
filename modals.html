@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/nice-select2.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Document</title>
+</head>
+<body>
+
+ <div class="page">
+  <div class="container">
+    <div class="btn btn--outline js-open-modal" data-modal="1">Cертификат успешно создан</div>
+    <div class="btn btn--outline js-open-modal" data-modal="2">Новая компания</div>
+    <div class="btn btn--outline js-open-modal" data-modal="3">Редактирвоание компании</div>
+    <div class="btn btn--outline js-open-modal" data-modal="4">Введите выделенную область</div>
+    <div class="btn btn--outline js-open-modal" data-modal="5">Редактирование отправленного сертификата</div>
+    <div class="btn btn--outline js-open-modal" data-modal="6">Добавить коментарий</div>
+    <div class="btn btn--outline js-open-modal" data-modal="7">Редактирование коментарий</div>
+    <div class="btn btn--outline js-open-modal" data-modal="8">Удалить коментарий</div>
+    <div class="btn btn--outline js-open-modal" data-modal="9">Удалить компанию</div>
+    <div class="btn btn--outline js-open-modal" data-modal="10">Удалить сертифика</div>
+  </div>
+ </div>
+
+
+ <div class="modal" data-modal="1">
+  <div class="modal-overlay"></div>
+  <div class="modal-content modal-content--sm">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Сертификат успешно создан!</div>
+      <div class="modal__text">Теперь он доступен в вашем каталоге сертификатов и вы можете отправить его клиенту.</div>
+    </div>
+    <div class="modal__btn btn btn-wide">Отправить сертификат</div>
+  </div>
+</div>
+<div class="modal" data-modal="2">
+  <div class="modal-overlay"></div>
+  <div class="modal-content modal-company">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Новая компания</div>
+    </div>
+
+    <div class="modal-form">
+      <div class="form-control">
+        <input type="text" class="js-form-control form__input">
+        <label for="" class="form__label">Название компании <span>*</span></label>
+
+        <div class="form__tooltip">Если вы работаете от своего лица, то можно указать имя и фамилию</div>
+      </div>
+      <div class="form-control">
+        <input type="text" class="js-form-control form__input">
+        <label for="" class="form__label">Чем занимается компания (кратко) <span>*</span></label>
+        <div class="form__tooltip">Например, «Семейный фотограф / Москва»</div>
+      </div>
+    </div>
+
+    <div class="modal-company-contacts">
+      <div class="modal-company__head">
+        <div class="modal-company__subtitle">Контактные данные</div>
+      </div>
+      <div class="modal-company-contacts__add btn btn--m btn--outline btn-wide">
+        <svg class="icon icon-24">
+          <use xlink:href="images/sprite.svg#Plus-24"></use>
+        </svg>
+        Добавить</div>
+    </div>
+
+    <div class="modal-company-photo">
+      <div class="modal-company__head">
+        <div class="modal-company__subtitle">Логотип или фотография</div>
+        <div class="modal-company__text">Вы можете загрузить изображение, в формате .jpeg или .png. Вес файла не более 500 кб.</div>
+      </div>
+      <div class="modal-company-photo__add btn btn--m btn--outline btn-wide">
+        <svg class="icon icon-24">
+          <use xlink:href="images/sprite.svg#Download-24"></use>
+        </svg>
+        Загрузить</div>
+    </div>
+
+    <div class="modal-action">
+      <div class="modal__btn btn btn-wide">Создать компанию</div>
+    </div>
+
+  </div>
+</div>
+<div class="modal" data-modal="3">
+  <div class="modal-overlay"></div>
+  <div class="modal-content modal-company">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Редактирование компании</div>
+    </div>
+
+    <div class="modal-form">
+      <div class="form-control">
+        <input type="text" class="js-form-control form__input">
+        <label for="" class="form__label">Название компании <span>*</span></label>
+
+        <div class="form__tooltip">Если вы работаете от своего лица, то можно указать имя и фамилию</div>
+      </div>
+      <div class="form-control">
+        <input type="text" class="js-form-control form__input">
+        <label for="" class="form__label">Чем занимается компания (кратко) <span>*</span></label>
+        <div class="form__tooltip">Например, «Семейный фотограф / Москва»</div>
+      </div>
+    </div>
+
+    <div class="modal-company-contacts">
+      <div class="modal-company__head">
+        <div class="modal-company__subtitle">Контактные данные</div>
+      </div>
+      <div class="modal-company-contacts__item contacts-item">
+        <div class="contacts-item__type">
+          <div class="dropdown-list">
+            <select
+              name=""
+              data-display="Select"
+              data-name=" "
+              id=""
+              style="display: none"
+            >
+              <option value="1">Vk</option>
+              <option value="2">Tel</option>
+            </select>
+          </div>
+        </div>
+        <div class="contacts-item__link">
+          <div class="form-control">
+            <input type="text" class="js-form-control form__input">
+            <label for="" class="form__label">Укажите ссылку</label>
+          </div>
+        </div>
+        <div class="contacts-item__remove btn btn--outline btn--icon">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Delete-24"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-company-contacts__item contacts-item">
+        <div class="contacts-item__type">
+          <div class="dropdown-list">
+            <select
+              name=""
+              data-display="Select"
+              data-name=" "
+              id=""
+              style="display: none"
+            >
+              <option value="1">
+                Vk
+              </option>
+              <option value="2">
+                Tel
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="contacts-item__link">
+          <div class="form-control">
+            <input type="text" class="js-form-control form__input">
+            <label for="" class="form__label">Укажите ссылку</label>
+          </div>
+        </div>
+        <div class="contacts-item__remove btn btn--outline btn--icon">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Delete-24"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-company-contacts__error">
+        <svg class="icon icon-24">
+          <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
+        </svg>
+        Необходимо указать хотя бы один способ связи
+      </div>
+      <div class="modal-company-contacts__add btn btn--m btn--outline btn-wide">
+        <svg class="icon icon-24">
+          <use xlink:href="images/sprite.svg#Plus-24"></use>
+        </svg>
+        Добавить</div>
+    </div>
+
+    <div class="modal-company-photo">
+      <div class="modal-company__head">
+        <div class="modal-company__subtitle">Логотип или фотография</div>
+        <div class="modal-company__text">Вы можете загрузить изображение, в формате .jpeg или .png. Вес файла не более 500 кб.</div>
+      </div>
+      <div class="modal-company-photo__picture">
+        <img src="images/company-photo.png" alt="">
+      </div>
+      <div class="modal-company-photo__action ">
+        <div class="modal-company-photo__add btn btn--m btn--outline btn-wide">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Download-24"></use>
+          </svg>
+          Загрузить
+        </div>
+        <div class="modal-company-photo__remove btn btn--m btn--outline btn-wide">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Delete-24"></use>
+          </svg>
+          Удалить
+        </div>
+      </div>
+    </div>
+    <div class="modal-action">
+      <div class="modal__btn btn btn-wide">Создать компанию</div>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="4">
+  <div class="modal-overlay"></div>
+  <div class="modal-content modal-photo">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Выделите видимую область изображения</div>
+    </div>
+    <div class="modal-photo__preview">
+      <img src="images/preview.png" alt="">
+    </div>
+    <div class="modal-action">
+      <div class="modal__btn btn btn-wide">
+        Сохранить
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="5">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Редактирование отправленного сертификата</div>
+      <div class="modal__subtitle">
+        Семейные выходные в уютном доме «Taiga»  на Байкале  •  10 000 ₽
+      </div>
+    </div>
+    <div class="modal-form">
+
+        <div class="form-control form-control-icon-left form-control-icon-right ">
+
+          <input type="text" class="js-form-control form__input is-fill" value="Александрина">
+          <label for="" class="form__label">Получатель <span>*</span></label>
+          <div class="form__icon">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#User-24"></use>
+            </svg>
+          </div>
+          
+          <div class="form__icon-info">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
+            </svg>
+          </div>
+          <div class="form__tooltip">Имя лучше указывать в дательном падеже. Например: «Любимой Александре».</div>
+        </div>
+        <div class="form-control form-control-icon-left">
+          <input type="text" class="js-form-control form__input is-fill" value="13.05.2024">
+          <label for="" class="form__label">Срок действия сертификата <span>*</span></label>
+          <div class="form__icon">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#User-24"></use>
+            </svg>
+          </div>
+          <div class="form__tooltip">До какого числа клиент может воспользоваться сертификатом</div>
+        </div>
+        <div class="form-control">
+          <textarea contenteditable="" class="js-form-control form__textarea is-fill">Curabitur mattis arcu lectus, vitae vulputate ipsum facilisis vitae. Phasellus eget enim eu risus elementum bibendum.
+          </textarea>
+          <label for="" class="form__label">Укажите от кого сертификат или пожелание</label>
+        </div>
+    </div>
+    <div class="modal-action">
+      <button class="modal__btn btn btn-wide btn-primary">Сохранить изменения</button>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="6">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Добавление комментария</div>
+    </div>
+    <div class="modal-form">
+      <div class="form-control">
+        <textarea contenteditable="" class="js-form-control form__textarea">
+        </textarea>
+        <label for="" class="form__label">Введите комментарий</label>
+      </div>
+    </div>
+    <div class="modal-action">
+      <button class="modal__btn btn btn-wide btn-primary">Сохранить</button>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="7">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Редактирование комментария</div>
+    </div>
+    <div class="modal-form">
+      <div class="form-control">
+        <textarea contenteditable="" class="js-form-control form__textarea is-fill">Curabitur mattis arcu lectus, vitae vulputate ipsum facilisis vitae. Phasellus eget enim eu risus elementum bibendum.
+        </textarea>
+        <label for="" class="form__label">Укажите от кого сертификат или пожелание</label>
+      </div>
+    </div>
+    <div class="modal-action">
+      <button class="modal__btn btn btn-wide btn--outline">
+        <svg class="icon icon-24">
+          <use xlink:href="images/sprite.svg#Delete-24"></use>
+        </svg>
+        Удалить</button>
+      <button class="modal__btn btn btn-wide btn-primary">Сохранить</button>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="8">
+  <div class="modal-overlay"></div>
+  <div class="modal-content modal-content--centered">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Удалить комментарий?</div>
+    </div>
+    <div class="modal-action">
+      <button class="modal__btn btn btn-wide btn--outline">Отменить</button>
+      <button class="modal__btn btn btn-wide btn-primary btn--red">
+        <svg class="icon icon-24">
+          <use xlink:href="images/sprite.svg#Delete-24"></use>
+        </svg>
+        Удалить</button>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="9">
+  <div class="modal-overlay"></div>
+  <div class="modal-content modal-content--centered">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Удалить компанию и ее контакты?</div>
+    </div>
+    <div class="modal-action">
+      <button class="modal__btn btn btn-wide btn--outline">Отменить</button>
+      <button class="modal__btn btn btn-wide btn-primary btn--red">
+        <svg class="icon icon-24">
+          <use xlink:href="images/sprite.svg#Delete-24"></use>
+        </svg>
+        Удалить</button>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="10">
+  <div class="modal-overlay"></div>
+  <div class="modal-content modal-delete modal-content--sm">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Внимание!</div>
+      <div class="modal__desc">Если вы удалите отправленный сертификат, то он перестанет быть доступен всем, кому был отправлен.</div>
+      <div class="modal__text">Для подтверждения удаления введите «Удалить сертификат»</div>
+
+    </div>
+    <div class="modal-form">
+      <div class="form-control form-control-icon-left form-control-icon-right ">
+        <input type="text" class="js-form-control form__input is-fill" value="Александрина">
+        <label for="" class="form__label">Получатель <span>*</span></label>
+        <div class="form__icon">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#User-24"></use>
+          </svg>
+        </div>
+        <div class="form__icon-info">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
+          </svg>
+        </div>
+      </div>
+      
+    </div>
+    <div class="modal-action">
+      <div class="form-btn form-btn__cancel btn-wide btn btn--outline">Отменить</div>
+      <div class="form-btn btn-wide btn btn--red">Удалить</div>
+    </div>
+  </div>
+</div>
+ <script src="js/nice-select2.js"></script>
+ <script src="js/swiper-bundle.min.js"></script>
+ <script src="js/main.js"></script>
+</body>
+</html>

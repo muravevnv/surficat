@@ -109,3 +109,38 @@ let sertificatSlider = new Swiper('.sertificat-list', {
     }, 
   }
 })
+
+var modalButtons = document.querySelectorAll(".js-open-modal"),
+overlay = document.querySelectorAll(".modal-overlay"),
+closeButtons = document.querySelectorAll(".modal__close");
+
+modalButtons.forEach(function (item) {
+
+item.addEventListener("click", function (e) {
+
+  e.preventDefault();
+
+  var modalId = this.getAttribute("data-modal"),
+    modalElem = document.querySelector(
+      '.modal[data-modal="' + modalId + '"]'
+    );
+
+  modalElem.classList.add("is-open");
+}); 
+}); 
+
+closeButtons.forEach(function (item) {
+item.addEventListener("click", function (e) {
+  var parentModal = this.closest(".modal");
+  parentModal.classList.remove("is-open");
+
+});
+}); 
+
+overlay.forEach(function (item) {
+item.addEventListener("click", function (e) {
+  var parentModal = this.closest(".modal");
+  parentModal.classList.remove("is-open");
+
+});
+}); 

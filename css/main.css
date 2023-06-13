@@ -2132,6 +2132,25 @@ h6 {
     line-height: 28px;
   }
 }
+.modal__desc {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+@media (max-width: 1024px) {
+  .modal__desc {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .modal__desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 .modal__text {
   font-size: 16px;
   line-height: 26px;
@@ -2245,6 +2264,24 @@ h6 {
 
 .modal-photo__preview img {
   display: block;
+}
+
+.modal-delete .form-btn__cancel {
+  display: none;
+}
+.modal-delete .modal__title {
+  color: var(--red);
+}
+@media (max-width: 767px) {
+  .modal-delete .modal__text {
+    display: none;
+  }
+  .modal-delete .modal-form {
+    display: none;
+  }
+  .modal-delete .form-btn__cancel {
+    display: flex;
+  }
 }
 
 .status {
