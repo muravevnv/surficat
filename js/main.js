@@ -144,3 +144,15 @@ item.addEventListener("click", function (e) {
 
 });
 }); 
+
+let previewSlider = new Swiper('.preview-gallery ', {
+  allowTouchMover: false,
+  slidesPerView: 1,
+  navigation: {
+    prevEl: '.slider-prev',
+    nextEl: '.slider-next'
+  },
+  pagination: {
+    el: '.swiper-pagination'
+  }
+})
