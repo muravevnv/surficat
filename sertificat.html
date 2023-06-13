@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/nice-select2.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Профиль</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header__logo">
+          <img src="images/logo.svg" alt="" />
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item is-active">
+              <a href="">Мои сертификаты</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="">Отправки</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="">Помощь</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-cabinet">
+          <div class="header-cabinet__icon">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#User-Circle-24"></use>
+            </svg>
+          </div>
+          <div class="header-cabinet__name">Александр</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page sertificat">
+        <div class="container container--md">
+          <div class="sertificat-head">
+            <div class="page__back">
+              <svg class="icon icon-24">
+                <use xlink:href="images/sprite.svg#Long-arrow-left-24"></use>
+              </svg>
+              Назад
+            </div>
+            <h1 class="sertificat__title">
+              <svg class="icon icon-32">
+                <use xlink:href="images/sprite.svg#Long-arrow-left-32"></use>
+              </svg>
+              О сертификате</h1>
+            <div class="sertificat-panel">
+              <div class="sertificat-remove btn btn--outline btn--icon btn--m">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Delete-24"></use>
+                </svg>
+              </div>
+              <div class="sertificat-edit btn btn--outline btn--icon btn--m">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Edit-24"></use>
+                </svg>
+              </div>
+              <div class="sertificat-view btn btn--outline btn--m">Предпросмотр</div>
+              <div class="sertificat-send btn btn--m">Отправить</div>
+            </div>
+          </div>
+          <div class="sertificat-slider slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide sertificat-slide">
+                <img src="images/sert-img-1.png" alt="">
+              </div>
+              <div class="swiper-slide sertificat-slide">
+                <img src="images/sert-img-1.png" alt="">
+              </div>
+            </div>
+            <div class="slider-next"></div>
+            <div class="slider-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="sertificat-desc box">
+            <h2 class="sertificat__name">Семейные выходные в&nbsp;уютном доме «Taiga» на Байкале</h2>
+            <div class="sertificat__price">На 10 000 ₽</div>
+            <div class="sertificat__desc">
+                <div class="sertificat__text">
+                  <p>Lorem ipsum dolor sit amet consec tetur. Lorem quis et ac tempus. 
+                    Donec ultrices aliquet nibh quam. Aliquam ac varius pretium phasellus 
+                    arcu hac eu lorem. Auctor risus in enim potenti ultrices viverra lobortis.
+                    Dictum in orci condimentum purus feugiat quisque pulvinar congue amet. 
+                    Libero ut amet egestas felis ante fusce sagittis in amet. Proin sapien 
+                    rhoncus elementum pellentesque id sed.</p>
+                  <p>Bibendum malesuada volutpat vitae lectus mattis mi ut at. Massa 
+                    sagittis eu pellentesque nec dictum venenatis at pharetra. 
+                    Dolor semper ullamcorper duis tortor vel ut. Ut porta non 
+                    at morbi eu facilisis nunc metus. Pulvinar tincidunt faucibus 
+                    malesuada enim cursus non bibendum. Vitae vel et ornare nibh. 
+                    Quam velit sed interdum consequat. Nunc imperdiet phasellus nibh 
+                    placerat. Ac pharetra gravida nunc bibendum aenean dui diam lorem 
+                    commodo. Enim tincidunt eget eget enim ut diam blandit sodales ipsum. 
+                    Est amet commodo sit nisi amet velit nunc arcu. Netus euismod arcu 
+                    egestas dolor sollicitudin sit euismod.</p>
+                </div>
+                <span class="text-show">Читать далее</span>
+            </div>
+          </div>
+          <div class="sertificat-recepient box">
+            <div class="sertificat-recepient__person">
+              <div class="sertificat-recepient__img">
+                <img src="images/avatar.png" alt="">
+              </div>
+              <div class="sertificat-recepient__info">
+                <div class="sertificat-recepient__name">Александр Александровский</div>
+                <div class="sertificat-recepient__desc">Сдаю загородные дома для…</div>
+              </div>
+            </div>
+            <div class="sertificat-recepient__btn btn btn--m">Связаться</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="preview">
+      <div class="preview-wrap">
+        <div class="preview-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide preview-galery__img">
+              <img src="images/gallery-1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="preview-content">
+          <div class="preview-main">
+            <div class="preview__type">Подарочный сертификат</div>
+            <div class="preview__name">Семейные выходные в уютном доме «Taiga» на Байкале</div>
+            <div class="preview-info">
+              <div class="preview-info__item preview__price">
+                На 10 000 ₽
+              </div>
+              <div class="preview-info__item preview__number is-disabled">
+                № 0000000000
+              </div>
+              <div class="preview-info__item preview__amount is-disabled">
+                До 00.00.0000
+              </div>
+            </div>
+            <div class="preview-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Lorem quis et ac tempus. 
+                Donec ultrices aliquet nibh quam. Aliquam ac varius pretium phasellus
+                arcu hac eu lorem. Auctor risus in enim potenti ultrices viverra lobortis. 
+                Dictum in orci condimentum purus feugiat quisque pulvinar congue amet. 
+                Libero ut amet egestas felis ante fusce sagittis in amet. Proin sapien 
+                rhoncus elementum pellentesque id sed.
+              </p>
+              <p>
+                Bibendum malesuada volutpat vitae lectus mattis mi ut at.
+                Massa sagittis eu pellentesque nec dictum venenatis at 
+                pharetra. Dolor semper ullamcorper duis tortor vel ut. Ut porta 
+                non at morbi eu facilisis nunc metus. Pulvinar tincidunt faucibus 
+                malesuada enim cursus non bibendum. Vitae vel et ornare nibh. 
+                Quam velit sed interdum consequat. Nunc imperdiet phasellus nibh placerat. 
+                Ac pharetra gravida nunc bibendum aenean dui diam lorem commodo. 
+                Enim tincidunt eget eget enim ut diam blandit sodales ipsum. 
+                Est amet commodo sit nisi amet velit nunc arcu. Netus euismod 
+                arcu egestas dolor sollicitudin sit euismod.
+              </p>
+              <p>
+                Sagittis rutrum in non fermentum sed lectus augue. Semper proin duis 
+                aliquam massa scelerisque nullam in urna. Mattis et neque duis ut eget viverra. 
+                Ut morbi consectetur est malesuada pharetra pulvinar. Et turpis sed nunc hac velit amet. 
+                Turpis dignissim integer mollis vitae donec. Tellus massa vitae diam velit nibh 
+                pellentesque eget ut. Fermentum mattis viverra id id mattis sollicitudin quam lectus. 
+                Eleifend velit ornare purus faucibus a viverra porttitor. Ut urna orci rhoncus porttitor quis.
+              </p>
+              <p>
+                Sed dignissim pellentesque tincidunt arcu ultrices vitae. Id quam semper 
+                sodales elementum donec ultrices. Sit mauris convallis nisl quis at tristique. 
+                Egestas orci habitasse quisque posuere proin tincidunt ultricies non quis.
+                Nisl est adipiscing in dui pellentesque id condimentum. Sit ornare nunc a a 
+                molestie vitae viverra pellentesque. Elementum adipiscing amet fames vehicula. 
+                Pellentesque blandit tellus hac ut sollicitudin sagittis vulputate turpis. 
+                Purus viverra in a gravida gravida turpis malesuada gravida. Dignissim gravida 
+                enim at sit nec. Habitant vestibulum vel viverra odio. Nulla pharetra fusce 
+                facilisis euismod nam in dui et.
+              </p>
+              <p>
+                Sapien mauris molestie egestas mauris augue mauris. Porttitor nulla 
+                vitae ullamcorper consectetur. Imperdiet eget massa sit lacus facilisis. 
+                Mollis facilisi elementum augue suscipit in sagittis ac nisl. Volutpat 
+                maecenas ut lorem enim sit urna. Blandit platea eu iaculis orci quam nisi 
+                sed tempus eu. Urna tellus vitae porta nunc. Malesuada viverra nullam 
+                tempus mattis nam blandit. Purus integer a netus diam nunc nunc. 
+                Nunc risus purus at velit pellentesque.
+              </p>
+            </div>
+          </div>
+          <div class="preview-recepient">
+            <div class="recepient">
+              <div class="recepient-main">
+                <div class="recepient__img">
+                  <img src="images/avatar.png" alt="">
+                </div>
+                <div class="recepient__info">
+                  <div class="recepient__name">Александр Петров-Александровский</div>
+                  <div class="recepient__desc">Сдаю загородные дома для отдыха и туризма на</div>
+                </div>
+              </div>
+              <div class="recepient__btn btn btn--m">
+                Связаться
+              </div>
+            </div>
+          </div>
+          <div class="preview-copy-link">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Copy-24"></use>
+            </svg>
+            Скопировать ссылку на сертификат
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/nice-select2.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

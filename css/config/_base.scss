@@ -42,6 +42,10 @@ main {
   flex-direction: column;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 1240px;
   width: 100%;
@@ -53,15 +57,19 @@ main {
   }
 
   &--lg {
-    max-width: 1001px;
+    max-width: 1041px;
   }
 
   &--md {
-    max-width: 604px;
+    max-width: 644px;
 
     @include media(lg) {
-      max-width: 500px;
+      max-width: 540px;
     }
+  }
+
+  &--sm {
+    max-width: 644px;
   }
 }
 
@@ -130,6 +138,7 @@ select {
 
     @include media(sm) {
       display: flex;
+      gap: 8px;
     }
   }
 
