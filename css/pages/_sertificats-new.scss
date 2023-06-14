@@ -223,6 +223,10 @@
     &__type {
       max-width: 106px;
       width: 100%;
+
+      @include media(md) {
+        max-width: 90px;
+      }
     }
 
     @include media(md) {

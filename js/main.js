@@ -156,3 +156,39 @@ let previewSlider = new Swiper('.preview-gallery ', {
     el: '.swiper-pagination'
   }
 })
+
+
+let typeItems = document.querySelectorAll('.type')
+
+typeItems.forEach(function(item) {
+  let type = item.querySelector('.type-item');
+  let typeList = item.querySelector('.type-list');
+  let typeListItem = typeList.querySelectorAll('.type-list__item');
+  let typeContent = item.querySelector('.type-item__content');
+
+  type.addEventListener('click', function(){
+    typeList.classList.toggle('is-open');
+    this.classList.toggle('is-active')
+  })
+
+  typeListItem.forEach(function(e){
+    e.addEventListener('click', function(){
+      typeListItem.forEach((k)=> {
+        k.classList.remove('is-selected')
+      })
+      e.classList.add('is-selected');
+      let typeIcon = e.innerHTML;
+      typeContent.innerHTML = typeIcon;
+      closeList()
+    })
+  })
+
+  let closeList = function () {
+    if(typeList.classList.contains('is-open')) {
+      typeList.classList.remove('is-open');
+      type.classList.remove('is-active')
+    } else {
+      return
+    }
+  }
+})
