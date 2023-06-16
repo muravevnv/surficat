@@ -96,6 +96,10 @@ select {
 .page {
   padding: 64px 0 120px;
 
+  @include media(md) {
+    padding: 48px 0 96px;
+  }
+
   @include media(sm) {
     padding: 32px 0 64px;
   }
@@ -105,6 +109,10 @@ select {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 48px;
+
+    @include media(md) {
+      margin-bottom: 40px;
+    }
 
     @include media(sm) {
       margin-bottom: 32px;
@@ -135,6 +143,10 @@ select {
     line-height: 24px;
     font-weight: 800;
     margin-bottom: 16px;
+
+    @include media(md) {
+      gap: 8px;
+    }
 
     @include media(sm) {
       display: flex;

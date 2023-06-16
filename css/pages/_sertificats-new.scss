@@ -11,6 +11,13 @@
 }
 
 .new-sertificat {
+
+  @include media(md) {
+
+    .form-control + .form-control {
+      margin-top: 20px;
+    }
+  }
   &__box {
     @include media(md) {
       padding: 23px;
@@ -188,8 +195,21 @@
   .form-control {
     @include media(md) {
       + .form-control {
+        margin-top: 20px;
+      }
+    }
+
+    @include media(sm) {
+
+      + .form-control {
         margin-top: 16px;
       }
+    }
+  }
+
+  .form__textarea {
+    @include media(md) {
+      min-height: 84px;
     }
   }
 }
@@ -330,6 +350,316 @@
       svg {
         width: 16px;
         height: 16px;
+      }
+    }
+  }
+}
+
+
+.sertificat-box {
+
+  &__tip {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 26px;
+
+    svg {
+      color: var(--red);
+    }
+
+    @include media(md) {
+      font-size: 14px;
+      line-height: 24px;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    @include media(sm) {
+      margin: 16px 0;
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 24px;
+
+    @include media(sm) {
+      gap: 4px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    img {
+      display: block;
+      border-radius: 8px;
+    }
+
+    &-remove {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 8px;
+      right: 8px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: rgba(#232124, .4);
+      z-index: 3;
+      cursor: pointer;
+
+      @include media(sm) {
+        top: 4px;
+        right: 4px;
+      }
+
+      svg {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.sertificat-companies {
+  margin-bottom: 24px;
+
+  @include media(sm) {
+    margin-bottom: 16px;
+  }
+}
+
+.sertificat-company {
+  position: relative;
+
+  + .sertificat-company {
+    margin-top: 16px;
+
+    @include media(md) {
+      margin-top: 12px;
+    }
+  }
+  
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 1px;
+    width: 1px;
+
+    &:checked {
+      + .sertificat-company__label {
+
+        background: rgba(109, 84, 254, 0.03);
+        border-color: var(--primary);
+
+        .sertificat-company__toggle {
+          background-color: var(--primary);
+
+          &::before {
+            opacity: 1;
+          }
+        }
+
+        @include media(sm) {
+          
+          .sertificat-company__btn-toggle {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: var(--white);
+
+            .show {
+              display: none;
+            }
+
+            .hidden {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    padding: 15px 19px 15px 25px;
+    position: relative;
+    background-color: var(--white);
+    border: 1px solid var(--border-grey);
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(109, 84, 254, 0.03);
+      border-color: var(--primary);
+    }
+
+    @include media(md) {
+      padding: 11px 11px 11px 17px;
+    }
+
+    @include media(sm)  {
+      padding: 11px;
+      background: rgba(245, 245, 246, 0.5);
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 22px;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    flex-shrink: 0;
+
+    @include media(md) {
+      margin-right: 14px;
+    }
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 6px;
+      background-color: var(--white);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 0;
+    }
+
+    @include media(sm) {
+      display: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @include media(sm) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    margin-right: 16px;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+
+    img {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--border-gery);
+      overflow: hidden;
+    }
+
+    @include media(sm)  {
+      width: 32px;
+      height: 32px;
+      margin-right: 0;
+      margin-bottom: 8px;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  &__desc {
+    width: 100%;
+    margin-right: 32px;
+
+    @include media(sm)  {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &__action {
+    @include media(sm) {
+      width: 100%;
+      display: flex;
+      gap: 12px;
+    }
+  }
+
+  &__edit {
+    margin: 0 0 0 auto;
+    flex-shrink: 0;
+
+    @include media(sm) {
+      padding: 7px;
+      min-width: 32px;
+      min-height: 32px;
+
+      svg {
+        display: block;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__btn-toggle {
+    display: none;
+
+    @include media(sm) {
+      display: block;
+      padding: 3px;
+      font-size: 14px;
+      line-height: 24px;
+      border: 1px solid var(--border-grey);
+      border-radius: 4px;
+      font-weight: 600;
+      width: 100%;
+      text-align: center;
+      background-color: var(--white);
+
+      span {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .hidden {
+        display: none;
+        
+      }
+
+      .show {
+        display: flex;
       }
     }
   }
