@@ -4307,6 +4307,13 @@ h6 {
   line-height: 26px;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  .not-found__text {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 254px;
+  }
+}
 @media (max-width: 767px) {
   .not-found__text {
     font-size: 14px;
@@ -4321,6 +4328,7 @@ h6 {
 @media (max-width: 1024px) {
   .not-found__btn {
     margin-top: 24px;
+    max-width: 170px;
   }
 }
 @media (max-width: 767px) {
