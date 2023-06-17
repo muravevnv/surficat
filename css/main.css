@@ -223,9 +223,9 @@ select {
     bottom: 0;
     left: 0;
     right: 0;
-    border-radius: 0;
-    border: none;
-    border-top: 1px solid var(--border-grey);
+    border-radius: 0 !important;
+    border: none !important;
+    border-top: 1px solid var(--border-grey) !important;
   }
 }
 
@@ -3170,6 +3170,24 @@ h6 {
   background-color: #F5F5F6;
 }
 
+.nav-panel {
+  display: none;
+}
+@media (max-width: 767px) {
+  .nav-panel {
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid var(--border-grey);
+  }
+}
+
 .auth {
   min-height: 100vh;
   display: flex;
@@ -3496,6 +3514,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .faq-main {
+    max-width: 100%;
     margin-right: 0;
     margin-bottom: 32px;
   }
@@ -3605,15 +3624,17 @@ h6 {
   align-items: center;
   font-weight: 600;
   gap: 12px;
+  font-size: 18px;
+  line-height: 28px;
 }
 .faq-asside__mail a svg {
   stroke: var(--primary);
 }
 @media (max-width: 1024px) {
-  .faq-asside__mail a {
+  .faq-asside__mail {
     border-radius: 8px;
   }
-  .faq-asside__mail a a {
+  .faq-asside__mail a {
     font-size: 16px;
     line-height: 24px;
   }
@@ -3687,6 +3708,14 @@ h6 {
     margin-top: 8px;
     font-size: 14px;
     line-height: 24px;
+  }
+}
+.faq-item__icon {
+  padding-top: 2px;
+}
+@media (max-width: 767px) {
+  .faq-item__icon {
+    padding-top: 0;
   }
 }
 
@@ -3857,6 +3886,9 @@ h6 {
   .sertificats-field__btn {
     max-width: 120px;
     margin-top: 20px;
+    padding: 7px;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 

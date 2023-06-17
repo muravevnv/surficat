@@ -157,6 +157,31 @@ let previewSlider = new Swiper('.preview-gallery ', {
   }
 })
 
+let acc = document.querySelectorAll('.faq-item');
+
+
+let initAcc = function() {
+  acc.forEach(item => {
+    let accItem = item;
+    let accHead = item.querySelector('.faq-item__head');
+    
+    accHead.addEventListener('click', function(){
+      
+      if(accItem.classList.contains('is-open')) {
+        accItem.classList.remove('is-open');
+      } else {
+        acc.forEach(el => el.classList.remove('is-open'))
+        accItem.classList.add('is-open')
+      }
+    })
+  })
+}
+
+
+if(acc) {
+  initAcc()
+}
+
 
 let typeItems = document.querySelectorAll('.type')
 
