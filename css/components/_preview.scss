@@ -3,6 +3,78 @@
   height: 100vh;
   background-color: var(--white);
 
+  &.is-ended {
+    .preview__status {
+      background-color: var(--red);
+    }
+
+    .preview__amount {
+      background-color: var(--red);
+      color: var(--white);
+      opacity: 1;
+
+      @include media(sm) {
+        background-color: transparent;
+        color: var(--black);
+
+        span {
+          color: var(--red);
+        }
+      }
+    }
+
+    .preview__number {
+      opacity: 1;
+      span {
+        color: var(--primary);
+      }
+    }
+
+    .preview-copy-link {
+      pointer-events: auto;
+      color: var(--black);
+
+      &:hover {
+        color: var(--primary);
+      }
+
+      @include media(sm) {
+        color: var(--primary);
+      }
+    }
+  }
+
+  &.is-sended {
+
+    .preview__amount {
+      color: var(--black);
+      opacity: 1;
+      span {
+        color: var(--primary);
+      }
+    }
+
+    .preview__number {
+      opacity: 1;
+      span {
+        color: var(--primary);
+      }
+    }
+
+    .preview-copy-link {
+      pointer-events: auto;
+      color: var(--black);
+
+      &:hover {
+        color: var(--primary);
+      }
+
+      @include media(sm) {
+        color: var(--primary);
+      }
+    }
+  }
+
   @include media(md) {
     overflow-y: auto;
   }
@@ -16,6 +88,7 @@
       margin: 0 auto;
       flex-direction: column;
       padding: 64px 20px 96px;
+      position: relative;
     }
 
     @include media(sm) {
@@ -150,17 +223,6 @@
     }
   }
 
-  &__amount {
-    @include media(sm) {
-      display: none;
-    }
-  }
-
-  &__price {
-    background-color: var(--primary);
-    color: var(--white);
-  }
-
   &-info {
     display: flex;
     flex-wrap: wrap;
@@ -172,11 +234,9 @@
       border-radius: 6px;
       font-size: 18px;
       line-height: 28px;
-
-      &.is-disabled {
-        background: #f5f5f6;
-        opacity: 0.6;
-      }
+      background: #f5f5f6;
+      opacity: 0.6;
+      font-weight: 600;
     }
 
     @include media(sm) {
@@ -201,6 +261,18 @@
         line-height: 26px;
       }
     }
+  }
+
+  &__amount {
+    @include media(sm) {
+      display: none;
+    }
+  }
+
+  &__price {
+    background-color: var(--primary);
+    color: var(--white);
+    opacity: 1;
   }
 
   &-desc {
@@ -277,6 +349,8 @@
     font-size: 16px;
     line-height: 24px;
     cursor: pointer;
+    color: var(--grey);
+    pointer-events: none;
 
     &:hover {
       color: var(--primary);
@@ -305,17 +379,7 @@
   }
 
   &-dev {
-    position: fixed;
-    bottom: 24px;
-    left: 24px;
-    border-radius: 4px;
-    color: var(--border-grey);
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 26px;
-    padding: 4px 12px;
-    background: rgba(#232124, 0.4);
-    z-index: 5;
+    display: none;
 
     @include media(md) {
       position: static;
@@ -338,6 +402,25 @@
     @include media(sm) {
       margin-top: 40px;
     }
+
+    &__desk {
+      position: fixed;
+      bottom: 32px;
+      left: 32px;
+      color: var(--white);
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 4px 12px;
+      background: var(--black);
+      z-index: 5;
+      opacity: 0.4;
+      border-radius: 4px;
+
+      @include media(md) {
+        display: none;
+      }
+    }
   }
 
   &-box {
@@ -359,6 +442,7 @@
         font-size: 16px;
         line-height: 26px;
         text-align: center;
+        color: rgba(#787486, .4);
       }
 
       .preview-copy-link {
@@ -369,40 +453,47 @@
         border-radius: 6px;
         margin-top: 16px;
         font-weight: 600;
-        color: var(--primary);
+        color: rgba(#787486, .6);
+        color: var(--border-grey);
       }
     }
 
-    &.is-disabled {
-
-      .preview__amount {
-        color: rgba(#787486, .5)
-      }
-
-      .preview-copy-link {
-        color: var(--border-grey);
-      }
+    .preview__amount {
+      color: var(--grey);
     }
   }
 
   &__status {
-    display: none;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    background-color: #232124;
+    padding: 6px 16px;
+    z-index: 5;
+    top: 32px;
+    left: 32px;
+    border-radius: 6px;
+
+    @include media(md) {
+      top: 88px;
+    }
 
     @include media(sm) {
-      display: flex;
-      position: absolute;
       justify-content: center;
-      align-items: center;
-      color: var(--white);
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 26px;
-      background-color: #232124;
+      width: 100%;
       padding: 8px;
       top: 0;
       left: 0;
       right: 0;
-      z-index: 5;
+      font-size: 16px;
+      line-height: 24px;
+      gap: 10px;
+      
     }
   }
 }

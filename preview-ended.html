@@ -10,14 +10,10 @@
 </head>
 <body>
   <main>
-    <div class="preview">
+    <div class="preview is-ended">
       <div class="preview-wrap">
         <div class="preview-dev__desk">Сделано в Surficat</div>
-        <div class="preview__status">
-          <svg class="icon icon-24">
-            <use xlink:href="images/sprite.svg#Check-24"></use>
-          </svg>
-          Сертификат использован</div>
+        <div class="preview__status">Сертификат просрочен</div>
         <div class="preview-gallery slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide preview-galery__img">
@@ -43,16 +39,20 @@
         </div>
         <div class="preview-content">
           <div class="preview-main">
-            <div class="preview__type">Подарочный сертификат</div>
+            <div class="preview__type">
+              <svg class="icon icon-24">
+                <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
+              </svg>
+              Подарочный сертификат</div>
             <div class="preview__name">Семейные выходные в уютном доме «Taiga» на&nbsp;Байкале</div>
             <div class="preview-info">
               <div class="preview-info__item preview__price">
                 На 10 000 ₽
               </div>
-              <div class="preview-info__item preview__number is-disabled">
+              <div class="preview-info__item preview__number">
                 <span>№</span> 0000000000
               </div>
-              <div class="preview-info__item preview__amount is-disabled">
+              <div class="preview-info__item preview__amount">
                 <span>До</span> 00.00.0000
               </div>
             </div>
@@ -111,7 +111,7 @@
             </div>
           </div> 
           <div class="preview-box">
-            <div class="preview__amount">Действует до <span>00.00.0000</span></div>
+            <div class="preview__amount">Действует до <span>14.06.2024</span></div>
             <div class="preview-copy-link">
               <svg class="icon icon-24">
                 <use xlink:href="images/sprite.svg#Copy-24"></use>
@@ -131,7 +131,7 @@
                     <div class="recepient__desc">Сдаю загородные дома для отдыха и туризма на</div>
                   </div>
                 </div>
-                <div class="recepient__btn btn btn--m js-open-modal" data-modal="11">
+                <div class="recepient__btn btn btn--m">
                   Связаться
                 </div>
               </div>
@@ -151,46 +151,6 @@
       </div>
     </div>
   </main>
-  <div class="modal" data-modal="11">
-    <div class="modal-overlay"></div>
-    <div class="modal-content modal-recepient">
-      <div class="modal__close">
-        <svg class="icon icon-24">
-          <use xlink:href="images/sprite.svg#Close-24"></use>
-        </svg>
-      </div>
-
-        <div class="modal-recepient__img">
-          <img src="images/avatar-big.png" alt="">
-        </div>
-        <div class="modal-recepient__name">Александр Александровский</div>
-        <div class="modal-recepient__text">Сдаю дома для отдыха</div>
-        <div class="modal-recepient__action">
-          <a href="#" class="modal-recepient__link btn btn--outline btn--icon">
-            <svg class="icon icon-24">
-              <use xlink:href="images/sprite.svg#Vk-24"></use>
-            </svg>
-          </a>
-          <a href="#" class="modal-recepient__link btn btn--outline btn--icon">
-            <svg class="icon icon-24">
-              <use xlink:href="images/sprite.svg#Ins-24"></use>
-            </svg>
-          </a>
-          <a href="#" class="modal-recepient__link btn btn--outline btn--icon">
-            <svg class="icon icon-24">
-              <use xlink:href="images/sprite.svg#Telegram-24"></use>
-            </svg>
-          </a>
-          <a href="#" class="modal-recepient__link btn btn--outline btn--icon">
-            <svg class="icon icon-24">
-              <use xlink:href="images/sprite.svg#Whatsapp-24"></use>
-            </svg>
-          </a>
-        </div>
-        <a href="tel:+7 900 898 00 00" class="modal-recepient__call btn btn-wide">+7 900 898 00 00</a>
-
-    </div>
-  </div>
   <script src="js/nice-select2.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

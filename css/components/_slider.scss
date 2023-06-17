@@ -9,6 +9,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .swiper-pagination {
+      position: static !important;
+      transform: translate(0, 0) !important;
+    }
     
     @include media(md) {
       bottom: 24px;
