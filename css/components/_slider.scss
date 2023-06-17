@@ -70,7 +70,11 @@
     justify-content: center;
     background: rgba(35, 33, 36, 0.4);
     border-radius: 48px;
-    padding: 6px 9px;
+    padding: 8px 12px;
+
+    @include media(sm) {
+      padding: 6px 9px;
+    }
 
 
     &-bullet {

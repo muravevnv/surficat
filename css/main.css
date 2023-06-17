@@ -2458,9 +2458,15 @@ h6 {
 .preview.is-ended .preview-copy-link {
   pointer-events: auto;
   color: var(--black);
+  opacity: 1;
 }
 .preview.is-ended .preview-copy-link:hover {
   color: var(--primary);
+}
+@media (max-width: 1024px) {
+  .preview.is-ended .preview-copy-link {
+    color: var(--primary);
+  }
 }
 @media (max-width: 767px) {
   .preview.is-ended .preview-copy-link {
@@ -2483,9 +2489,15 @@ h6 {
 .preview.is-sended .preview-copy-link {
   pointer-events: auto;
   color: var(--black);
+  opacity: 1;
 }
 .preview.is-sended .preview-copy-link:hover {
   color: var(--primary);
+}
+@media (max-width: 1024px) {
+  .preview.is-sended .preview-copy-link {
+    color: var(--primary);
+  }
 }
 @media (max-width: 767px) {
   .preview.is-sended .preview-copy-link {
@@ -2572,7 +2584,7 @@ h6 {
 }
 @media (max-width: 1024px) {
   .preview-content {
-    padding: 0 20px;
+    padding: 0 0px;
     height: auto;
     overflow: hidden;
   }
@@ -2659,6 +2671,11 @@ h6 {
   gap: 16px;
   margin-bottom: 40px;
 }
+@media (max-width: 1024px) {
+  .preview-info {
+    margin-bottom: 24px;
+  }
+}
 .preview-info__item {
   padding: 6px 16px;
   border-radius: 6px;
@@ -2707,6 +2724,12 @@ h6 {
 }
 .preview-desc p + p {
   margin-top: 16px;
+}
+@media (max-width: 1024px) {
+  .preview-desc p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 .preview-desc__more {
   display: none;
@@ -2780,8 +2803,11 @@ h6 {
 }
 @media (max-width: 1024px) {
   .preview-copy-link {
-    padding: 16px;
+    padding: 15px;
     margin-top: 20px;
+    border: 1px solid var(--border-grey);
+    border-radius: 8px;
+    opacity: 0.6;
   }
 }
 @media (max-width: 767px) {
@@ -2817,6 +2843,7 @@ h6 {
     gap: 5px;
     color: var(--grey);
     font-weight: 500;
+    margin-top: 32px;
   }
   .preview-dev span {
     color: var(--primary);
@@ -2865,7 +2892,8 @@ h6 {
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    color: rgba(120, 116, 134, 0.4);
+    color: var(--grey);
+    opacity: 0.6;
   }
   .preview-box .preview-copy-link {
     display: flex;
@@ -2875,8 +2903,7 @@ h6 {
     border-radius: 6px;
     margin-top: 16px;
     font-weight: 600;
-    color: rgba(120, 116, 134, 0.6);
-    color: var(--border-grey);
+    color: var(--grey);
   }
 }
 .preview-box .preview__amount {
@@ -2901,6 +2928,7 @@ h6 {
 @media (max-width: 1024px) {
   .preview__status {
     top: 88px;
+    left: 44px;
   }
 }
 @media (max-width: 767px) {
@@ -2985,7 +3013,7 @@ h6 {
   line-height: 24px;
 }
 .recepient__btn {
-  max-width: 160px;
+  max-width: 168px;
 }
 @media (max-width: 767px) {
   .recepient__btn {
@@ -3061,7 +3089,12 @@ h6 {
   justify-content: center;
   background: rgba(35, 33, 36, 0.4);
   border-radius: 48px;
-  padding: 6px 9px;
+  padding: 8px 12px;
+}
+@media (max-width: 767px) {
+  .slider .swiper-pagination {
+    padding: 6px 9px;
+  }
 }
 .slider .swiper-pagination-bullet {
   width: 12px;
