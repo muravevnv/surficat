@@ -226,6 +226,10 @@
     font-size: 18px;
     line-height: 28px;
 
+    span {
+      padding-left: 8px;
+    }
+
     @include media(md) {
       margin-top: 12px;
       font-size: 14px;

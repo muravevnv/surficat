@@ -297,24 +297,17 @@
     <div class="modal-head">
       <div class="modal__title">Редактирование отправленного сертификата</div>
       <div class="modal__subtitle">
-        Семейные выходные в уютном доме «Taiga»  на Байкале  •  10 000 ₽
+        Семейные выходные в уютном доме «Taiga»  на Байкале  <span>• 10 000 ₽</span>
       </div>
     </div>
     <div class="modal-form">
 
         <div class="form-control form-control-icon-left form-control-icon-right ">
-
           <input type="text" class="js-form-control form__input is-fill" value="Александрина">
           <label for="" class="form__label">Получатель <span>*</span></label>
           <div class="form__icon">
             <svg class="icon icon-24">
               <use xlink:href="images/sprite.svg#User-24"></use>
-            </svg>
-          </div>
-          
-          <div class="form__icon-info">
-            <svg class="icon icon-24">
-              <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
             </svg>
           </div>
           <div class="form__tooltip">Имя лучше указывать в дательном падеже. Например: «Любимой Александре».</div>
@@ -324,7 +317,7 @@
           <label for="" class="form__label">Срок действия сертификата <span>*</span></label>
           <div class="form__icon">
             <svg class="icon icon-24">
-              <use xlink:href="images/sprite.svg#User-24"></use>
+              <use xlink:href="images/sprite.svg#Calender-24"></use>
             </svg>
           </div>
           <div class="form__tooltip">До какого числа клиент может воспользоваться сертификатом</div>
@@ -465,7 +458,11 @@
     </div>
     <div class="modal-action">
       <div class="form-btn form-btn__cancel btn-wide btn btn--outline">Отменить</div>
-      <div class="form-btn btn-wide btn btn--red">Удалить</div>
+      <div class="form-btn btn-wide btn btn--red">
+        <svg class="icon icon-24">
+          <use xlink:href="images/sprite.svg#Delete-24"></use>
+        </svg>
+        Удалить</div>
     </div>
   </div>
 </div>

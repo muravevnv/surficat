@@ -150,6 +150,14 @@
   text-overflow: ellipsis;
 }
 
+.sending-num {
+  a {
+    &:hover {
+      color: var(--black);
+    }
+  }
+}
+
 .sending-comment {
 
   &.tablet-hide {
@@ -236,6 +244,8 @@
     &__btn {
       width: 144px;
       flex-shrink: 0;
+      gap: 9px;
+      line-height: 23px;
     }
   }
 }
