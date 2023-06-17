@@ -12,12 +12,6 @@
 
 .new-sertificat {
 
-  @include media(md) {
-
-    .form-control + .form-control {
-      margin-top: 20px;
-    }
-  }
   &__box {
     @include media(md) {
       padding: 23px;
@@ -198,11 +192,6 @@
   }
 
   .form-control {
-    @include media(md) {
-      + .form-control {
-        margin-top: 20px;
-      }
-    }
 
     @include media(sm) {
 

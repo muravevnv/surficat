@@ -3904,11 +3904,6 @@ h6 {
 }
 
 @media (max-width: 1024px) {
-  .new-sertificat .form-control + .form-control {
-    margin-top: 20px;
-  }
-}
-@media (max-width: 1024px) {
   .new-sertificat__box {
     padding: 23px;
   }
@@ -4079,11 +4074,6 @@ h6 {
   .new-sertificat .dropdown-list {
     max-width: 100%;
     margin: 12px 0 0 0;
-  }
-}
-@media (max-width: 1024px) {
-  .new-sertificat .form-control + .form-control {
-    margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
