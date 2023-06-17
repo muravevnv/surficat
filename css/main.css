@@ -4037,6 +4037,12 @@ h6 {
   max-width: 180px;
   margin-left: 24px;
 }
+@media (max-width: 1024px) {
+  .new-sertificat .dropdown-list {
+    max-width: 148px;
+    margin-left: 20px;
+  }
+}
 @media (max-width: 767px) {
   .new-sertificat .dropdown-list {
     max-width: 100%;
@@ -4184,7 +4190,7 @@ h6 {
 .sertificat-box__tip {
   display: flex;
   align-items: center;
-  margin: 24px 0;
+  margin: 24px 0 0 0;
   gap: 16px;
   font-size: 16px;
   line-height: 26px;
@@ -4202,7 +4208,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .sertificat-box__tip {
-    margin: 16px 0;
+    margin: 16px 0 0 0;
   }
 }
 .sertificat-box__gallery {

@@ -186,6 +186,11 @@
     max-width: 180px;
     margin-left: 24px;
 
+    @include media(md) {
+      max-width: 148px;
+      margin-left: 20px;
+    }
+
     @include media(sm) {
       max-width: 100%;
       margin: 12px 0 0 0;
@@ -361,7 +366,7 @@
   &__tip {
     display: flex;
     align-items: center;
-    margin: 24px 0;
+    margin: 24px 0 0 0;
     gap: 16px;
     font-size: 16px;
     line-height: 26px;
@@ -378,7 +383,7 @@
     }
 
     @include media(sm) {
-      margin: 16px 0;
+      margin: 16px 0 0 0;
     }
   }
 
