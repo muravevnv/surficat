@@ -217,3 +217,52 @@ typeItems.forEach(function(item) {
     }
   }
 })
+
+$('body').on('click', '.password-control', function(){
+	if ($('#password-input').attr('type') == 'password'){
+		$(this).addClass('view');
+		$('#password-input').attr('type', 'text');
+	} else {
+		$(this).removeClass('view');
+		$('#password-input').attr('type', 'password');
+	}
+	return false;
+});
+
+// $('.password').each(function(){
+//   $item = $(this);
+//   $itemInput = $item.find('.password-input')
+//   $itemControl = $item.find('.password-control');
+//   console.log($item)
+
+//   $itemControl.on('click', function(){
+//     if ($itemInput.attr('type') == 'password'){
+//       $item.addClass('view');
+//       $itemInput.attr('type', 'text');
+//     } else {
+//       $item.removeClass('view');
+//       $itemInput.attr('type', 'password');
+//     }
+//   })
+// })
+
+
+const password = document.querySelectorAll('.password');
+
+password.forEach(function(item) {
+  let itemInput = item.querySelector('.password-input');
+  let itemControl = item.querySelector('.password-control');
+  
+
+  itemControl.addEventListener('click', function(){
+    let itemType = itemInput.getAttribute('type')
+    if (itemType === 'password'){
+        item.classList.add('view');
+        itemInput.setAttribute('type', 'text');
+      } else {
+        item.classList.remove('view');
+        itemInput.setAttribute('type', 'password');
+      }
+      return false
+  })
+})

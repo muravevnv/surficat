@@ -42,7 +42,7 @@
         <div class="container container--md">
           <div class="page-head">
             <h1 class="page__title">Мой профиль</h1>
-            <div class="logout btn btn--outline">
+            <div class="logout btn btn--outline btn--m">
               <svg class="icon icon-24">
                 <use xlink:href="images/sprite.svg#Log-out-24"></use>
               </svg>
@@ -76,27 +76,27 @@
             <div class="box profile-box">
               <h3 class="profile__title">Изменение пароля</h3>
               <form action="" class="profile__form">
-                <div class="form-control form-control-icon-right">
+                <div class="form-control form-control-icon-right password">
                   <input
                     type="text"
-                    class="js-form-control is-fill form__input"
+                    class="js-form-control is-fill form__input password-input"
                     value="qwerty123"
                   />
                   <label for="" class="form__label"
                     >Текущий пароль <span>*</span></label
                   >
-                  <div class="form__icon-info">
+                  <div class="form__icon-info password-control">
                     <svg class="icon icon-24">
                       <use xlink:href="images/sprite.svg#Eye-off-24"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="form-control form-control-icon-right">
-                  <input type="text" class="js-form-control form__input" />
+                <div class="form-control form-control-icon-right password">
+                  <input type="text" class="js-form-control form__input password-input" />
                   <label for="" class="form__label"
                     >Новый пароль <span>*</span></label
                   >
-                  <div class="form__icon-info">
+                  <div class="form__icon-info password-control">
                     <svg class="icon icon-24">
                       <use xlink:href="images/sprite.svg#Eye-24"></use>
                     </svg>
@@ -106,7 +106,7 @@
               </form>
             </div>
             <div class="box profile-box">
-              <h3 class="profile__title">Информация о компаниях и контакты</h3>
+              <h3 class="profile__title">Информация о компании и контакты</h3>
               <div class="profile__text">
                 Эти данные будут отображаться в сертификатах, в блоке
                 «Связаться». Привязать данные о компании к определенному
@@ -152,7 +152,7 @@
                     </div>
                   </div>
                   <div class="profile-companies__item-tip">
-                    <svg class="icon icon-24">
+                    <svg class="icon icon-16">
                       <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
                     </svg>
                     Компанию нельзя удалить, пока она привязана к сертификату
@@ -218,6 +218,12 @@
                   </div>
                 </div>
               </div>
+              <div class="profile-companies__btn btn btn-wide btn--m btn--outline">
+                <svg class="icon icon-24">
+                  <use xlink:href="images/sprite.svg#Plus-24"></use>
+                </svg>
+                Создать компанию
+              </div>
             </div>
             <div class="box profile-box">
               <h3 class="profile__title">Удаление аккаунта</h3>
@@ -235,7 +241,7 @@
                     >Введите текст <span>*</span></label
                   >
                 </div>
-                <div class="form__btn btn btn-wide btn--red">
+                <div class="profile-box__btn btn btn-wide btn--red">
                   <svg class="icon icon-24">
                     <use xlink:href="images/sprite.svg#Delete-24"></use>
                   </svg>
@@ -268,6 +274,12 @@
         </div>
       </div>
     </div>
+    <div class="nav-panel tabs">
+      <div class="nav-panel__item tabs__item is-active">Cертификаты</div>
+      <div class="nav-panel__item tabs__item">Отправки</div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/nice-select2.js"></script>
     <script src="js/main.js"></script>
   </body>

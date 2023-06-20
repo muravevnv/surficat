@@ -1,12 +1,12 @@
 .profile {
   &-page {
-    @include media(md) {
-      padding: 51px 0 96px;
-    }
+    // @include media(md) {
+    //   padding: 51px 0 96px;
+    // }
 
-    @include media(sm) {
-      padding: 32px 0 112px;
-    }
+    // @include media(sm) {
+    //   padding: 32px 0 112px;
+    // }
 
     .page-head {
       @include media(sm) {
@@ -77,7 +77,7 @@
 
 .profile-companies {
   &__item {
-    padding: 15px 23px;
+    padding: 15px 19px 15px 23px;
     width: 100%;
     border: 1px solid var(--border-grey);
     border-radius: 8px;
@@ -89,10 +89,16 @@
 
     &:hover {
       background: rgba(109, 84, 254, 0.03);
+      border-color: var(--primary);
     }
 
     @include media(md) {
       padding: 11px;
+
+      + .profile-companies__item {
+        margin-top: 12px;
+      }
+  
     }
 
     @include media(sm) {
@@ -133,6 +139,11 @@
       @include media(sm) {
         align-items: flex-start;
         gap: 12px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
   }
@@ -155,6 +166,12 @@
       margin-bottom: 8px;
       width: 32px;
       height: 32px;
+
+      img {
+        display: block;
+        width: 32px;
+        height: 32px;
+      }
     }
   }
 
@@ -181,6 +198,7 @@
 
     &--disabled {
       border-width: 1px;
+      pointer-events: none;
 
       svg {
         opacity: 0.6;
@@ -248,4 +266,25 @@
   @include media(sm) {
     max-width: 100%;
   }
+}
+
+
+.profile-companies__btn {
+  margin-top: 24px;
+
+  @include media(sm) {
+    padding: 7px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 16px;
+
+    svg {
+      width: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+.profile-box__btn {
+  margin-top: 24px;
 }
