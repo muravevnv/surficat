@@ -461,6 +461,18 @@
     }
   }
 
+  &__call {
+    svg {
+      stroke: initial;
+    }
+
+    &:hover {
+      svg {
+        stroke: initial;
+      }
+    }
+  }
+
   &__link {
     width: 100%;
   }

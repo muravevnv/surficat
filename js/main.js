@@ -47,10 +47,40 @@ niceSelects.forEach(function(item){
 
 var tx = document.getElementsByTagName("textarea"); //РАСТЯГИВАЕМ_textarea
 
+let spacer = 16;
+
+if (window.matchMedia("(max-width: 1024px)").matches) {
+  spacer = 12;
+} 
+
+// if(window.matchMedia("(max-width: 768px)").matches) {
+//   spacer = 8;
+// }
+
+
+let open = document.querySelector('.open');
+
+if(open) {
+
+  let videoAfterOpen = open.querySelector('.after-open');
+  let videoBtn = open.querySelector('.open__btn');
+  
+  videoBtn.addEventListener('click', function(){
+    videoAfterOpen.play();
+    open.classList.add('is-open');
+  })
+}
+
+
 for (var i = 0; i < tx.length; i++) {
+  let innerHeight = tx[i].scrollHeight;
+ 
+  let height = innerHeight + spacer;
+  
+  console.log(typeof(innerHeight), typeof(spacer), typeof(height))
   tx[i].setAttribute(
     "style",
-    "height:" + tx[i].scrollHeight + "px;overflow-y:hidden;"
+    "height:" + height + "px;overflow-y:hidden;"
   );
 
   tx[i].addEventListener("input", OnInput, false);
@@ -218,16 +248,16 @@ typeItems.forEach(function(item) {
   }
 })
 
-$('body').on('click', '.password-control', function(){
-	if ($('#password-input').attr('type') == 'password'){
-		$(this).addClass('view');
-		$('#password-input').attr('type', 'text');
-	} else {
-		$(this).removeClass('view');
-		$('#password-input').attr('type', 'password');
-	}
-	return false;
-});
+// $('body').on('click', '.password-control', function(){
+// 	if ($('#password-input').attr('type') == 'password'){
+// 		$(this).addClass('view');
+// 		$('#password-input').attr('type', 'text');
+// 	} else {
+// 		$(this).removeClass('view');
+// 		$('#password-input').attr('type', 'password');
+// 	}
+// 	return false;
+// });
 
 // $('.password').each(function(){
 //   $item = $(this);

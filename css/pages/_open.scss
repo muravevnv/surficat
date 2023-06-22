@@ -14,19 +14,30 @@
     padding: 66px 20px 20px;
   }
 
+
+  .after-open {
+    display: none;
+  }
+
+  &.is-open {
+    .before-open {
+      display: none;
+    }
+  
+    .after-open {
+      display: block;
+    }
+  }
+
   &__dev {
     position: absolute;
-    bottom: 35px;
-    font-size: 15.3px;
-    line-height: 14px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    
-    img {
-      display: inline-block;
-      width: 57px;
-      height: 12px;
+    bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--grey);
+
+    span {
+      color: var(--primary);
     }
 
     @include media(sm) {
@@ -35,8 +46,10 @@
   }
 
   &__img {
+    max-width: 320px;
 
-    img {
+    video {
+      max-width: 100%;
       display: block;
     }
     @include media(md) {
