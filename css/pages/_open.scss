@@ -109,6 +109,10 @@
   &__btn {
     max-width: 230px;
 
+    @include media(md) {
+      padding: 11px;
+    }
+
     @include media(sm) {
       max-width: 280px;
     }

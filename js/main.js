@@ -50,7 +50,7 @@ var tx = document.getElementsByTagName("textarea"); //РАСТЯГИВАЕМ_tex
 let spacer = 16;
 
 if (window.matchMedia("(max-width: 1024px)").matches) {
-  spacer = 12;
+  spacer = 16;
 } 
 
 // if(window.matchMedia("(max-width: 768px)").matches) {
@@ -64,7 +64,7 @@ if(open) {
 
   let videoAfterOpen = open.querySelector('.after-open');
   let videoBtn = open.querySelector('.open__btn');
-  
+
   videoBtn.addEventListener('click', function(){
     videoAfterOpen.play();
     open.classList.add('is-open');
@@ -187,6 +187,18 @@ let previewSlider = new Swiper('.preview-gallery ', {
   }
 })
 
+let sertSlider = new Swiper('.sertificat-slider', {
+  allowTouchMover: false,
+  slidesPerView: 1,
+  navigation: {
+    prevEl: '.sertificat-slider .slider-prev',
+    nextEl: '.sertificat-slider .slider-next'
+  },
+  pagination: {
+    el: '.swiper-pagination'
+  }
+})
+
 let acc = document.querySelectorAll('.faq-item');
 
 
@@ -248,33 +260,23 @@ typeItems.forEach(function(item) {
   }
 })
 
-// $('body').on('click', '.password-control', function(){
-// 	if ($('#password-input').attr('type') == 'password'){
-// 		$(this).addClass('view');
-// 		$('#password-input').attr('type', 'text');
-// 	} else {
-// 		$(this).removeClass('view');
-// 		$('#password-input').attr('type', 'password');
-// 	}
-// 	return false;
-// });
+let text = document.querySelectorAll('.js-text');
 
-// $('.password').each(function(){
-//   $item = $(this);
-//   $itemInput = $item.find('.password-input')
-//   $itemControl = $item.find('.password-control');
-//   console.log($item)
+function showText() {
+  text.forEach(function(item) {
+    let textContent = item.querySelector('.js-text-content');
+    let textBtn = item.querySelector('.js-text-show');
 
-//   $itemControl.on('click', function(){
-//     if ($itemInput.attr('type') == 'password'){
-//       $item.addClass('view');
-//       $itemInput.attr('type', 'text');
-//     } else {
-//       $item.removeClass('view');
-//       $itemInput.attr('type', 'password');
-//     }
-//   })
-// })
+    textBtn.addEventListener('click', function(){
+      textContent.classList.toggle('is-active');
+      this.classList.toggle('is-active');
+    })
+  })
+}
+
+if(text) {
+  showText();
+}
 
 
 const password = document.querySelectorAll('.password');

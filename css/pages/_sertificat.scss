@@ -104,6 +104,8 @@
         font-size: 16px;
         line-height: 26px;
         margin-top: 8px;
+
+       
       }
     }
   }
@@ -138,6 +140,15 @@
       -webkit-line-clamp: 6;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      &.is-active {
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: initial;
+        overflow: visible;
+        
+      }
     }
   }
 }
@@ -226,6 +237,24 @@
   }
 }
 
+.sertificat-slider {
+  position: relative;
+
+  .slider-next {
+    right: 24px;
+  }
+
+  .slider-prev {
+    left: 24px;
+  }
+
+  .swiper-pagination {
+    @include media(md) {
+      bottom: 20px;
+    }
+  }
+}
+
 .sertificat-slide {
   border: 1px solid var(--border-grey);
   border-radius: 12px;
@@ -251,7 +280,7 @@
   padding: 23px 39px;
 
   @include media(md) {
-    padding: 19px 23px;
+    padding: 18px 23px;
     gap: 24px;
   }
 
@@ -286,7 +315,6 @@
     width: 48px;
     height: 48px;
     background-color: #F5F5F6;
-    border: 1px solid var(--border-grey);
     border-radius: 50%;
 
     @include media(md) {
