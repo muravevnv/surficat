@@ -115,6 +115,26 @@
     flex-shrink: 0;
     height: 100vh;
 
+    .slider-next {
+      right: 40px;
+
+      @media(max-width: 1600px) {
+        right: 32px;
+      }
+    }
+
+    .slider-prev {
+      left: 40px;
+      
+      @media(max-width: 1600px) {
+        left: 32px;
+      }
+    }
+
+    @media(min-width: 2000px) {
+      max-width: 50%;
+    }
+
     @media (max-width: 1919px) {
       max-width: 954px;
     }
@@ -164,6 +184,10 @@
       padding: 0 0px;
       height: auto;
       overflow: hidden;
+    }
+
+    @include media(sm) {
+      padding: 0 20px;
     }
   }
 
@@ -242,8 +266,17 @@
     gap: 16px;
     margin-bottom: 40px;
 
+    @media(max-width: 1600px) {
+      margin-bottom: 32px;
+    }
+
+    @media(max-width: 1280px) {
+      gap: 12px;
+    }
+
     @include media(md) {
       margin-bottom: 24px;
+      gap: 16px;
     }
 
     &__item {
@@ -254,6 +287,26 @@
       background: #f5f5f6;
       opacity: 0.6;
       font-weight: 600;
+
+      @media(max-width: 1280px) {
+        padding: 4px 12px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      @include media(md) {
+        padding: 6px 16px;
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      @include media(sm) {
+        border-radius: 6px;
+      }
+
+      @media(max-width: 359px) {
+        border-radius: 4px;
+      }
     }
 
     @include media(sm) {
@@ -264,7 +317,6 @@
         padding: 6px 16px;
         font-size: 18px;
         line-height: 28px;
-        border-radius: 4px;
       }
     }
 
@@ -327,6 +379,12 @@
         -webkit-line-clamp: 4;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        &.is-active {
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: initial;
+          overflow: visible;
+        }
       }
 
       @include media(sm) {
@@ -384,6 +442,7 @@
       border: 1px solid var(--border-grey);
       border-radius: 8px;
       opacity: .6;
+      font-weight: 600;
     }
 
     @include media(sm) {
@@ -397,9 +456,15 @@
     bottom: 0;
     right: 0;
     left: 0;
+    padding-top: 72px;
+
+    @media(max-width: 1600px) {
+      padding-top: 40px;
+    }
 
     @include media(md) {
       position: static;
+      padding-top: 0;
     }
   }
 
@@ -501,26 +566,47 @@
     background-color: #232124;
     padding: 6px 16px;
     z-index: 5;
-    top: 32px;
-    left: 32px;
+    top: 40px;
+    left: 40px;
     border-radius: 6px;
+
+    @media(max-width: 1600px) {
+      top: 32px;
+      left: 32px;
+    }
+
+    @media(max-width: 1280px) {
+      padding: 4px 12px;
+      gap: 8px;
+      font-size: 16px;
+      line-height: 24px;
+
+      svg {
+        display: block;
+        width: 16px;
+        height: 16px;
+      }
+    }
 
     @include media(md) {
       top: 88px;
       left: 44px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     @include media(sm) {
       justify-content: center;
       width: 100%;
       padding: 8px;
-      top: 0;
-      left: 0;
-      right: 0;
+      position: static;
       font-size: 16px;
       line-height: 24px;
       gap: 10px;
-      
+      border-radius: 0;
     }
   }
 }
@@ -545,6 +631,10 @@
     @include media(sm) {
       flex-direction: column;
       align-items: center;
+      gap: 20px;
+    }
+
+    @media(max-width: 370px) {
       gap: 16px;
     }
   }
@@ -553,12 +643,12 @@
     display: block;
     width: 48px;
     height: 48px;
-    border: 1px solid var(--border-grey);
     border-radius: 50%;
     background-color: #f5f5f6;
     flex-shrink: 0;
 
     img {
+      display: block;
       width: 48px;
       height: 48px;
       object-fit: cover;
@@ -581,6 +671,19 @@
     line-height: 24px;
     font-weight: 600;
 
+    @media(max-width:1600px) {
+      max-width: 276px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    @include media(md) {
+      max-width: initial;
+      margin-bottom: 2px;
+      margin-top: -1px;
+    }
+
     @include media(sm) {
       line-height: 26px;
       margin-bottom: 4px;
@@ -590,10 +693,34 @@
   &__desc {
     font-size: 14px;
     line-height: 24px;
+
+    
+    @media(max-width:1600px) {
+      max-width: 276px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    @include media(md) {
+      max-width: initial;
+    }
   }
 
   &__btn {
-    max-width: 168px;
+    max-width: 180px;
+
+    @media(max-width: 1600px) {
+      max-width: 158px;
+    }
+
+    @media(max-width: 1280px) {
+      max-width: 140px;
+    }
+
+    @include media(md) {
+      max-width: 168px;
+    }
 
     @include media(sm) {
       max-width: 100%;
