@@ -3762,7 +3762,7 @@ h6 {
   border: 1px solid #eaecf1;
   border-radius: 12px;
   background-color: var(--white);
-  padding: 12px;
+  padding: 11px;
   display: flex;
   flex-direction: column;
 }
@@ -3784,8 +3784,15 @@ h6 {
   color: var(--white);
   border-radius: 4px;
 }
+@media (max-width: 1024px) {
+  .sertificat-item__price {
+    top: 20px;
+    left: 20px;
+  }
+}
 .sertificat-item__img {
   margin-bottom: 4px;
+  border-radius: 8px;
 }
 @media (max-width: 1024px) {
   .sertificat-item__img {
@@ -3793,8 +3800,9 @@ h6 {
   }
 }
 .sertificat-item__img img {
+  display: block;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .sertificat-item__info {
   padding: 12px;
@@ -3822,6 +3830,63 @@ h6 {
   display: flex;
   gap: 16px;
   margin: auto 0 0 0;
+}
+
+.sertificat-add-head {
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .sertificat-add-head {
+    gap: 34px;
+  }
+}
+
+.sertificat-add-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 50%;
+}
+.sertificat-add-btn svg {
+  display: block !important;
+}
+@media (max-width: 1024px) {
+  .sertificat-add-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .sertificat-add-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.sertificat-item-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sertificat-item-add__title {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.sertificat-item-add__btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 50%;
 }
 
 .sertificats-empty {
