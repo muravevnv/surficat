@@ -22,6 +22,9 @@
     <div class="btn btn--outline js-open-modal" data-modal="8">Удалить коментарий</div>
     <div class="btn btn--outline js-open-modal" data-modal="9">Удалить компанию</div>
     <div class="btn btn--outline js-open-modal" data-modal="10">Удалить сертифика</div>
+    <div class="btn btn--outline js-open-modal" data-modal="20">Отправка сертификата</div>
+    <div class="btn btn--outline js-open-modal" data-modal="21">Удалить сертификат</div>
+    <div class="btn btn--outline js-open-modal" data-modal="22">Сертификат отправлен</div>
   </div>
  </div>
 
@@ -463,6 +466,111 @@
           <use xlink:href="images/sprite.svg#Delete-24"></use>
         </svg>
         Удалить</div>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="20">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Отправка сертификата</div>
+      <div class="modal__subtitle">
+        Семейные выходные в уютном доме «Taiga» <span>• 10 000 ₽</span>
+      </div>
+    </div>
+    <div class="modal-form">
+
+        <div class="form-control form-control-icon-left form-control-icon-right ">
+          <input type="text" class="js-form-control form__input is-fill" value="Александрина">
+          <label for="" class="form__label">Получатель <span>*</span></label>
+          <div class="form__icon">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#User-24"></use>
+            </svg>
+          </div>
+          <div class="form__tooltip">Имя лучше указывать в дательном падеже. Например: «Любимой Александре».</div>
+        </div>
+        <div class="form-control form-control-icon-left">
+          <input type="text" class="js-form-control form__input is-fill" value="13.05.2024">
+          <label for="" class="form__label">Срок действия сертификата <span>*</span></label>
+          <div class="form__icon">
+            <svg class="icon icon-24">
+              <use xlink:href="images/sprite.svg#Calender-24"></use>
+            </svg>
+          </div>
+          <div class="form__tooltip">До какого числа клиент может воспользоваться сертификатом</div>
+        </div>
+        <div class="form-control">
+          <textarea contenteditable="" class="js-form-control form__textarea is-fill">Curabitur mattis arcu lectus, vitae vulputate ipsum facilisis vitae. Phasellus eget enim eu risus elementum bibendum.
+          </textarea>
+          <label for="" class="form__label">Укажите от кого сертификат или пожелание</label>
+        </div>
+    </div>
+    <div class="modal-action">
+      <button class="modal__btn btn btn-wide btn-primary">Отправить</button>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="21">
+  <div class="modal-overlay"></div>
+  <div class="modal-content modal-delete modal-content--sm">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Внимание!</div>
+      <div class="modal__desc">Если вы удалите этот сертификат, он перестанет быть доступен всем, кому был отправлен.</div>
+      <div class="modal__text">Для подтверждения удаления введите «Удалить сертификат»</div>
+
+    </div>
+    <div class="modal-form">
+      <div class="form-control form-control-icon-left form-control-icon-right ">
+        <input type="text" class="js-form-control form__input is-fill" value="Александрина">
+        <label for="" class="form__label">Получатель <span>*</span></label>
+        <div class="form__icon">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#User-24"></use>
+          </svg>
+        </div>
+        <div class="form__icon-info">
+          <svg class="icon icon-24">
+            <use xlink:href="images/sprite.svg#Alert-circle-24"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="modal-action">
+      <div class="form-btn form-btn__cancel btn-wide btn btn--outline">Отменить</div>
+      <div class="form-btn btn-wide btn btn--red">
+        <svg class="icon icon-24">
+          <use xlink:href="images/sprite.svg#Delete-24"></use>
+        </svg>
+        Удалить</div>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="22">
+  <div class="modal-overlay"></div>
+  <div class="modal-content modal-content--sm">
+    <div class="modal__close">
+      <svg class="icon icon-24">
+        <use xlink:href="images/sprite.svg#Close-24"></use>
+      </svg>
+    </div>
+    <div class="modal-head">
+      <div class="modal__title">Ура! Ваш сертификат <br> готов к отправке!</div>
+      <div class="modal__desc">Теперь откройте предпросмотр и поделитесь с клиентом ссылкой на сертификат.</div>
+    </div>
+
+    <div class="modal-action">
+      <div class="form-btn form-btn__preview btn-wide btn ">Открыть предпросмотр</div>
     </div>
   </div>
 </div>
