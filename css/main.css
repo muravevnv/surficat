@@ -1794,6 +1794,11 @@ h6 {
 .showcase-header-md .header-nav {
   margin-right: 23.5px;
 }
+@media (max-width: 767px) {
+  .showcase-header-md .header-nav {
+    margin-top: 16px;
+  }
+}
 .showcase-header-md .header-nav__item {
   margin-right: 25.5px;
 }
@@ -2184,7 +2189,7 @@ h6 {
   line-height: 28px;
 }
 .modal__subtitle span {
-  padding-left: 8px;
+  padding: 0 4px 0 5px;
 }
 @media (max-width: 1024px) {
   .modal__subtitle {
@@ -3999,6 +4004,10 @@ h6 {
   background-color: var(--primary);
   color: var(--white);
   border-radius: 50%;
+  cursor: pointer;
+}
+.sertificat-add-btn:hover {
+  background-color: var(--black);
 }
 .sertificat-add-btn svg {
   display: block !important;
@@ -4027,6 +4036,13 @@ h6 {
   margin-bottom: 20px;
   font-weight: 600;
 }
+@media (max-width: 1024px) {
+  .sertificat-item-add__title {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+}
 .sertificat-item-add__btn {
   width: 48px;
   height: 48px;
@@ -4036,6 +4052,16 @@ h6 {
   background-color: var(--primary);
   color: var(--white);
   border-radius: 50%;
+  cursor: pointer;
+}
+.sertificat-item-add__btn:hover {
+  background-color: var(--black);
+}
+@media (max-width: 1024px) {
+  .sertificat-item-add__btn {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .sertificats-empty {
@@ -4146,6 +4172,9 @@ h6 {
   line-height: 34px;
   font-weight: 600;
 }
+.new-sertificat__title span {
+  color: var(--primary);
+}
 @media (max-width: 1024px) {
   .new-sertificat__title {
     margin-bottom: 12px;
@@ -4238,14 +4267,14 @@ h6 {
     line-height: 24px;
     align-items: flex-start;
   }
+  .new-sertificat__tip svg {
+    margin-right: 12px;
+  }
 }
 @media (max-width: 767px) {
   .new-sertificat__tip {
     margin-top: 16px;
     align-items: flex-start;
-  }
-  .new-sertificat__tip svg {
-    margin-right: 12px;
   }
 }
 @media (max-width: 767px) {
@@ -4306,6 +4335,9 @@ h6 {
   }
 }
 
+.contacts-list {
+  margin-top: 24px;
+}
 @media (max-width: 767px) {
   .contacts-list {
     margin-top: 16px;
@@ -4734,9 +4766,30 @@ h6 {
   }
 }
 
+@media (max-width: 1024px) {
+  .edit-company .form-control + .form-control {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .edit-company .form-control + .form-control {
+    margin-top: 16px;
+  }
+}
 @media (max-width: 767px) {
   .edit-company .new-sertificat__box + .new-sertificat__box {
     margin-top: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .new-company-page .form-control + .form-control {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .new-company-page .form-control + .form-control {
+    margin-top: 16px;
   }
 }
 
@@ -5523,17 +5576,17 @@ h6 {
   }
 }
 
-.text.is-open .text-hidden {
+.text .text-hidden.is-active {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: initial;
   overflow: visible;
   text-overflow: initial;
 }
-.text.is-open .text-show .show {
+.text .text-show.is-active .show {
   display: none;
 }
-.text.is-open .text-show .hide {
+.text .text-show.is-active .hide {
   display: block;
 }
 .text .text-hidden {

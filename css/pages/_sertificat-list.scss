@@ -1,5 +1,4 @@
 .sertificat-list {
-
   @include media(sm) {
     overflow: hidden;
     width: calc(100% + 40px);
@@ -11,12 +10,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
-  
+
     @include media(md) {
       gap: 24px;
     }
-  
-    @media(max-width: 992px) {
+
+    @media (max-width: 992px) {
       grid-template-columns: repeat(3, 1fr);
     }
 
@@ -35,7 +34,7 @@
   padding: 11px;
   display: flex;
   flex-direction: column;
-  
+
   @include media(sm) {
     width: 260px;
     height: auto;
@@ -63,9 +62,8 @@
     margin-bottom: 4px;
     border-radius: 8px;
 
-    @include media(md)  {
+    @include media(md) {
       margin-bottom: 8px;
-      
     }
 
     img {
@@ -81,7 +79,7 @@
     flex-direction: column;
     height: 100%;
 
-    @include media(md)  {
+    @include media(md) {
       padding: 8px;
     }
   }
@@ -121,12 +119,17 @@
   background-color: var(--primary);
   color: var(--white);
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--black);
+  }
 
   svg {
     display: block !important;
   }
 
-  @include media(md)  {
+  @include media(md) {
     width: 40px;
     height: 40px;
 
@@ -149,16 +152,32 @@
     line-height: 34px;
     margin-bottom: 20px;
     font-weight: 600;
+
+    @include media(md) {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
   }
 
   &__btn {
     width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary);
-  color: var(--white);
-  border-radius: 50%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--black);
+    }
+
+    @include media(md) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }

@@ -482,17 +482,19 @@
 
 .text {
 
-  &.is-open {
-
-    .text-hidden {
+  .text-hidden {
+    &.is-active {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: initial;
       overflow: visible;
       text-overflow: initial;
     }
+  }
 
-    .text-show {
+
+  .text-show {
+    &.is-active {
       .show {
         display: none;
       }
@@ -502,6 +504,7 @@
       }
     }
   }
+
 
   .text-hidden {
     display: -webkit-box;

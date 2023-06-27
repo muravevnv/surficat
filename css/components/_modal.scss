@@ -227,7 +227,7 @@
     line-height: 28px;
 
     span {
-      padding-left: 8px;
+      padding: 0 4px 0 5px;
     }
 
     @include media(md) {

@@ -124,17 +124,16 @@ tabs.forEach(function(item){
 
 
 let sertificatSlider = new Swiper('.sertificat-list', {
-  allowTouchMover: false,
+  allowTouchMove: true,
   slidesPerView: 'auto',
   breakpoints: {
     0: {
       slidesPerView: 'auto',
-      allowTouchMover: true,
       spaceBetween: 12,
     }, 
     768: {
       slidesPerView: 'auto',
-      allowTouchMover: false,
+      allowTouchMove: false,
       spaceBetween: 0
     }, 
   }

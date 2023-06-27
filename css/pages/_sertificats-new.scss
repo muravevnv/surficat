@@ -39,6 +39,10 @@
     line-height: 34px;
     font-weight: 600;
 
+    span {
+      color: var(--primary);
+    }
+
     @include media(md) {
       margin-bottom: 12px;
       font-size: 22px;
@@ -129,15 +133,15 @@
       font-size: 14px;
       line-height: 24px;
       align-items: flex-start;
+
+      svg {
+        margin-right: 12px;
+      }
     }
 
     @include media(sm) {
       margin-top: 16px;
       align-items: flex-start;
-
-      svg {
-        margin-right: 12px;
-      }
     }
   }
 
@@ -212,6 +216,7 @@
 .contacts {
 
   &-list {
+    margin-top: 24px;
     @include media(sm) {
       margin-top: 16px;
     }
@@ -689,10 +694,35 @@
 }
 
 .edit-company {
+  @include media(md) {
+    .form-control + .form-control {
+      margin-top: 24px;
+    }
+  }
+  
+  @include media(sm) {
+    .form-control + .form-control {
+      margin-top: 16px;
+    }
+  }
 
   @include media(sm) {
     .new-sertificat__box + .new-sertificat__box {
       margin-top: 8px;
+    }
+  }
+}
+
+.new-company-page {
+  @include media(md) {
+    .form-control + .form-control {
+      margin-top: 24px;
+    }
+  }
+  
+  @include media(sm) {
+    .form-control + .form-control {
+      margin-top: 16px;
     }
   }
 }
