@@ -297,3 +297,17 @@ password.forEach(function(item) {
       return false
   })
 })
+
+
+
+const image = document.querySelector('.js-crop-img') || false
+
+if(image) {
+
+  const cropper = new Cropper(image, {
+    aspectRatio: 6 / 6,
+    crop(event) {
+
+    }
+  });
+}

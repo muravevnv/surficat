@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/nice-select2.css" />
   <link rel="stylesheet" href="css/swiper-bundle.css" />
+  <link rel="stylesheet" href="css/cropper.min.css" />
   <link rel="stylesheet" href="css/main.css" />
   <title>Document</title>
 </head>
@@ -278,7 +279,7 @@
     </div>
   </div>
 </div>
-<div class="modal" data-modal="4">
+<div class="modal is-open" data-modal="4">
   <div class="modal-overlay"></div>
   <div class="modal-content modal-photo">
     <div class="modal__close">
@@ -289,8 +290,8 @@
     <div class="modal-head">
       <div class="modal__title">Выделите видимую область изображения</div>
     </div>
-    <div class="modal-photo__preview">
-      <img src="images/preview.png" alt="">
+    <div class="modal-photo__preview ">
+      <img class="js-crop-img" src="images/crop-preview.png" alt="">
     </div>
     <div class="modal-action">
       <div class="modal__btn btn btn-wide">
@@ -585,6 +586,7 @@
 </div>
  <script src="js/nice-select2.js"></script>
  <script src="js/swiper-bundle.min.js"></script>
+ <script src="js/cropper.min.js"></script>
  <script src="js/main.js"></script>
 </body>
 </html>
