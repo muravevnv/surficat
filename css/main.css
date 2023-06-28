@@ -5819,6 +5819,12 @@ h6 {
 .sertificat__desc .text-show {
   display: none;
 }
+.sertificat__desc .text-show-open {
+  display: block;
+}
+.sertificat__desc .text-show-hide {
+  display: none;
+}
 @media (max-width: 1024px) {
   .sertificat__desc .text-show {
     display: block;
@@ -5827,6 +5833,12 @@ h6 {
     line-height: 24px;
     color: var(--primary);
     font-weight: 600;
+  }
+  .sertificat__desc .text-show.is-active .text-show-open {
+    display: none;
+  }
+  .sertificat__desc .text-show.is-active .text-show-hide {
+    display: block;
   }
 }
 @media (max-width: 767px) {
