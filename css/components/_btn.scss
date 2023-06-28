@@ -231,6 +231,14 @@
   &--loaded {
     pointer-events: none;
   }
+
+  &--remove {
+    &:hover {
+      background-color: var(--red);
+      border-color: var(--red);
+      color: var(--white);
+    }
+  }
 }
 
 

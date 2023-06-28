@@ -477,3 +477,35 @@
     width: 100%;
   }
 }
+
+.modal-photo {
+
+  &__preview {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &.modal-content {
+    @include media(sm) {
+      max-height: 100vh;
+      height: 100%;
+      background-color: #232124;
+      border: none;
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 24px 20px;
+      
+      .modal__title {
+        color: var(--white);
+      }
+
+      .modal__close {
+        svg {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

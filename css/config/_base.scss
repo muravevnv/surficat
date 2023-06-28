@@ -146,6 +146,7 @@ select {
 
     @include media(md) {
       gap: 8px;
+      display: flex;
     }
 
     @include media(sm) {

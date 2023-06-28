@@ -211,6 +211,12 @@
       line-height: 20px;
       transition: .3s;
     }
+
+    ~ .form__icon {
+      svg {
+        color: var(--black);
+      }
+    }
   }
 
   &.is-focus {

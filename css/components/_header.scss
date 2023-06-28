@@ -33,6 +33,10 @@
     @include media(md) {
       margin-right: 23.5px;
     }
+    
+    @include media(sm) {
+      margin-right: 16px;
+    }
 
     &__list {
       display: flex;
@@ -154,10 +158,6 @@
 
     .header-nav {
       margin-right: 23.5px;
-
-      @include media(sm) {
-        margin-top: 16px;
-      }
 
       &__item {
         margin-right: 25.5px;
