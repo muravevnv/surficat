@@ -286,6 +286,7 @@ password.forEach(function(item) {
   
 
   itemControl.addEventListener('click', function(){
+
     let itemType = itemInput.getAttribute('type')
     if (itemType === 'password'){
         item.classList.add('view');

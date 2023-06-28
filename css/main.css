@@ -5104,9 +5104,10 @@ h6 {
 .profile-companies__remove--disabled {
   border-width: 1px;
   pointer-events: none;
+  opacity: 0.6;
 }
 .profile-companies__remove--disabled svg {
-  opacity: 0.6;
+  color: var(--grey);
 }
 .profile-companies__remove--disabled:hover {
   background-color: unset !important;
@@ -5188,6 +5189,17 @@ h6 {
 
 .profile-box__btn {
   margin-top: 24px;
+}
+
+.password-hide {
+  display: none;
+}
+
+.password.view .password-view {
+  display: none;
+}
+.password.view .password-hide {
+  display: block;
 }
 
 @media (max-width: 1024px) {
